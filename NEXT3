@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded",function(){
+
+console.log("Welcome to SHGT Website");
+
+const btn=document.querySelector(".btn");
+
+if(btn){
+
+btn.addEventListener("click",function(){
+
+alert("Welcome to SH GLOBAL TECHNOLOGY");
+
+});
+
+}
+
+});
