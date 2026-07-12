@@ -1,0 +1,18 @@
+SHGT/
+│── index.html
+│── products.html
+│── services.html
+│── contact.html
+│── admin.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── firebase.js   ← এই ফাইল
+│   ├── script.js
+│   ├── admin.js
+│
+├── images/
+│
+└── README.md
