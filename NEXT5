@@ -1,0 +1,21 @@
+SHGT
+│
+├── index.html
+├── products.html
+├── services.html
+├── contact.html
+├── about.html
+│
+├── css
+│     └── style.css
+│
+├── js
+│     └── script.js
+│
+├── images
+│     ├── logo.png
+│     └── products
+│          ├── sewing-machine.jpg
+│          ├── servo-motor.jpg
+│          ├── spare-parts.jpg
+│          └── needle.jpg
