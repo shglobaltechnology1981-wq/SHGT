@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHGT Services</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">SHGT</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="container">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🔧 Machine Repair</h3>
+<p>Professional repair service for all industrial sewing machines.</p>
+</div>
+
+<div class="card">
+<h3>⚙ Machine Installation</h3>
+<p>Complete installation and setup service.</p>
+</div>
+
+<div class="card">
+<h3>🛠 Preventive Maintenance</h3>
+<p>Regular maintenance to reduce machine breakdown.</p>
+</div>
+
+<div class="card">
+<h3>🚨 Emergency Factory Support</h3>
+<p>24/7 emergency support for garments factories.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SH GLOBAL TECHNOLOGY</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
