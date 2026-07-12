@@ -1,0 +1,19 @@
+SHGT/
+├── index.html
+├── about.html
+├── products.html
+├── services.html
+├── contact.html
+├── quotation.html
+├── admin.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── script.js
+│   ├── firebase.js
+│   └── admin.js
+├── images/
+│   ├── logo.png
+│   ├── banner.jpg
+│   └── products/
+└── firebase.json
