@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHGT Products</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">SHGT</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="container">
+
+<h2 class="title">Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/products/sewing-machine.jpg" alt="Sewing Machine">
+<h3>Industrial Sewing Machine</h3>
+<p>High quality industrial sewing machines.</p>
+<a class="btn" href="https://wa.me/8801621007916">Order Now</a>
+</div>
+
+<div class="card">
+<img src="images/products/servo-motor.jpg" alt="Servo Motor">
+<h3>Servo Motor</h3>
+<p>Energy saving servo motors.</p>
+<a class="btn" href="https://wa.me/8801621007916">Order Now</a>
+</div>
+
+<div class="card">
+<img src="images/products/spare-parts.jpg" alt="Spare Parts">
+<h3>Machine Spare Parts</h3>
+<p>All genuine sewing machine spare parts.</p>
+<a class="btn" href="https://wa.me/8801621007916">Order Now</a>
+</div>
+
+<div class="card">
+<img src="images/products/needle.jpg" alt="Needle">
+<h3>Sewing Needles</h3>
+<p>Industrial needles for all brands.</p>
+<a class="btn" href="https://wa.me/8801621007916">Order Now</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 SH GLOBAL TECHNOLOGY</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
