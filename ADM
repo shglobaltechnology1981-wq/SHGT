@@ -1,0 +1,15 @@
+SHGT/
+│── index.html
+│── about.html
+│── products.html
+│── services.html
+│── contact.html
+│── quotation.html
+│── css/
+│     └── style.css
+│── js/
+│     └── script.js
+│── images/
+│     ├── logo.png
+│     ├── banner.jpg
+│     └── products/
