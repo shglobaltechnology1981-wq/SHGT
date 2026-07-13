@@ -10,7 +10,115 @@ body{
 font-family:Arial,sans-serif;
 margin:0;
 background:#f4f4f4;
+}<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHGT Products</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
 }
+
+h1{
+background:#0b3d91;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+#products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px #ccc;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:contain;
+}
+
+button{
+background:#0b3d91;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>SHGT Products</h1>
+
+<div id="products"></div>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+
+const firebaseConfig = {
+apiKey:"YOUR_API_KEY",
+authDomain:"YOUR_AUTH_DOMAIN",
+projectId:"YOUR_PROJECT_ID",
+storageBucket:"YOUR_STORAGE_BUCKET",
+messagingSenderId:"YOUR_SENDER_ID",
+appId:"YOUR_APP_ID"
+};
+
+const app=initializeApp(firebaseConfig);
+
+const db=getFirestore(app);
+
+const querySnapshot=await getDocs(collection(db,"products"));
+
+let html="";
+
+querySnapshot.forEach((doc)=>{
+
+const p=doc.data();
+
+html+=`
+<div class="card">
+
+<img src="${p.image}">
+
+<h2>${p.name}</h2>
+
+<h3>৳ ${p.price}</h3>
+
+<p>${p.description}</p>
+
+<button>Order Now</button>
+
+</div>
+`;
+
+});
+
+document.getElementById("products").innerHTML=html;
+
+</script>
+
+</body>
+</html>
 
 header{
 background:#003366;
