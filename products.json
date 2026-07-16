@@ -2,7 +2,10 @@
   {
     "name": "JUKI DDL-9000C",
     "price": "Contact Us",
-    "image": "images/juki-ddl9000c.jpg",
+    {
+"name":"JUKI DDL-9000C",
+"image":"images/juki-ddl9000c.jpg"
+}
     "description": "Single Needle Lockstitch Machine"
   },
   {
