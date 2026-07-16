@@ -121,3 +121,64 @@
   "image": "images/brother-bas311hn.jpg",
   "description": "Electronic Pattern Sewing Machine"
 }
+,
+{
+  "name": "Pegasus M700",
+  "price": "Contact Us",
+  "image": "images/pegasus-m700.jpg",
+  "description": "High Speed Overlock Machine"
+},
+{
+  "name": "Pegasus W500",
+  "price": "Contact Us",
+  "image": "images/pegasus-w500.jpg",
+  "description": "Flatlock Interlock Machine"
+},
+{
+  "name": "Siruba 737K",
+  "price": "Contact Us",
+  "image": "images/siruba-737k.jpg",
+  "description": "Industrial Overlock Machine"
+},
+{
+  "name": "Siruba F007",
+  "price": "Contact Us",
+  "image": "images/siruba-f007.jpg",
+  "description": "Flatlock Sewing Machine"
+},
+{
+  "name": "Jack A4",
+  "price": "Contact Us",
+  "image": "images/jack-a4.jpg",
+  "description": "Computerized Single Needle Machine"
+},
+{
+  "name": "Jack E4",
+  "price": "Contact Us",
+  "image": "images/jack-e4.jpg",
+  "description": "Direct Drive Overlock Machine"
+},
+{
+  "name": "Jack JK-T1900",
+  "price": "Contact Us",
+  "image": "images/jack-jkt1900.jpg",
+  "description": "Electronic Bartack Machine"
+},
+{
+  "name": "Typical GC6150",
+  "price": "Contact Us",
+  "image": "images/typical-gc6150.jpg",
+  "description": "Single Needle Lockstitch Machine"
+},
+{
+  "name": "Zoje ZJ9000",
+  "price": "Contact Us",
+  "image": "images/zoje-zj9000.jpg",
+  "description": "Computerized Lockstitch Machine"
+},
+{
+  "name": "Highlead GC0618",
+  "price": "Contact Us",
+  "image": "images/highlead-gc0618.jpg",
+  "description": "Walking Foot Sewing Machine"
+}
