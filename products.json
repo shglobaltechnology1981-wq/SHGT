@@ -1,0 +1,26 @@
+[
+  {
+    "name": "JUKI DDL-900",
+    "price": "Contact Us",
+    "image": "images/juki-single-needle.jpg",
+    "description": "Single Needle Lock Stitch Machine"
+  },
+  {
+    "name": "JUKI Overlock",
+    "price": "Contact Us",
+    "image": "images/juki-overlock.jpg",
+    "description": "Industrial Overlock Machine"
+  },
+  {
+    "name": "JUKI LBH-1790",
+    "price": "Contact Us",
+    "image": "images/juki-buttonhole.jpg",
+    "description": "Button Hole Machine"
+  },
+  {
+    "name": "JUKI LK-1900",
+    "price": "Contact Us",
+    "image": "images/juki-bartack.jpg",
+    "description": "Electronic Bartack Machine"
+  }
+]
