@@ -59,8 +59,7 @@
     "image": "images/juki-ms1261.jpg",
     "description": "Feed of Arm Double Chain Stitch Machine"
   }
-]
-,
+
 {
   "name": "JUKI LU-2810A",
   "price": "Contact Us",
@@ -120,8 +119,7 @@
   "price": "Contact Us",
   "image": "images/brother-bas311hn.jpg",
   "description": "Electronic Pattern Sewing Machine"
-}
-,
+},
 {
   "name": "Pegasus M700",
   "price": "Contact Us",
@@ -243,3 +241,4 @@
   "image": "images/siruba-vc008.jpg",
   "description": "Cylinder Bed Interlock Machine"
 }
+]
