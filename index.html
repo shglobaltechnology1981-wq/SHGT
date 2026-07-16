@@ -27,15 +27,13 @@ header{
 
 header img{
     width:150px;
-    height:auto;
-    display:block;
-    margin:0 auto 15px;
+    margin-bottom:15px;
 }
 
 nav{
     background:#0055aa;
-    padding:12px;
     text-align:center;
+    padding:15px;
 }
 
 nav a{
@@ -47,25 +45,45 @@ nav a{
 
 section{
     padding:40px 20px;
-    text-align:center;
 }
 
 .card{
     background:#fff;
+    max-width:1100px;
+    margin:auto;
     padding:20px;
-    margin:20px auto;
-    max-width:900px;
     border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.product{
+    width:220px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+}
+
+.product img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
 }
 
 .btn{
     display:inline-block;
     background:#25D366;
     color:#fff;
-    padding:12px 25px;
-    text-decoration:none;
+    padding:10px 20px;
     border-radius:5px;
+    text-decoration:none;
     margin-top:15px;
 }
 
@@ -74,98 +92,21 @@ footer{
     color:#fff;
     text-align:center;
     padding:20px;
-    margin-top:20px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
+<img src="logo.png" alt="SHGT Logo">
 
-    <img src="logo.png" alt="SHGT Logo">
-
-    <h1>SH Global Technology</h1>
-
-    <p>Industrial Sewing Machine Sales, Spare Parts & Service</p>
-
-</header>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-<div class="card">
-<h2>Welcome</h2>
-
-<p>We supply Industrial Sewing Machines, Spare Parts and Maintenance Service.</p>
-
-<a class="btn" href="https://wa.me/8801621007916" target="_blank">
-WhatsApp Now
-</a>
-
-</div>
-</section>
-
-
-
-header{
-background:#003366;
-color:#fff;
-padding:25px;
-text-align:center;
-}
-nav{
-background:#0055aa;
-padding:12px;
-text-align:center;
-}
-nav a{
-color:#fff;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-section{
-padding:40px 20px;
-text-align:center;
-}
-.card{
-background:#fff;
-padding:20px;
-margin:15px auto;
-max-width:900px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.15);
-}
-.btn{
-display:inline-block;
-background:#25D366;
-color:#fff;
-padding:12px 25px;
-text-decoration:none;
-border-radius:5px;
-margin-top:15px;
-}
-footer{
-background:#003366;
-color:#fff;
-text-align:center;
-padding:20px;
-margin-top:20px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
 <h1>SH Global Technology</h1>
+
 <p>Industrial Sewing Machine Sales, Spare Parts & Service</p>
+
+<a class="btn" href="https://wa.me/8801621007917">WhatsApp Now</a>
+
 </header>
 
 <nav>
@@ -176,106 +117,61 @@ margin-top:20px;
 </nav>
 
 <section id="home">
+
 <div class="card">
+
 <h2>Welcome</h2>
+
 <p>We supply Industrial Sewing Machines, Spare Parts and Maintenance Service.</p>
 
-<a class="btn" href="https://wa.me/8801621007917" target="_blank">
-WhatsApp Now
-</a>
 </div>
+
 </section>
 
 <section id="products">
+
 <div class="card">
-<h2>Our Products</h2>
 
-<p>✔ Single Needle Machine</p>
-<p>✔ Overlock Machine</p>
-<p>✔ Flatlock Machine</p>
-<p>✔ Button Stitch Machine</p>
-<p>✔ Button Hole Machine</p>
-<p>✔ Feed of Arm Machine</p>
-<p>✔ Sewing Machine Spare Parts</p>
+<h2 style="text-align:center;">Our Products</h2>
 
+<div class="products">
+
+<div class="product">
+<img src="images/juki-single-needle.jpg" alt="">
+<h3>JUKI DDL-900</h3>
+<p>Single Needle Lock Stitch Machine</p>
+<p><b>Price:</b> Contact Us</p>
 </div>
-</section>
 
-<section id="services">
-<div class="card">
-<h2>Our Services</h2>
-
-<p>✔ Machine Installation</p>
-<p>✔ Machine Repair</p>
-<p>✔ Annual Maintenance</p>
-<p>✔ Spare Parts Supply</p>
-
+<div class="product">
+<img src="images/juki-overlock.jpg" alt="">
+<h3>JUKI Overlock</h3>
+<p>Industrial Overlock Machine</p>
+<p><b>Price:</b> Contact Us</p>
 </div>
-</section>
 
-<section id="contact">
-<div class="card">
-<h2>Contact Us</h2>
-
-<p><b>WhatsApp:</b> +8801621007916</p>
-<p><b>phone:</b> +8801621007917</p>
-<p><b>Email:</b> shglobaltechnology1981@gmail.com</p>
-<p><b>Address:</b> Uttara House Building, Dhaka, Bangladesh</p>
-
-</div>
-</section>
-
-<footer>
-© 2026 SH Global Technology | All Rights Reserved
-</footer>
-
-</body>
-</html>
-<div style="border:1px solid #ddd;border-radus:10px;padding:15px;width:220px;">
-<img src="images/juki-buttonhole.jpg" width="200" alt="JUKI Button Hole">
+<div class="product">
+<img src="images/juki-buttonhole.jpg" alt="">
 <h3>JUKI LBH-1790</h3>
-<p>Industrial Button Hole Machine</p>
+<p>Button Hole Machine</p>
 <p><b>Price:</b> Contact Us</p>
 </div>
-<div style="broder:1px solid #ddd;broder-radius:10px;padding:15px;width:220px;">
-<img src="images/juki-single-needle.jpg" width="200" alt="JUKI Single Needle">
-<h3>JUKI DDL-900</h3>   
-<p> industrial single needle lock stitch machine</p> 
-<p><b>Price:</b> Contact Us</p>
-</div>
-<div style="border:1px solid #ddd;border-radius:10px;padding:15px;width:220px;">
-<img src="images/juki-bartack.jpg" width="200" alt="JUKI Bartack">
+
+<div class="product">
+<img src="images/juki-bartack.jpg" alt="">
 <h3>JUKI LK-1900</h3>
 <p>Electronic Bartack Machine</p>
 <p><b>Price:</b> Contact Us</p>
 </div>
-divdiv style="border:1px solid #ddd;border-radius:10px;padding:15px;width:220px;">
-<img src="machine3.jpg" width="200" alt="Button Hole Machine">
-<h3>Button Hole Machine</h3>
-<p>Industrial Button Hole Machine</p>
-<p><b>Price:</b> ৳ </p>
-</div>
 
 </div>
 
 </div>
-</section>
-<div class="card">
 
-<h2>Our Products</h2>
-
-<p>✔ Single Needle Machine</p>
-<p>✔ Overlock Machine</p>
-<p>✔ Flatlock Machine</p>
-<p>✔ Button Stitch Machine</p>
-<p>✔ Button Hole Machine</p>
-<p>✔ Feed of Arm Machine</p>
-<p>✔ Sewing Machine Spare Parts</p>
-
-</div>
 </section>
 
 <section id="services">
+
 <div class="card">
 
 <h2>Our Services</h2>
@@ -286,9 +182,11 @@ divdiv style="border:1px solid #ddd;border-radius:10px;padding:15px;width:220px;
 <p>✔ Spare Parts Supply</p>
 
 </div>
+
 </section>
 
 <section id="contact">
+
 <div class="card">
 
 <h2>Contact Us</h2>
@@ -299,10 +197,13 @@ divdiv style="border:1px solid #ddd;border-radius:10px;padding:15px;width:220px;
 <p><b>Address:</b> Uttara House Building, Dhaka, Bangladesh</p>
 
 </div>
+
 </section>
 
 <footer>
+
 © 2026 SH Global Technology | All Rights Reserved
+
 </footer>
 
 </body>
