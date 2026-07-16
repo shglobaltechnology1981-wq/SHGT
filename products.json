@@ -1,247 +1,32 @@
 [
   {
-    "name": "JUKI DDL-9000C",
+    "name": "JUKI DDL-900",
     "price": "Contact Us",
-    {
-"name":"JUKI DDL-9000C",
-"image": "juki-ddl9000c.jpg"
-}
-    "description": "Single Needle Lockstitch Machine"
+    "image": "images/juki-single-needle.jpg",
+    "description": "Single Needle Lock Stitch Machine"
   },
   {
-    "name": "JUKI DDL-8700",
+    "name": "JUKI Overlock",
     "price": "Contact Us",
-    "image": "images/juki-ddl8700.jpg",
-    "description": "High Speed Single Needle Machine"
-  },
-  {
-    "name": "JUKI DDL-7000A",
-    "price": "Contact Us",
-    "image": "images/juki-ddl7000a.jpg",
-    "description": "Computerized Single Needle Machine"
-  },
-  {
-    "name": "JUKI MO-6714S",
-    "price": "Contact Us",
-    "image": "images/juki-mo6714s.jpg",
-    "description": "High Speed Overlock Machine"
-  },
-  {
-    "name": "JUKI MO-6814S",
-    "price": "Contact Us",
-    "image": "images/juki-mo6814s.jpg",
+    "image": "images/juki-overlock.jpg",
     "description": "Industrial Overlock Machine"
-  },
-  {
-    "name": "JUKI MF-7923",
-    "price": "Contact Us",
-    "image": "images/juki-mf7923.jpg",
-    "description": "Flatlock Interlock Machine"
   },
   {
     "name": "JUKI LBH-1790",
     "price": "Contact Us",
-    "image": "images/juki-lbh1790.jpg",
-    "description": "Computerized Button Hole Machine"
+    "image": "images/juki-buttonhole.jpg",
+    "description": "Button Hole Machine"
   },
   {
-    "name": "JUKI MB-1377",
+    "name": "JUKI LK-1900",
     "price": "Contact Us",
-    "image": "images/juki-mb1377.jpg",
-    "description": "Button Sewing Machine"
-  },
-  {
-    "name": "JUKI LK-1900BN",
-    "price": "Contact Us",
-    "image": "images/juki-lk1900bn.jpg",
+    "image": "images/juki-bartack.jpg",
     "description": "Electronic Bartack Machine"
   },
   {
-    "name": "JUKI MS-1261",
+    "name": "JUKI MO-6700",
     "price": "Contact Us",
-    "image": "images/juki-ms1261.jpg",
-    "description": "Feed of Arm Double Chain Stitch Machine"
+    "image": "images/juki-mo6700.jpg",
+    "description": "Industrial Overlock Machine"
   }
-
-{
-  "name": "JUKI LU-2810A",
-  "price": "Contact Us",
-  "image": "images/juki-lu2810a.jpg",
-  "description": "1 Needle Walking Foot Machine"
-},
-{
-  "name": "JUKI DU-1181N",
-  "price": "Contact Us",
-  "image": "images/juki-du1181n.jpg",
-  "description": "Heavy Duty Single Needle Machine"
-},
-{
-  "name": "JUKI PLC-2710",
-  "price": "Contact Us",
-  "image": "images/juki-plc2710.jpg",
-  "description": "Post Bed Sewing Machine"
-},
-{
-  "name": "JUKI AMS-210EN",
-  "price": "Contact Us",
-  "image": "images/juki-ams210en.jpg",
-  "description": "Programmable Pattern Sewing Machine"
-},
-{
-  "name": "JUKI APW-895",
-  "price": "Contact Us",
-  "image": "images/juki-apw895.jpg",
-  "description": "Automatic Pocket Welting Machine"
-},
-{
-  "name": "JUKI PS-800",
-  "price": "Contact Us",
-  "image": "images/juki-ps800.jpg",
-  "description": "Electronic Pattern Sewing Machine"
-},
-{
-  "name": "Brother S-7300A",
-  "price": "Contact Us",
-  "image": "images/brother-s7300a.jpg",
-  "description": "Computerized Single Needle Machine"
-},
-{
-  "name": "Brother HE-800C",
-  "price": "Contact Us",
-  "image": "images/brother-he800c.jpg",
-  "description": "Electronic Button Hole Machine"
-},
-{
-  "name": "Brother KE-430F",
-  "price": "Contact Us",
-  "image": "images/brother-ke430f.jpg",
-  "description": "Electronic Bartack Machine"
-},
-{
-  "name": "Brother BAS-311HN",
-  "price": "Contact Us",
-  "image": "images/brother-bas311hn.jpg",
-  "description": "Electronic Pattern Sewing Machine"
-},
-{
-  "name": "Pegasus M700",
-  "price": "Contact Us",
-  "image": "images/pegasus-m700.jpg",
-  "description": "High Speed Overlock Machine"
-},
-{
-  "name": "Pegasus W500",
-  "price": "Contact Us",
-  "image": "images/pegasus-w500.jpg",
-  "description": "Flatlock Interlock Machine"
-},
-{
-  "name": "Siruba 737K",
-  "price": "Contact Us",
-  "image": "images/siruba-737k.jpg",
-  "description": "Industrial Overlock Machine"
-},
-{
-  "name": "Siruba F007",
-  "price": "Contact Us",
-  "image": "images/siruba-f007.jpg",
-  "description": "Flatlock Sewing Machine"
-},
-{
-  "name": "Jack A4",
-  "price": "Contact Us",
-  "image": "images/jack-a4.jpg",
-  "description": "Computerized Single Needle Machine"
-},
-{
-  "name": "Jack E4",
-  "price": "Contact Us",
-  "image": "images/jack-e4.jpg",
-  "description": "Direct Drive Overlock Machine"
-},
-{
-  "name": "Jack JK-T1900",
-  "price": "Contact Us",
-  "image": "images/jack-jkt1900.jpg",
-  "description": "Electronic Bartack Machine"
-},
-{
-  "name": "Typical GC6150",
-  "price": "Contact Us",
-  "image": "images/typical-gc6150.jpg",
-  "description": "Single Needle Lockstitch Machine"
-},
-{
-  "name": "Zoje ZJ9000",
-  "price": "Contact Us",
-  "image": "images/zoje-zj9000.jpg",
-  "description": "Computerized Lockstitch Machine"
-},
-{
-  "name": "Highlead GC0618",
-  "price": "Contact Us",
-  "image": "images/highlead-gc0618.jpg",
-  "description": "Walking Foot Sewing Machine"
-}
-,
-{
-  "name": "Yamato AZ8000",
-  "price": "Contact Us",
-  "image": "images/yamato-az8000.jpg",
-  "description": "High Speed Overlock Machine"
-},
-{
-  "name": "Yamato FD62G",
-  "price": "Contact Us",
-  "image": "images/yamato-fd62g.jpg",
-  "description": "Flatlock Sewing Machine"
-},
-{
-  "name": "JUKI MO-6900",
-  "price": "Contact Us",
-  "image": "images/juki-mo6900.jpg",
-  "description": "Industrial Overlock Machine"
-},
-{
-  "name": "JUKI MF-7500",
-  "price": "Contact Us",
-  "image": "images/juki-mf7500.jpg",
-  "description": "Cover Stitch Machine"
-},
-{
-  "name": "JUKI LH-3578",
-  "price": "Contact Us",
-  "image": "images/juki-lh3578.jpg",
-  "description": "Double Needle Lockstitch Machine"
-},
-{
-  "name": "JUKI PLC-1690",
-  "price": "Contact Us",
-  "image": "images/juki-plc1690.jpg",
-  "description": "Cylinder Bed Sewing Machine"
-},
-{
-  "name": "Brother T-8422D",
-  "price": "Contact Us",
-  "image": "images/brother-t8422d.jpg",
-  "description": "Double Needle Lockstitch Machine"
-},
-{
-  "name": "Brother Z-8560A",
-  "price": "Contact Us",
-  "image": "images/brother-z8560a.jpg",
-  "description": "Zigzag Sewing Machine"
-},
-{
-  "name": "Jack C4",
-  "price": "Contact Us",
-  "image": "images/jack-c4.jpg",
-  "description": "Cover Stitch Machine"
-},
-{
-  "name": "Siruba VC008",
-  "price": "Contact Us",
-  "image": "images/siruba-vc008.jpg",
-  "description": "Cylinder Bed Interlock Machine"
-}
 ]
