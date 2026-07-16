@@ -182,3 +182,64 @@
   "image": "images/highlead-gc0618.jpg",
   "description": "Walking Foot Sewing Machine"
 }
+,
+{
+  "name": "Yamato AZ8000",
+  "price": "Contact Us",
+  "image": "images/yamato-az8000.jpg",
+  "description": "High Speed Overlock Machine"
+},
+{
+  "name": "Yamato FD62G",
+  "price": "Contact Us",
+  "image": "images/yamato-fd62g.jpg",
+  "description": "Flatlock Sewing Machine"
+},
+{
+  "name": "JUKI MO-6900",
+  "price": "Contact Us",
+  "image": "images/juki-mo6900.jpg",
+  "description": "Industrial Overlock Machine"
+},
+{
+  "name": "JUKI MF-7500",
+  "price": "Contact Us",
+  "image": "images/juki-mf7500.jpg",
+  "description": "Cover Stitch Machine"
+},
+{
+  "name": "JUKI LH-3578",
+  "price": "Contact Us",
+  "image": "images/juki-lh3578.jpg",
+  "description": "Double Needle Lockstitch Machine"
+},
+{
+  "name": "JUKI PLC-1690",
+  "price": "Contact Us",
+  "image": "images/juki-plc1690.jpg",
+  "description": "Cylinder Bed Sewing Machine"
+},
+{
+  "name": "Brother T-8422D",
+  "price": "Contact Us",
+  "image": "images/brother-t8422d.jpg",
+  "description": "Double Needle Lockstitch Machine"
+},
+{
+  "name": "Brother Z-8560A",
+  "price": "Contact Us",
+  "image": "images/brother-z8560a.jpg",
+  "description": "Zigzag Sewing Machine"
+},
+{
+  "name": "Jack C4",
+  "price": "Contact Us",
+  "image": "images/jack-c4.jpg",
+  "description": "Cover Stitch Machine"
+},
+{
+  "name": "Siruba VC008",
+  "price": "Contact Us",
+  "image": "images/siruba-vc008.jpg",
+  "description": "Cylinder Bed Interlock Machine"
+}
