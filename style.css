@@ -20,8 +20,11 @@ body{
 }
 
 .logo{
-    width:80px;
-    margin-bottom:15px;
+    width:100px;
+    height:auto;
+    display:block;
+    margin:0 auto 15px;
+}
 }
 
 .header h1{
