@@ -60,3 +60,64 @@
     "description": "Feed of Arm Double Chain Stitch Machine"
   }
 ]
+,
+{
+  "name": "JUKI LU-2810A",
+  "price": "Contact Us",
+  "image": "images/juki-lu2810a.jpg",
+  "description": "1 Needle Walking Foot Machine"
+},
+{
+  "name": "JUKI DU-1181N",
+  "price": "Contact Us",
+  "image": "images/juki-du1181n.jpg",
+  "description": "Heavy Duty Single Needle Machine"
+},
+{
+  "name": "JUKI PLC-2710",
+  "price": "Contact Us",
+  "image": "images/juki-plc2710.jpg",
+  "description": "Post Bed Sewing Machine"
+},
+{
+  "name": "JUKI AMS-210EN",
+  "price": "Contact Us",
+  "image": "images/juki-ams210en.jpg",
+  "description": "Programmable Pattern Sewing Machine"
+},
+{
+  "name": "JUKI APW-895",
+  "price": "Contact Us",
+  "image": "images/juki-apw895.jpg",
+  "description": "Automatic Pocket Welting Machine"
+},
+{
+  "name": "JUKI PS-800",
+  "price": "Contact Us",
+  "image": "images/juki-ps800.jpg",
+  "description": "Electronic Pattern Sewing Machine"
+},
+{
+  "name": "Brother S-7300A",
+  "price": "Contact Us",
+  "image": "images/brother-s7300a.jpg",
+  "description": "Computerized Single Needle Machine"
+},
+{
+  "name": "Brother HE-800C",
+  "price": "Contact Us",
+  "image": "images/brother-he800c.jpg",
+  "description": "Electronic Button Hole Machine"
+},
+{
+  "name": "Brother KE-430F",
+  "price": "Contact Us",
+  "image": "images/brother-ke430f.jpg",
+  "description": "Electronic Bartack Machine"
+},
+{
+  "name": "Brother BAS-311HN",
+  "price": "Contact Us",
+  "image": "images/brother-bas311hn.jpg",
+  "description": "Electronic Pattern Sewing Machine"
+}
