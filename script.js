@@ -1,65 +1,48 @@
-// Product Data
-const products = [
-{
-name:"JUKI DDL-900",
-price:"Contact Us",
-image:"images/juki-single-needle.jpg",
-description:"Single Needle Lock Stitch Machine"
-},
-{
-name:"JUKI Overlock",
-price:"Contact Us",
-image:"images/juki-overlock.jpg",
-description:"Industrial Overlock Machine"
-},
-{
-name:"JUKI LBH-1790",
-price:"Contact Us",
-image:"images/juki-buttonhole.jpg",
-description:"Button Hole Machine"
-},
-{
-name:"JUKI LK-1900",
-price:"Contact Us",
-image:"images/juki-bartack.jpg",
-description:"Electronic Bartack Machine"
-}
-];
+// Load products from products.json
 
-// Show Products
-const productList = document.getElementById("product-list");
+fetch("products.json")
+  .then(response => response.json())
+  .then(products => {
 
-function displayProducts(list){
-    productList.innerHTML = "";
+    const productList = document.getElementById("product-list");
+    const search = document.getElementById("search");
 
-    list.forEach(product=>{
+    function showProducts(items) {
+      productList.innerHTML = "";
+
+      items.forEach(product => {
         productList.innerHTML += `
-        <div class="product">
+          <div class="product">
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p><b>${product.price}</b></p>
-            <a class="btn" target="_blank"
-            href="https://wa.me/8801621007917?text=I want to buy ${encodeURIComponent(product.name)}">
-            Order Now
+
+            <a class="btn"
+               target="_blank"
+               href="https://wa.me/8801621007917?text=I want to buy ${encodeURIComponent(product.name)}">
+               WhatsApp Order
             </a>
-        </div>
+
+          </div>
         `;
+      });
+    }
+
+    showProducts(products);
+
+    search.addEventListener("keyup", function () {
+
+      const value = this.value.toLowerCase();
+
+      const filter = products.filter(product =>
+        product.name.toLowerCase().includes(value) ||
+        product.description.toLowerCase().includes(value)
+      );
+
+      showProducts(filter);
+
     });
-}
 
-displayProducts(products);
-
-// Search
-document.getElementById("search").addEventListener("keyup", function(){
-
-const keyword = this.value.toLowerCase();
-
-const result = products.filter(product =>
-product.name.toLowerCase().includes(keyword) ||
-product.description.toLowerCase().includes(keyword)
-);
-
-displayProducts(result);
-
-});
+  })
+  .catch(error => console.log(error));
