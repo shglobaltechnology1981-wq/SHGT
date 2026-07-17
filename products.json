@@ -2,31 +2,31 @@
   {
     "name": "JUKI DDL-900",
     "price": "Contact Us",
-    "image": "images/juki-single-needle.jpg",
+    "image": "juki-single-needle.jpg",
     "description": "Single Needle Lock Stitch Machine"
   },
   {
     "name": "JUKI Overlock",
     "price": "Contact Us",
-    "image": "images/juki-overlock.jpg",
+    "image": "juki-overlock.jpg",
     "description": "Industrial Overlock Machine"
   },
   {
     "name": "JUKI LBH-1790",
     "price": "Contact Us",
-    "image": "images/juki-buttonhole.jpg",
+    "image": "juki-buttonhole.jpg",
     "description": "Button Hole Machine"
   },
   {
     "name": "JUKI LK-1900",
     "price": "Contact Us",
-    "image": "images/juki-bartack.jpg",
+    "image": "juki-bartack.jpg",
     "description": "Electronic Bartack Machine"
   },
   {
-    "name": "JUKI MO-6700",
+    "name": "JUKI MO-6714S",
     "price": "Contact Us",
-    "image": "images/juki-mo6700.jpg",
+    "image": "juki-mo6714s.jpg",
     "description": "Industrial Overlock Machine"
   }
 ]
