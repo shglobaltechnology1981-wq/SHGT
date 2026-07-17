@@ -19,9 +19,10 @@ body{
     padding:30px 20px;
 }
 
-.logo{
-    width:20px;
-    height:auto;
+..logo{
+    width:50px !important;
+    height:auto !important;
+    max-width:50px !important;
     display:block;
     margin:0 auto 10px;
 }
