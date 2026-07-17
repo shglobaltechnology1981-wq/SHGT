@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://shglobaltechnology1981-wq.github.io/SHGT/sitemap.xml
