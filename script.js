@@ -12,21 +12,10 @@ productList.innerHTML += `
 <h3>${product.name}</h3>
 <p>${product.description}</p>
 <p><b>${product.price}</b></p>
-<a class="btn" href="https://wa.me/8801621007917" target="_blank">WhatsApp Order</a>
+<a class="btn" href="https://wa.me/8801621007916" target="_blank">WhatsApp Order</a>
 </div>
 `;
 
 });
 
 });
-      const filter = products.filter(product =>
-        product.name.toLowerCase().includes(value) ||
-        product.description.toLowerCase().includes(value)
-      );
-
-      showProducts(filter);
-
-    });
-
-  })
-  .catch(error => console.log(error));
