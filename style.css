@@ -338,3 +338,23 @@ font-size:16px;
 .navbar a:hover{
     background:#0056b3;
 }
+.brand-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.brand-list a{
+    background:#0056b3;
+    color:#fff;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.brand-list a:hover{
+    background:#003d80;
+}
