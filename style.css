@@ -310,3 +310,12 @@ font-weight:bold;
 .category-menu .btn:hover{
 background:#ff6600;
 }
+#brandFilter{
+width:250px;
+padding:12px;
+margin:20px auto;
+display:block;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
