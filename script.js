@@ -1,29 +1,27 @@
 fetch("products.json")
-  .then(response => response.json())
-  .then(products => {
-    const productList = document.getElementById("product-list");
+  .then(res => res.json())
+  .then(data => {
+    const list = document.getElementById("product-list");
+    list.innerHTML = "";
 
-    if (!productList) return;
+    data.forEach(product => {
+      const card = document.createElement("div");
+      card.className = "product";
 
-    productList.innerHTML = "";
-
-    products.forEach(product => {
-      productList.innerHTML += `
-        <div class="product">
-          <img src="${product.image}" alt="${product.name}"
-               onerror="this.src='logo.png'">
-          <h3>${product.name}</h3>
-          <p>${product.description}</p>
-          <p><strong>${product.price}</strong></p>
-          <a class="btn"
-             href="https://wa.me/8801621007916"
-             target="_blank">
-             WhatsApp Order
-          </a>
-        </div>
+      card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p>${product.price}</p>
+        <a class="btn" href="https://wa.me/8801621007916" target="_blank">
+          WhatsApp Order
+        </a>
       `;
+
+      list.appendChild(card);
     });
   })
-  .catch(error => {
-    console.error("Error loading products:", error);
+  .catch(err => {
+    console.error(err);
+    alert("Products failed to load");
   });
