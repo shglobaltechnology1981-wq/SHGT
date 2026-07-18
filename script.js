@@ -4,7 +4,6 @@ alert("Script Working");
 fetch("products.json")
 .then(response => response.json())
 .then(products => {
-    ...
 });
 fetch("products.json")
   .then(res => res.json())
