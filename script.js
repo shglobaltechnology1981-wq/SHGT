@@ -1,3 +1,4 @@
+document.getElementById("product-list").innerHTML = "<h2>TEST OK</h2>";
 alert("Script Working");
 
 fetch("products.json")
