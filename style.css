@@ -291,3 +291,22 @@ footer{
 #catalogue .btn:hover{
     background:#0056b3;
 }
+.category-menu{
+text-align:center;
+margin:20px 0;
+}
+
+.category-menu .btn{
+display:inline-block;
+margin:8px;
+padding:10px 20px;
+background:#003366;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.category-menu .btn:hover{
+background:#ff6600;
+}
