@@ -14,140 +14,19 @@
   {
     "name": "JUKI LBH-1790",
     "price": "Contact Us",
-    "image": "juki-buttonhole.jpg",
-    "description": "Button Hole Machine"
-  },
-  {
-    "name": "JUKI LK-1900",
-    "price": "Contact Us",
-    "image": "juki-bartack.jpg",
-    "description": "Electronic Bartack Machine"
-  },
-  {
-    "name": "JUKI MO-6714S",
-    "price": "Contact Us",
-    "image": "juki-mo6714s.jpg",
-    "description": "Industrial Overlock Machine"
-  }
-
-  {
-    "name": "JUKI DDL-9000C",
-    "price": "Contact Us",
-    "image": "juki-ddl9000c.jpg",
-    "description": "Computerized Single Needle Lock Stitch Machine"
-  },
-  {
-    "name": "JUKI DDL-8700",
-    "price": "Contact Us",
-    "image": "juki-ddl8700.jpg",
-    "description": "Single Needle Lock Stitch Machine"
-  },
-  {
-    "name": "JUKI DDL-5550",
-    "price": "Contact Us",
-    "image": "juki-ddl5550.jpg",
-    "description": "Industrial Lock Stitch Machine"
-  },
-  {
-    "name": "JUKI MO-6714S",
-    "price": "Contact Us",
-    "image": "juki-mo6714s.jpg",
-    "description": "High Speed Overlock Machine"
-  },
-  {
-    "name": "JUKI MO-6800S",
-    "price": "Contact Us",
-    "image": "juki-mo6800s.jpg",
-    "description": "Industrial Overlock Machine"
-  },
-  {
-    "name": "JUKI MF-7923",
-    "price": "Contact Us",
-    "image": "juki-mf7923.jpg",
-    "description": "Flatlock Machine"
-  },
-  {
-    "name": "JUKI LBH-1790",
-    "price": "Contact Us",
     "image": "juki-lbh1790.jpg",
     "description": "Button Hole Machine"
   },
   {
     "name": "JUKI LK-1900",
     "price": "Contact Us",
-    "image": "juki-lk1900.jpg",
+    "image": "juki-lk1900bn.jpg",
     "description": "Electronic Bartack Machine"
   },
   {
-    "name": "JUKI MB-1377",
+    "name": "JUKI MO-6714S",
     "price": "Contact Us",
-    "image": "juki-mb1377.jpg",
-    "description": "Button Sewing Machine"
-  },
-  {
-    "name": "JUKI AMS-210EN",
-    "price": "Contact Us",
-    "image": "juki-ams210en.jpg",
-    "description": "Pattern Sewing Machine"
-  },
-  {
-    "name": "BROTHER S-7300A",
-    "price": "Contact Us",
-    "image": "brother-s7300a.jpg",
-    "description": "Computerized Single Needle Machine"
-  },
-  {
-    "name": "BROTHER BAS-311HN",
-    "price": "Contact Us",
-    "image": "brother-bas311hn.jpg",
-    "description": "Pattern Sewing Machine"
-  },
-  {
-    "name": "PEGASUS M700",
-    "price": "Contact Us",
-    "image": "pegasus-m700.jpg",
-    "description": "Overlock Machine"
-  },
-  {
-    "name": "PEGASUS W500",
-    "price": "Contact Us",
-    "image": "pegasus-w500.jpg",
-    "description": "Flatlock Machine"
-  },
-  {
-    "name": "KANSAI SPECIAL DFB1404",
-    "price": "Contact Us",
-    "image": "kansai-dfb1404.jpg",
-    "description": "Feed Off The Arm Machine"
-  },
-  {
-    "name": "KANSAI SPECIAL FX4412",
-    "price": "Contact Us",
-    "image": "kansai-fx4412.jpg",
-    "description": "Flat Seamer Machine"
-  },
-  {
-    "name": "Feed Off The Arm Machine",
-    "price": "Contact Us",
-    "image": "feed-off-arm.jpg",
-    "description": "Industrial Feed Off The Arm Machine"
-  },
-  {
-    "name": "Snap Button Machine",
-    "price": "Contact Us",
-    "image": "snap-button.jpg",
-    "description": "Snap Button Attaching Machine"
-  },
-  {
-    "name": "Fusing Machine",
-    "price": "Contact Us",
-    "image": "fusing-machine.jpg",
-    "description": "Industrial Fusing Press Machine"
-  },
-  {
-    "name": "Needle Detector Machine",
-    "price": "Contact Us",
-    "image": "needle-detector.jpg",
-    "description": "Garment Needle Detector Machine"
+    "image": "juki-mo6714s.jpg",
+    "description": "Industrial Overlock Machine"
   }
 ]
