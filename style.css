@@ -319,3 +319,22 @@ border:1px solid #ccc;
 border-radius:6px;
 font-size:16px;
 }
+/* Navigation */
+.navbar{
+    background:#003366;
+    text-align:center;
+    padding:12px;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    margin:8px;
+    padding:10px 15px;
+    display:inline-block;
+    border-radius:5px;
+}
+
+.navbar a:hover{
+    background:#0056b3;
+}
