@@ -35,3 +35,30 @@ fetch("products.json")
     "<h2>Products failed to load.</h2>";
     console.error(error);
   });
+function filterBrand(brand){
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+if(brand==="all"){
+
+card.style.display="block";
+
+}else{
+
+if(card.dataset.brand===brand){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+}
+
+});
+
+}
