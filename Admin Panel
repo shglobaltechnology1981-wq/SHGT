@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHGT Admin Panel</title>
+<style>
+body{font-family:Arial;padding:20px;background:#f4f4f4;}
+input,textarea{width:100%;padding:10px;margin:8px 0;}
+button{padding:12px 20px;background:#0a8f3d;color:#fff;border:none;cursor:pointer;}
+pre{background:#fff;padding:15px;border:1px solid #ccc;white-space:pre-wrap;}
+</style>
+</head>
+<body>
+
+<h2>SHGT Product Generator</h2>
+
+<input id="name" placeholder="Machine Name">
+<input id="price" placeholder="Price (Contact Us)">
+<input id="image" placeholder="Image Name (example: juki-ddl900.jpg)">
+<textarea id="description" placeholder="Description"></textarea>
+
+<button onclick="generate()">Generate Product Code</button>
+
+<h3>Copy this code and paste into products.json</h3>
+<pre id="output"></pre>
+
+<script>
+function generate(){
+let code=`{
+  "name":"${document.getElementById('name').value}",
+  "price":"${document.getElementById('price').value}",
+  "image":"${document.getElementById('image').value}",
+  "description":"${document.getElementById('description').value}"
+},`;
+
+document.getElementById('output').textContent=code;
+}
+</script>
+
+</body>
+</html>
