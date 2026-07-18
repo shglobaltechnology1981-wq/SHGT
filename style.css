@@ -251,3 +251,43 @@ nav a{
 }
 
 }
+/* Contact Section */
+#contact{
+   ...
+}
+
+/* Footer */
+footer{
+   ...
+}
+
+/* Catalogue Section */
+#catalogue{
+    background:#ffffff;
+    padding:50px 20px;
+    text-align:center;
+}
+
+#catalogue h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+#catalogue p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+#catalogue .btn{
+    display:inline-block;
+    background:#003366;
+    color:#fff;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+#catalogue .btn:hover{
+    background:#0056b3;
+}
