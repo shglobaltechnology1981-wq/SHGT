@@ -1,34 +1,37 @@
-document.getElementById("product-list").innerHTML = "<h2>TEST OK</h2>";
-alert("Script Working");
-
 fetch("products.json")
-.then(response => response.json())
-.then(products => {
-});
-fetch("products.json")
-  .then(res => res.json())
-  .then(data => {
-    const list = document.getElementById("product-list");
-    list.innerHTML = "";
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Cannot load products.json");
+    }
+    return response.json();
+  })
+  .then(products => {
 
-    data.forEach(product => {
-      const card = document.createElement("div");
-      card.className = "product";
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = "";
 
-      card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>${product.description}</p>
-        <p>${product.price}</p>
-        <a class="btn" href="https://wa.me/8801621007916" target="_blank">
-          WhatsApp Order
-        </a>
+    products.forEach(product => {
+
+      productList.innerHTML += `
+        <div class="product">
+          <img src="${product.image}" alt="${product.name}" onerror="this.src='logo.png'">
+          <h3>${product.name}</h3>
+          <p>${product.description}</p>
+          <p><b>${product.price}</b></p>
+
+          <a class="btn"
+             href="https://wa.me/8801621007916"
+             target="_blank">
+             WhatsApp Order
+          </a>
+        </div>
       `;
 
-      list.appendChild(card);
     });
+
   })
-  .catch(err => {
-    console.error(err);
-    alert("Products failed to load");
+  .catch(error => {
+    document.getElementById("product-list").innerHTML =
+    "<h2>Products failed to load.</h2>";
+    console.error(error);
   });
