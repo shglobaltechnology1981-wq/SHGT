@@ -1724,5 +1724,186 @@
   "image":"pu-air-tube.jpg",
   "description":"Polyurethane Pneumatic Tube"
 } 
+ ,
+{
+  "name":"Plotter Cutting Blade",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-cutting-blade.jpg",
+  "description":"High Precision Plotter Blade"
+},
+{
+  "name":"Blade Holder",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"blade-holder.jpg",
+  "description":"Plotter Blade Holder"
+},
+{
+  "name":"Pen Holder",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"pen-holder.jpg",
+  "description":"CAD Plotter Pen Holder"
+},
+{
+  "name":"Plotter Pen",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-pen.jpg",
+  "description":"Plotter Drawing Pen"
+},
+{
+  "name":"Drive Belt",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-drive-belt.jpg",
+  "description":"Plotter Timing Belt"
+},
+{
+  "name":"Carriage Belt",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"carriage-belt.jpg",
+  "description":"Plotter Carriage Belt"
+},
+{
+  "name":"Carriage Assembly",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"carriage-assembly.jpg",
+  "description":"Plotter Carriage Unit"
+},
+{
+  "name":"Stepper Motor",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"stepper-motor.jpg",
+  "description":"Plotter Stepper Motor"
+},
+{
+  "name":"Servo Motor",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-servo-motor.jpg",
+  "description":"Plotter Servo Motor"
+},
+{
+  "name":"Main Board",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"main-board.jpg",
+  "description":"Plotter Main PCB Board"
+},
+{
+  "name":"Power Supply",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"power-supply.jpg",
+  "description":"Switching Power Supply"
+},
+{
+  "name":"Control Panel",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"control-panel.jpg",
+  "description":"Plotter LCD Control Panel"
+},
+{
+  "name":"Touch Display",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"touch-display.jpg",
+  "description":"Touch Screen Display"
+},
+{
+  "name":"Encoder Strip",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"encoder-strip.jpg",
+  "description":"Linear Encoder Strip"
+},
+{
+  "name":"Encoder Sensor",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"encoder-sensor.jpg",
+  "description":"Encoder Reading Sensor"
+},
+{
+  "name":"Limit Sensor",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"limit-sensor.jpg",
+  "description":"Home Position Sensor"
+},
+{
+  "name":"Linear Rail",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"linear-rail.jpg",
+  "description":"Precision Linear Guide Rail"
+},
+{
+  "name":"Linear Bearing",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"linear-bearing.jpg",
+  "description":"Linear Motion Bearing"
+},
+{
+  "name":"Pulley",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-pulley.jpg",
+  "description":"Drive Pulley"
+},
+{
+  "name":"Roller",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-roller.jpg",
+  "description":"Paper Feed Roller"
+},
+{
+  "name":"Pinch Roller",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"pinch-roller.jpg",
+  "description":"Media Pinch Roller"
+},
+{
+  "name":"Paper Sensor",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"paper-sensor.jpg",
+  "description":"Paper Detection Sensor"
+},
+{
+  "name":"USB Interface Board",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"usb-board.jpg",
+  "description":"USB Communication Board"
+},
+{
+  "name":"LAN Interface Board",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"lan-board.jpg",
+  "description":"Ethernet Interface Board"
+},
+{
+  "name":"Cooling Fan",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"cooling-fan.jpg",
+  "description":"Main Board Cooling Fan"
+},
+{
+  "name":"Power Cable",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"power-cable.jpg",
+  "description":"AC Power Cable"
+},
+{
+  "name":"Signal Cable",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"signal-cable.jpg",
+  "description":"Data Signal Cable"
+},
+{
+  "name":"Fuse",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"plotter-fuse.jpg",
+  "description":"Electrical Protection Fuse"
+},
+{
+  "name":"Emergency Switch",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"emergency-switch.jpg",
+  "description":"Emergency Stop Button"
+},
+{
+  "name":"Maintenance Kit",
+  "brand":"PLOTTER SPARE PARTS",
+  "image":"maintenance-kit.jpg",
+  "description":"Complete Plotter Maintenance Kit"
+}   
 ]
 
