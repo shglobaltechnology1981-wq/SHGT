@@ -28,5 +28,66 @@
     "price": "Contact Us",
     "image": "juki-mo6714s.jpg",
     "description": "Industrial Overlock Machine"
-  }
+  },
+  {
+  "name": "PEGASUS M700",
+  "brand": "PEGASUS",
+  "image": "pegasus-m700.jpg",
+  "description": "High Speed Overlock Sewing Machine"
+},
+{
+  "name": "PEGASUS M800",
+  "brand": "PEGASUS",
+  "image": "pegasus-m800.jpg",
+  "description": "4 Thread Overlock Machine"
+},
+{
+  "name": "PEGASUS M900",
+  "brand": "PEGASUS",
+  "image": "pegasus-m900.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "PEGASUS EX3200",
+  "brand": "PEGASUS",
+  "image": "pegasus-ex3200.jpg",
+  "description": "Industrial Overlock Machine"
+},
+{
+  "name": "PEGASUS EX5214",
+  "brand": "PEGASUS",
+  "image": "pegasus-ex5214.jpg",
+  "description": "4 Thread Overlock Machine"
+},
+{
+  "name": "PEGASUS W500",
+  "brand": "PEGASUS",
+  "image": "pegasus-w500.jpg",
+  "description": "Flatlock Sewing Machine"
+},
+{
+  "name": "PEGASUS FS700",
+  "brand": "PEGASUS",
+  "image": "pegasus-fs700.jpg",
+  "description": "Feed Off The Arm Machine"
+},
+{
+  "name": "PEGASUS CW600",
+  "brand": "PEGASUS",
+  "image": "pegasus-cw600.jpg",
+  "description": "Cylinder Bed Interlock Machine"
+},
+{
+  "name": "PEGASUS MX5214",
+  "brand": "PEGASUS",
+  "image": "pegasus-mx5214.jpg",
+  "description": "High Speed Overlock Machine"
+},
+{
+  "name": "PEGASUS W662",
+  "brand": "PEGASUS",
+  "image": "pegasus-w662.jpg",
+  "description": "Flat Seamer Machine"
+} 
+
 ]
