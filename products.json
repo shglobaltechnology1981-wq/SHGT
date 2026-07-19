@@ -698,5 +698,127 @@
   "image": "highlead-gc8500.jpg",
   "description": "Computerized Direct Drive Sewing Machine"
 } 
+  [
+  {
+    "name": "Single Needle Lock Stitch Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "single-needle.jpg",
+    "description": "High Speed Industrial Sewing Machine"
+  },
+  {
+    "name": "Double Needle Lock Stitch Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "double-needle.jpg",
+    "description": "Double Needle Sewing Machine"
+  },
+  {
+    "name": "Overlock Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "overlock.jpg",
+    "description": "3 / 4 / 5 Thread Overlock Machine"
+  },
+  {
+    "name": "Flatlock Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "flatlock.jpg",
+    "description": "Flat Seam Sewing Machine"
+  },
+  {
+    "name": "Feed Off The Arm Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "foa.jpg",
+    "description": "Feed Off The Arm Sewing Machine"
+  },
+  {
+    "name": "Button Hole Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "button-hole.jpg",
+    "description": "Automatic Button Hole Machine"
+  },
+  {
+    "name": "Button Attach Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "button-attach.jpg",
+    "description": "Button Sewing Machine"
+  },
+  {
+    "name": "Bartack Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "bartack.jpg",
+    "description": "Electronic Bartack Machine"
+  },
+  {
+    "name": "Pattern Sewing Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "pattern.jpg",
+    "description": "Programmable Pattern Sewing Machine"
+  },
+  {
+    "name": "Blind Stitch Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "blind-stitch.jpg",
+    "description": "Blind Hem Sewing Machine"
+  },
+  {
+    "name": "Post Bed Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "post-bed.jpg",
+    "description": "Post Bed Sewing Machine"
+  },
+  {
+    "name": "Cylinder Bed Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "cylinder-bed.jpg",
+    "description": "Cylinder Bed Sewing Machine"
+  },
+  {
+    "name": "Walking Foot Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "walking-foot.jpg",
+    "description": "Heavy Duty Walking Foot Machine"
+  },
+  {
+    "name": "Zigzag Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "zigzag.jpg",
+    "description": "Industrial Zigzag Machine"
+  },
+  {
+    "name": "Automatic Pocket Welting Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "pocket-welting.jpg",
+    "description": "Automatic Pocket Sewing Machine"
+  },
+  {
+    "name": "Eyelet Button Hole Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "eyelet.jpg",
+    "description": "Eyelet Button Hole Sewing Machine"
+  },
+  {
+    "name": "Snap Button Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "snap-button.jpg",
+    "description": "Snap Button Attaching Machine"
+  },
+  {
+    "name": "Rivet Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "rivet.jpg",
+    "description": "Automatic Rivet Attaching Machine"
+  },
+  {
+    "name": "Label Attaching Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "label.jpg",
+    "description": "Label Sewing Machine"
+  },
+  {
+    "name": "Elastic Attaching Machine",
+    "brand": "INDUSTRIAL MACHINE",
+    "image": "elastic.jpg",
+    "description": "Elastic Sewing Machine"
+  }
+]
 ]
 
