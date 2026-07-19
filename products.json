@@ -819,6 +819,186 @@
     "image": "elastic.jpg",
     "description": "Elastic Sewing Machine"
   }
-]
+,
+{
+  "name":"Rotary Hook",
+  "brand":"SPARE PARTS",
+  "image":"rotary-hook.jpg",
+  "description":"Industrial Sewing Machine Rotary Hook"
+},
+{
+  "name":"Bobbin Case",
+  "brand":"SPARE PARTS",
+  "image":"bobbin-case.jpg",
+  "description":"Bobbin Case Assembly"
+},
+{
+  "name":"Bobbin",
+  "brand":"SPARE PARTS",
+  "image":"bobbin.jpg",
+  "description":"Industrial Machine Bobbin"
+},
+{
+  "name":"Needle Plate",
+  "brand":"SPARE PARTS",
+  "image":"needle-plate.jpg",
+  "description":"Needle Plate"
+},
+{
+  "name":"Feed Dog",
+  "brand":"SPARE PARTS",
+  "image":"feed-dog.jpg",
+  "description":"Feed Dog Set"
+},
+{
+  "name":"Presser Foot",
+  "brand":"SPARE PARTS",
+  "image":"presser-foot.jpg",
+  "description":"Standard Presser Foot"
+},
+{
+  "name":"Walking Foot",
+  "brand":"SPARE PARTS",
+  "image":"walking-foot.jpg",
+  "description":"Walking Foot Assembly"
+},
+{
+  "name":"Needle Clamp",
+  "brand":"SPARE PARTS",
+  "image":"needle-clamp.jpg",
+  "description":"Needle Clamp Holder"
+},
+{
+  "name":"Needle Bar",
+  "brand":"SPARE PARTS",
+  "image":"needle-bar.jpg",
+  "description":"Needle Bar"
+},
+{
+  "name":"Looper",
+  "brand":"SPARE PARTS",
+  "image":"looper.jpg",
+  "description":"Overlock Machine Looper"
+},
+{
+  "name":"Upper Knife",
+  "brand":"SPARE PARTS",
+  "image":"upper-knife.jpg",
+  "description":"Upper Knife"
+},
+{
+  "name":"Lower Knife",
+  "brand":"SPARE PARTS",
+  "image":"lower-knife.jpg",
+  "description":"Lower Knife"
+},
+{
+  "name":"Timing Belt",
+  "brand":"SPARE PARTS",
+  "image":"timing-belt.jpg",
+  "description":"Machine Timing Belt"
+},
+{
+  "name":"Motor Belt",
+  "brand":"SPARE PARTS",
+  "image":"motor-belt.jpg",
+  "description":"Drive Belt"
+},
+{
+  "name":"Hand Wheel",
+  "brand":"SPARE PARTS",
+  "image":"hand-wheel.jpg",
+  "description":"Machine Hand Wheel"
+},
+{
+  "name":"Thread Stand",
+  "brand":"SPARE PARTS",
+  "image":"thread-stand.jpg",
+  "description":"Double Thread Stand"
+},
+{
+  "name":"Machine Table",
+  "brand":"SPARE PARTS",
+  "image":"machine-table.jpg",
+  "description":"Industrial Machine Table"
+},
+{
+  "name":"Machine Stand",
+  "brand":"SPARE PARTS",
+  "image":"machine-stand.jpg",
+  "description":"Steel Machine Stand"
+},
+{
+  "name":"Oil Pump",
+  "brand":"SPARE PARTS",
+  "image":"oil-pump.jpg",
+  "description":"Automatic Oil Pump"
+},
+{
+  "name":"Oil Filter",
+  "brand":"SPARE PARTS",
+  "image":"oil-filter.jpg",
+  "description":"Oil Filter"
+},
+{
+  "name":"Thread Guide",
+  "brand":"SPARE PARTS",
+  "image":"thread-guide.jpg",
+  "description":"Thread Guide"
+},
+{
+  "name":"Tension Assembly",
+  "brand":"SPARE PARTS",
+  "image":"tension.jpg",
+  "description":"Thread Tension Assembly"
+},
+{
+  "name":"Shuttle Hook",
+  "brand":"SPARE PARTS",
+  "image":"shuttle-hook.jpg",
+  "description":"Industrial Shuttle Hook"
+},
+{
+  "name":"Hook Base",
+  "brand":"SPARE PARTS",
+  "image":"hook-base.jpg",
+  "description":"Hook Base Assembly"
+},
+{
+  "name":"Check Spring",
+  "brand":"SPARE PARTS",
+  "image":"check-spring.jpg",
+  "description":"Thread Check Spring"
+},
+{
+  "name":"Take Up Lever",
+  "brand":"SPARE PARTS",
+  "image":"take-up-lever.jpg",
+  "description":"Take Up Lever"
+},
+{
+  "name":"Presser Bar",
+  "brand":"SPARE PARTS",
+  "image":"presser-bar.jpg",
+  "description":"Presser Bar"
+},
+{
+  "name":"Face Plate",
+  "brand":"SPARE PARTS",
+  "image":"face-plate.jpg",
+  "description":"Machine Face Plate"
+},
+{
+  "name":"Slide Plate",
+  "brand":"SPARE PARTS",
+  "image":"slide-plate.jpg",
+  "description":"Slide Plate"
+},
+{
+  "name":"Foot Pedal",
+  "brand":"SPARE PARTS",
+  "image":"foot-pedal.jpg",
+  "description":"Electronic Foot Pedal"
+}
 ]
 
