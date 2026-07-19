@@ -393,4 +393,65 @@
   "image": "reece-5000.jpg",
   "description": "Industrial Sewing Machine"
 }
+ ,
+{
+  "name": "VEIT 2000",
+  "brand": "VEIT",
+  "image": "veit-2000.jpg",
+  "description": "Steam Ironing Station"
+},
+{
+  "name": "VEIT 2330",
+  "brand": "VEIT",
+  "image": "veit-2330.jpg",
+  "description": "Vacuum Ironing Table"
+},
+{
+  "name": "VEIT 2365",
+  "brand": "VEIT",
+  "image": "veit-2365.jpg",
+  "description": "Universal Ironing Table"
+},
+{
+  "name": "VEIT 8400",
+  "brand": "VEIT",
+  "image": "veit-8400.jpg",
+  "description": "Garment Finishing Machine"
+},
+{
+  "name": "VEIT 8905",
+  "brand": "VEIT",
+  "image": "veit-8905.jpg",
+  "description": "Steam Generator"
+},
+{
+  "name": "VEIT Varioset",
+  "brand": "VEIT",
+  "image": "veit-varioset.jpg",
+  "description": "Universal Pressing System"
+},
+{
+  "name": "VEIT Form Finisher",
+  "brand": "VEIT",
+  "image": "veit-form-finisher.jpg",
+  "description": "Garment Form Finishing Machine"
+},
+{
+  "name": "VEIT Tunnel Finisher",
+  "brand": "VEIT",
+  "image": "veit-tunnel-finisher.jpg",
+  "description": "Tunnel Garment Finishing System"
+},
+{
+  "name": "VEIT Spotting Table",
+  "brand": "VEIT",
+  "image": "veit-spotting-table.jpg",
+  "description": "Spot Cleaning Table"
+},
+{
+  "name": "VEIT Steam Iron",
+  "brand": "VEIT",
+  "image": "veit-steam-iron.jpg",
+  "description": "Industrial Steam Iron"
+} 
 ]
