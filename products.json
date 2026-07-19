@@ -1890,6 +1890,67 @@
   "brand":"PLOTTER SPARE PARTS",
   "image":"maintenance-kit.jpg",
   "description":"Complete Plotter Maintenance Kit"
-}   
+  },  
+  {
+    "name": "JUKI Sewing Machine Main Control PCB",
+    "price": "Contact Us",
+    "image": "juki-main-control-pcb.jpg",
+    "description": "Original control PCB board for JUKI industrial sewing machines"
+  },
+  {
+    "name": "Brother Industrial Sewing Machine PCB",
+    "price": "Contact Us",
+    "image": "brother-industrial-pcb.jpg",
+    "description": "Electronic control PCB for Brother sewing machine models"
+  },
+  {
+    "name": "PEGASUS Overlock Machine PCB",
+    "price": "Contact Us",
+    "image": "pegasus-overlock-pcb.jpg",
+    "description": "Main controller PCB board for Pegasus overlock machines"
+  },
+  {
+    "name": "SIRUBA Sewing Machine PCB",
+    "price": "Contact Us",
+    "image": "siruba-pcb.jpg",
+    "description": "Control board PCB for SIRUBA industrial sewing machines"
+  },
+  {
+    "name": "Typical Sewing Machine Control PCB",
+    "price": "Contact Us",
+    "image": "typical-control-pcb.jpg",
+    "description": "Electronic PCB controller for Typical sewing machines"
+  },
+  {
+    "name": "Jack Industrial Sewing Machine PCB",
+    "price": "Contact Us",
+    "image": "jack-sewing-pcb.jpg",
+    "description": "Main drive and control PCB for Jack machines"
+  },
+  {
+    "name": "Highlead Sewing Machine PCB",
+    "price": "Contact Us",
+    "image": "highlead-pcb.jpg",
+    "description": "Replacement control PCB board for Highlead sewing machines"
+  },
+  {
+    "name": "SunStar Sewing Machine PCB",
+    "price": "Contact Us",
+    "image": "sunstar-pcb.jpg",
+    "description": "Electronic control PCB for SunStar industrial machines"
+  },
+  {
+    "name": "Automatic Button Hole Machine PCB",
+    "price": "Contact Us",
+    "image": "button-hole-pcb.jpg",
+    "description": "Main PCB board for automatic button hole machines"
+  },
+  {
+    "name": "Automatic Bartack Machine PCB",
+    "price": "Contact Us",
+    "image": "bartack-machine-pcb.jpg",
+    "description": "Control PCB for automatic bartack sewing machines"
+  }
+ 
 ]
 
