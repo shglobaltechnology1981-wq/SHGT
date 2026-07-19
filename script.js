@@ -13,16 +13,14 @@ fetch("products.json")
     products.forEach(product => {
 
       productList.innerHTML += `
-        <div class="product">
+        <div class="card" data-brand="${product.brand}">
           <img src="${product.image}" alt="${product.name}" onerror="this.src='logo.png'">
           <h3>${product.name}</h3>
           <p>${product.description}</p>
-          <p><b>${product.price}</b></p>
-
           <a class="btn"
              href="https://wa.me/8801621007916"
              target="_blank">
-             WhatsApp Order
+             WhatsApp Inquiry
           </a>
         </div>
       `;
@@ -32,33 +30,30 @@ fetch("products.json")
   })
   .catch(error => {
     document.getElementById("product-list").innerHTML =
-    "<h2>Products failed to load.</h2>";
+      "<h2>Products failed to load.</h2>";
     console.error(error);
   });
-function filterBrand(brand){
 
-const cards = document.querySelectorAll(".card");
+function filterBrand(brand) {
 
-cards.forEach(card=>{
+  const cards = document.querySelectorAll(".card");
 
-if(brand==="all"){
+  cards.forEach(card => {
 
-card.style.display="block";
+    if (brand === "all") {
 
-}else{
+      card.style.display = "block";
 
-if(card.dataset.brand===brand){
+    } else {
 
-card.style.display="block";
+      if (card.dataset.brand === brand) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
 
-}else{
+    }
 
-card.style.display="none";
-
-}
-
-}
-
-});
+  });
 
 }
