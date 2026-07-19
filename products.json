@@ -58,7 +58,14 @@
     "price": "Contact Us",
     "image": "juki-mo6714.jpg",
     "description": "Industrial 4 Thread Overlock Machine"
-  }
+  },
+{
+"name":"JUKI DDL-9000",
+"brand":"JUKI",
+"price":"Contact Us",
+"image":"images/juki-ddl9000.jpg",
+"description":"Single Needle Lock Stitch Machine"
+}
 ]
 
 
