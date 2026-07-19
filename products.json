@@ -89,7 +89,7 @@
   "image": "pegasus-w662.jpg",
   "description": "Flat Seamer Machine"
 } 
-,
+
 {
   "name": "SIRUBA 747K",
   "brand": "SIRUBA",
@@ -150,7 +150,7 @@
   "image": "siruba-dl730.jpg",
   "description": "Direct Drive Lock Stitch Machine"
 }
-,
+
 {
   "name": "YAMATO AZ8000",
   "brand": "YAMATO",
@@ -272,7 +272,6 @@
   "image": "pfaff-467.jpg",
   "description": "Industrial Lockstitch Sewing Machine"
 }
-,
 {
   "name": "DURKOPP ADLER 867",
   "brand": "DURKOPP ADLER",
