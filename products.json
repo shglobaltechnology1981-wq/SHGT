@@ -637,4 +637,66 @@
   "image": "zoje-zj9820.jpg",
   "description": "Electronic Buttonhole Machine"
 }
+ ,
+{
+  "name": "HIGHLEAD GC188",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc188.jpg",
+  "description": "Single Needle Lock Stitch Machine"
+},
+{
+  "name": "HIGHLEAD GC20618",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc20618.jpg",
+  "description": "Heavy Duty Walking Foot Sewing Machine"
+},
+{
+  "name": "HIGHLEAD GC24618",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc24618.jpg",
+  "description": "Cylinder Bed Walking Foot Machine"
+},
+{
+  "name": "HIGHLEAD GC3020",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc3020.jpg",
+  "description": "Double Needle Lock Stitch Machine"
+},
+{
+  "name": "HIGHLEAD GN794",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gn794.jpg",
+  "description": "4 Thread High Speed Overlock Machine"
+},
+{
+  "name": "HIGHLEAD GN795",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gn795.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "HIGHLEAD GC0318",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc0318.jpg",
+  "description": "Post Bed Sewing Machine"
+},
+{
+  "name": "HIGHLEAD GC1510",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc1510.jpg",
+  "description": "Zigzag Sewing Machine"
+},
+{
+  "name": "HIGHLEAD GC2698",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc2698.jpg",
+  "description": "Programmable Pattern Sewing Machine"
+},
+{
+  "name": "HIGHLEAD GC8500",
+  "brand": "HIGHLEAD",
+  "image": "highlead-gc8500.jpg",
+  "description": "Computerized Direct Drive Sewing Machine"
+} 
 ]
+
