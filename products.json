@@ -1362,5 +1362,186 @@
   "image":"plotter.jpg",
   "description":"CAD Pattern Plotter"
 }   
+ ,
+{
+  "name":"Rotary Fusing Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"rotary-fusing-machine.jpg",
+  "description":"Continuous Rotary Fusing Machine"
+},
+{
+  "name":"Flat Bed Fusing Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"flat-bed-fusing-machine.jpg",
+  "description":"Industrial Flat Bed Fusing Machine"
+},
+{
+  "name":"Continuous Fusing Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"continuous-fusing-machine.jpg",
+  "description":"High Speed Continuous Fusing Machine"
+},
+{
+  "name":"Steam Boiler",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-boiler.jpg",
+  "description":"Industrial Steam Boiler"
+},
+{
+  "name":"Electric Steam Boiler",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"electric-steam-boiler.jpg",
+  "description":"Electric Steam Generator Boiler"
+},
+{
+  "name":"Steam Generator",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-generator.jpg",
+  "description":"Industrial Steam Generator"
+},
+{
+  "name":"Vacuum Ironing Table",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"vacuum-ironing-table.jpg",
+  "description":"Vacuum Ironing Table with Suction"
+},
+{
+  "name":"Steam Iron",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-iron.jpg",
+  "description":"Industrial Steam Iron"
+},
+{
+  "name":"Steam Iron Set",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-iron-set.jpg",
+  "description":"Complete Steam Iron Set"
+},
+{
+  "name":"Iron Shoe",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"iron-shoe.jpg",
+  "description":"Steam Iron Shoe"
+},
+{
+  "name":"Thread Sucking Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"thread-sucking-machine.jpg",
+  "description":"Thread Sucking & Cleaning Machine"
+},
+{
+  "name":"Spot Removing Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"spot-removing-machine.jpg",
+  "description":"Garment Spot Cleaning Machine"
+},
+{
+  "name":"Garment Steamer",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"garment-steamer.jpg",
+  "description":"Industrial Garment Steamer"
+},
+{
+  "name":"Collar Press Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"collar-press-machine.jpg",
+  "description":"Collar Press Machine"
+},
+{
+  "name":"Cuff Press Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"cuff-press-machine.jpg",
+  "description":"Cuff Press Machine"
+},
+{
+  "name":"Body Press Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"body-press-machine.jpg",
+  "description":"Garment Body Press"
+},
+{
+  "name":"Form Finisher",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"form-finisher.jpg",
+  "description":"Automatic Garment Form Finisher"
+},
+{
+  "name":"Trouser Topper",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"trouser-topper.jpg",
+  "description":"Trouser Finishing Machine"
+},
+{
+  "name":"Legger Press",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"legger-press.jpg",
+  "description":"Trouser Leg Press Machine"
+},
+{
+  "name":"Tunnel Finisher",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"tunnel-finisher.jpg",
+  "description":"Automatic Tunnel Finishing System"
+},
+{
+  "name":"Needle Detector",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"needle-detector.jpg",
+  "description":"Garment Needle Detector"
+},
+{
+  "name":"Metal Detector",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"metal-detector.jpg",
+  "description":"Industrial Metal Detector"
+},
+{
+  "name":"Shrinkage Tester",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"shrinkage-tester.jpg",
+  "description":"Fabric Shrinkage Testing Machine"
+},
+{
+  "name":"Fabric Inspection Machine",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"fabric-inspection-machine.jpg",
+  "description":"Fabric Inspection & Rolling Machine"
+},
+{
+  "name":"Packing Table",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"packing-table.jpg",
+  "description":"Garment Packing Table"
+},
+{
+  "name":"Heat Transfer Press",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"heat-transfer-press.jpg",
+  "description":"Heat Transfer Press Machine"
+},
+{
+  "name":"Label Heat Press",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"label-heat-press.jpg",
+  "description":"Label Heat Press Machine"
+},
+{
+  "name":"Steam Hose",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-hose.jpg",
+  "description":"Steam Iron Hose"
+},
+{
+  "name":"Steam Valve",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"steam-valve.jpg",
+  "description":"Steam Control Valve"
+},
+{
+  "name":"Boiler Water Pump",
+  "brand":"FINISHING EQUIPMENT",
+  "image":"boiler-water-pump.jpg",
+  "description":"Industrial Boiler Feed Water Pump"
+}   
 ]
 
