@@ -272,4 +272,65 @@
   "image": "pfaff-467.jpg",
   "description": "Industrial Lockstitch Sewing Machine"
 }
+,
+{
+  "name": "DURKOPP ADLER 867",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-867.jpg",
+  "description": "Heavy Duty Walking Foot Sewing Machine"
+},
+{
+  "name": "DURKOPP ADLER 869",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-869.jpg",
+  "description": "Cylinder Arm Walking Foot Machine"
+},
+{
+  "name": "DURKOPP ADLER 669",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-669.jpg",
+  "description": "Cylinder Arm Sewing Machine"
+},
+{
+  "name": "DURKOPP ADLER 281",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-281.jpg",
+  "description": "Single Needle Lockstitch Machine"
+},
+{
+  "name": "DURKOPP ADLER 272",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-272.jpg",
+  "description": "Automatic Pocket Sewing Machine"
+},
+{
+  "name": "DURKOPP ADLER 550-12",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-550-12.jpg",
+  "description": "Automatic Button Sewing Machine"
+},
+{
+  "name": "DURKOPP ADLER 558",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-558.jpg",
+  "description": "Automatic Sewing Unit"
+},
+{
+  "name": "DURKOPP ADLER 745-34",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-745-34.jpg",
+  "description": "Programmable Pattern Sewing Machine"
+},
+{
+  "name": "DURKOPP ADLER 911",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-911.jpg",
+  "description": "High Speed Lockstitch Machine"
+},
+{
+  "name": "DURKOPP ADLER 888",
+  "brand": "DURKOPP ADLER",
+  "image": "durkopp-adler-888.jpg",
+  "description": "M-TYPE Industrial Sewing Machine"
+}
 ]
