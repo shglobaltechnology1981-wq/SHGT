@@ -1,58 +1,61 @@
 let allProducts = [];
 
 fetch("products.json")
-.then(response => response.json())
-.then(products => {
+  .then(response => response.json())
+  .then(products => {
     allProducts = products;
     displayProducts(products);
-})
-.catch(error => {
+  })
+  .catch(error => {
     console.log(error);
     document.getElementById("product-list").innerHTML =
-    "Products failed to load.";
-});
+      "<h2>Products failed to load.</h2>";
+  });
 
+function displayProducts(products) {
 
-function displayProducts(products){
+  const container = document.getElementById("product-list");
+  container.innerHTML = "";
 
-    const container = document.getElementById("product-list");
+  products.forEach(product => {
 
-    container.innerHTML = "";
+    container.innerHTML += `
+      <div class="product-card" data-brand="${product.brand}">
 
-    products.forEach(product => {
-
-        container.innerHTML += `
-        <div class="product-card">
-
-        <img src="${product.image}" alt="${product.name}">
+        <img src="${product.image}"
+             alt="${product.name}"
+             onerror="this.src='logo.png'">
 
         <h3>${product.name}</h3>
 
+        <p><b>Brand:</b> ${product.brand}</p>
+
         <p>${product.description}</p>
 
-        <strong>${product.price}</strong>
+        <a href="https://wa.me/8801621007916"
+           class="btn"
+           target="_blank">
+           WhatsApp Inquiry
+        </a>
 
-        </div>
-        `;
+      </div>
+    `;
 
-    });
+  });
 
 }
 
+function filterBrand(brand) {
 
-function filterBrand(brand){
+  if (brand === "all") {
+    displayProducts(allProducts);
+    return;
+  }
 
-    if(brand=="all"){
-        displayProducts(allProducts);
-    }
-    else{
+  const filtered = allProducts.filter(
+    item => item.brand === brand
+  );
 
-        let filtered = allProducts.filter(
-            item => item.brand == brand
-        );
-
-        displayProducts(filtered);
-
-    }
+  displayProducts(filtered);
 
 }
