@@ -1000,5 +1000,186 @@
   "image":"foot-pedal.jpg",
   "description":"Electronic Foot Pedal"
 }
+ ,
+{
+  "name":"Servo Motor",
+  "brand":"SPARE PARTS",
+  "image":"servo-motor.jpg",
+  "description":"Energy Saving Servo Motor"
+},
+{
+  "name":"Clutch Motor",
+  "brand":"SPARE PARTS",
+  "image":"clutch-motor.jpg",
+  "description":"Industrial Clutch Motor"
+},
+{
+  "name":"Motor Pulley",
+  "brand":"SPARE PARTS",
+  "image":"motor-pulley.jpg",
+  "description":"Motor Pulley"
+},
+{
+  "name":"Power Switch",
+  "brand":"SPARE PARTS",
+  "image":"power-switch.jpg",
+  "description":"Machine Power Switch"
+},
+{
+  "name":"Control Box",
+  "brand":"SPARE PARTS",
+  "image":"control-box.jpg",
+  "description":"Servo Motor Control Box"
+},
+{
+  "name":"Control Panel",
+  "brand":"SPARE PARTS",
+  "image":"control-panel.jpg",
+  "description":"Machine Control Panel"
+},
+{
+  "name":"PCB Board",
+  "brand":"SPARE PARTS",
+  "image":"pcb-board.jpg",
+  "description":"Electronic PCB Board"
+},
+{
+  "name":"Encoder",
+  "brand":"SPARE PARTS",
+  "image":"encoder.jpg",
+  "description":"Servo Motor Encoder"
+},
+{
+  "name":"Position Sensor",
+  "brand":"SPARE PARTS",
+  "image":"position-sensor.jpg",
+  "description":"Needle Position Sensor"
+},
+{
+  "name":"LED Machine Light",
+  "brand":"SPARE PARTS",
+  "image":"led-light.jpg",
+  "description":"LED Sewing Machine Lamp"
+},
+{
+  "name":"Machine Fan",
+  "brand":"SPARE PARTS",
+  "image":"machine-fan.jpg",
+  "description":"Cooling Fan"
+},
+{
+  "name":"Fuse",
+  "brand":"SPARE PARTS",
+  "image":"fuse.jpg",
+  "description":"Machine Fuse"
+},
+{
+  "name":"Relay",
+  "brand":"SPARE PARTS",
+  "image":"relay.jpg",
+  "description":"Electrical Relay"
+},
+{
+  "name":"Transformer",
+  "brand":"SPARE PARTS",
+  "image":"transformer.jpg",
+  "description":"Power Transformer"
+},
+{
+  "name":"Power Cord",
+  "brand":"SPARE PARTS",
+  "image":"power-cord.jpg",
+  "description":"Machine Power Cable"
+},
+{
+  "name":"Foot Controller",
+  "brand":"SPARE PARTS",
+  "image":"foot-controller.jpg",
+  "description":"Electronic Foot Controller"
+},
+{
+  "name":"Solenoid",
+  "brand":"SPARE PARTS",
+  "image":"solenoid.jpg",
+  "description":"Machine Solenoid Valve"
+},
+{
+  "name":"Air Cylinder",
+  "brand":"SPARE PARTS",
+  "image":"air-cylinder.jpg",
+  "description":"Pneumatic Air Cylinder"
+},
+{
+  "name":"FRL Unit",
+  "brand":"SPARE PARTS",
+  "image":"frl-unit.jpg",
+  "description":"Filter Regulator Lubricator"
+},
+{
+  "name":"Air Regulator",
+  "brand":"SPARE PARTS",
+  "image":"air-regulator.jpg",
+  "description":"Air Pressure Regulator"
+},
+{
+  "name":"Air Filter",
+  "brand":"SPARE PARTS",
+  "image":"air-filter.jpg",
+  "description":"Compressed Air Filter"
+},
+{
+  "name":"PU Air Tube",
+  "brand":"SPARE PARTS",
+  "image":"pu-air-tube.jpg",
+  "description":"Polyurethane Air Tube"
+},
+{
+  "name":"Quick Coupler",
+  "brand":"SPARE PARTS",
+  "image":"quick-coupler.jpg",
+  "description":"Air Hose Quick Coupler"
+},
+{
+  "name":"Silencer",
+  "brand":"SPARE PARTS",
+  "image":"silencer.jpg",
+  "description":"Pneumatic Exhaust Silencer"
+},
+{
+  "name":"Needle Set",
+  "brand":"SPARE PARTS",
+  "image":"needle-set.jpg",
+  "description":"Industrial Sewing Machine Needles"
+},
+{
+  "name":"Screw Set",
+  "brand":"SPARE PARTS",
+  "image":"screw-set.jpg",
+  "description":"Machine Screw Kit"
+},
+{
+  "name":"Bearing",
+  "brand":"SPARE PARTS",
+  "image":"bearing.jpg",
+  "description":"Machine Bearing"
+},
+{
+  "name":"Oil Seal",
+  "brand":"SPARE PARTS",
+  "image":"oil-seal.jpg",
+  "description":"Machine Oil Seal"
+},
+{
+  "name":"Rubber Mount",
+  "brand":"SPARE PARTS",
+  "image":"rubber-mount.jpg",
+  "description":"Anti Vibration Rubber Mount"
+},
+{
+  "name":"Thread Cutter",
+  "brand":"SPARE PARTS",
+  "image":"thread-cutter.jpg",
+  "description":"Automatic Thread Cutter Assembly"
+}   
 ]
 
