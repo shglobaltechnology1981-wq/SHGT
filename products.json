@@ -332,4 +332,65 @@
   "image": "durkopp-adler-888.jpg",
   "description": "M-TYPE Industrial Sewing Machine"
 }
+,
+{
+  "name": "REECE S2",
+  "brand": "REECE",
+  "image": "reece-s2.jpg",
+  "description": "Button Hole Sewing Machine"
+},
+{
+  "name": "REECE S101",
+  "brand": "REECE",
+  "image": "reece-s101.jpg",
+  "description": "Automatic Button Hole Machine"
+},
+{
+  "name": "REECE S2000",
+  "brand": "REECE",
+  "image": "reece-s2000.jpg",
+  "description": "Computerized Button Hole Machine"
+},
+{
+  "name": "REECE 101",
+  "brand": "REECE",
+  "image": "reece-101.jpg",
+  "description": "Industrial Button Hole Machine"
+},
+{
+  "name": "REECE 104",
+  "brand": "REECE",
+  "image": "reece-104.jpg",
+  "description": "Eyelet Button Hole Machine"
+},
+{
+  "name": "REECE 2001",
+  "brand": "REECE",
+  "image": "reece-2001.jpg",
+  "description": "Automatic Eyelet Button Hole Machine"
+},
+{
+  "name": "REECE 2500",
+  "brand": "REECE",
+  "image": "reece-2500.jpg",
+  "description": "Heavy Duty Button Hole Machine"
+},
+{
+  "name": "REECE 3000",
+  "brand": "REECE",
+  "image": "reece-3000.jpg",
+  "description": "Electronic Button Hole Machine"
+},
+{
+  "name": "REECE 4000",
+  "brand": "REECE",
+  "image": "reece-4000.jpg",
+  "description": "Computer Controlled Sewing Machine"
+},
+{
+  "name": "REECE 5000",
+  "brand": "REECE",
+  "image": "reece-5000.jpg",
+  "description": "Industrial Sewing Machine"
+}
 ]
