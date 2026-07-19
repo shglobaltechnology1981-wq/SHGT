@@ -1180,6 +1180,187 @@
   "brand":"SPARE PARTS",
   "image":"thread-cutter.jpg",
   "description":"Automatic Thread Cutter Assembly"
+}  
+ ,
+{
+  "name":"KM Straight Knife 8 Inch",
+  "brand":"CUTTING MACHINE",
+  "image":"km-8-inch.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"KM Straight Knife 10 Inch",
+  "brand":"CUTTING MACHINE",
+  "image":"km-10-inch.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"KM Straight Knife 12 Inch",
+  "brand":"CUTTING MACHINE",
+  "image":"km-12-inch.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"EASTMAN 629X",
+  "brand":"CUTTING MACHINE",
+  "image":"eastman-629x.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"EASTMAN Blue Streak II",
+  "brand":"CUTTING MACHINE",
+  "image":"eastman-blue-streak.jpg",
+  "description":"Industrial Straight Knife Cutter"
+},
+{
+  "name":"DAYANG CZD-108",
+  "brand":"CUTTING MACHINE",
+  "image":"dayang-czd108.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"DAYANG CZD-103",
+  "brand":"CUTTING MACHINE",
+  "image":"dayang-czd103.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"DAYANG YJ-70",
+  "brand":"CUTTING MACHINE",
+  "image":"dayang-yj70.jpg",
+  "description":"Round Knife Cutting Machine"
+},
+{
+  "name":"DAYANG YJ-100",
+  "brand":"CUTTING MACHINE",
+  "image":"dayang-yj100.jpg",
+  "description":"Round Knife Cutting Machine"
+},
+{
+  "name":"YIN YSM-108",
+  "brand":"CUTTING MACHINE",
+  "image":"yin-ysm108.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"YIN YSM-128",
+  "brand":"CUTTING MACHINE",
+  "image":"yin-ysm128.jpg",
+  "description":"Straight Knife Cutting Machine"
+},
+{
+  "name":"GERBER Paragon HX",
+  "brand":"CUTTING MACHINE",
+  "image":"gerber-paragon-hx.jpg",
+  "description":"Automatic Cutting Machine"
+},
+{
+  "name":"GERBER GTXL",
+  "brand":"CUTTING MACHINE",
+  "image":"gerber-gtxl.jpg",
+  "description":"Automatic Fabric Cutter"
+},
+{
+  "name":"LECTRA Vector iX6",
+  "brand":"CUTTING MACHINE",
+  "image":"lectra-ix6.jpg",
+  "description":"Automatic Cutting Machine"
+},
+{
+  "name":"LECTRA Vector Q25",
+  "brand":"CUTTING MACHINE",
+  "image":"lectra-q25.jpg",
+  "description":"Automatic Fabric Cutter"
+},
+{
+  "name":"Bullmer Premiumcut",
+  "brand":"CUTTING MACHINE",
+  "image":"bullmer-premiumcut.jpg",
+  "description":"Automatic Cutter"
+},
+{
+  "name":"Bullmer Procut",
+  "brand":"CUTTING MACHINE",
+  "image":"bullmer-procut.jpg",
+  "description":"Fabric Cutting Machine"
+},
+{
+  "name":"Round Knife Cutter RCM-100",
+  "brand":"CUTTING MACHINE",
+  "image":"round-knife-100.jpg",
+  "description":"Round Knife Cutter"
+},
+{
+  "name":"Round Knife Cutter RCM-125",
+  "brand":"CUTTING MACHINE",
+  "image":"round-knife-125.jpg",
+  "description":"Round Knife Cutter"
+},
+{
+  "name":"Mini Cloth Cutter",
+  "brand":"CUTTING MACHINE",
+  "image":"mini-cloth-cutter.jpg",
+  "description":"Portable Cloth Cutter"
+},
+{
+  "name":"Band Knife Cutting Machine",
+  "brand":"CUTTING MACHINE",
+  "image":"band-knife.jpg",
+  "description":"Band Knife Cutter"
+},
+{
+  "name":"End Cutter",
+  "brand":"CUTTING MACHINE",
+  "image":"end-cutter.jpg",
+  "description":"Fabric End Cutter"
+},
+{
+  "name":"Fabric Spreader",
+  "brand":"CUTTING MACHINE",
+  "image":"fabric-spreader.jpg",
+  "description":"Automatic Fabric Spreader"
+},
+{
+  "name":"Fabric Inspection Machine",
+  "brand":"CUTTING MACHINE",
+  "image":"fabric-inspection.jpg",
+  "description":"Fabric Inspection Machine"
+},
+{
+  "name":"Fabric Rolling Machine",
+  "brand":"CUTTING MACHINE",
+  "image":"fabric-rolling.jpg",
+  "description":"Fabric Rolling Machine"
+},
+{
+  "name":"Automatic Spreader",
+  "brand":"CUTTING MACHINE",
+  "image":"automatic-spreader.jpg",
+  "description":"Automatic Fabric Spreader"
+},
+{
+  "name":"Cloth Relaxing Machine",
+  "brand":"CUTTING MACHINE",
+  "image":"cloth-relaxing.jpg",
+  "description":"Fabric Relaxing Machine"
+},
+{
+  "name":"Laser Fabric Cutter",
+  "brand":"CUTTING MACHINE",
+  "image":"laser-cutter.jpg",
+  "description":"Laser Cutting Machine"
+},
+{
+  "name":"CNC Fabric Cutter",
+  "brand":"CUTTING MACHINE",
+  "image":"cnc-cutter.jpg",
+  "description":"Computer Controlled Cutter"
+},
+{
+  "name":"Pattern Cutting Plotter",
+  "brand":"CUTTING MACHINE",
+  "image":"plotter.jpg",
+  "description":"CAD Pattern Plotter"
 }   
 ]
 
