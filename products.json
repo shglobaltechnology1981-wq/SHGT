@@ -88,8 +88,7 @@
   "brand": "PEGASUS",
   "image": "pegasus-w662.jpg",
   "description": "Flat Seamer Machine"
-} 
-
+}, 
 {
   "name": "SIRUBA 747K",
   "brand": "SIRUBA",
@@ -149,8 +148,7 @@
   "brand": "SIRUBA",
   "image": "siruba-dl730.jpg",
   "description": "Direct Drive Lock Stitch Machine"
-}
-
+},
 {
   "name": "YAMATO AZ8000",
   "brand": "YAMATO",
@@ -210,8 +208,7 @@
   "brand": "YAMATO",
   "image": "yamato-azf8420.jpg",
   "description": "Industrial Overlock Machine"
-}
-,
+},
 {
   "name": "PFAFF 487",
   "brand": "PFAFF",
@@ -271,7 +268,7 @@
   "brand": "PFAFF",
   "image": "pfaff-467.jpg",
   "description": "Industrial Lockstitch Sewing Machine"
-}
+},
 {
   "name": "DURKOPP ADLER 867",
   "brand": "DURKOPP ADLER",
@@ -331,8 +328,7 @@
   "brand": "DURKOPP ADLER",
   "image": "durkopp-adler-888.jpg",
   "description": "M-TYPE Industrial Sewing Machine"
-}
-,
+},
 {
   "name": "REECE S2",
   "brand": "REECE",
@@ -392,8 +388,7 @@
   "brand": "REECE",
   "image": "reece-5000.jpg",
   "description": "Industrial Sewing Machine"
-}
- ,
+},
 {
   "name": "VEIT 2000",
   "brand": "VEIT",
@@ -453,8 +448,7 @@
   "brand": "VEIT",
   "image": "veit-steam-iron.jpg",
   "description": "Industrial Steam Iron"
-} 
- ,
+}, 
 {
   "name": "KANSAI SPECIAL DFB-1404P",
   "brand": "KANSAI SPECIAL",
@@ -514,8 +508,7 @@
   "brand": "KANSAI SPECIAL",
   "image": "kansai-dfb1412pmd.jpg",
   "description": "Direct Drive Feed Off The Arm Machine"
-} 
- ,
+}, 
 {
   "name": "TYPICAL GC6150MD",
   "brand": "TYPICAL",
@@ -636,8 +629,7 @@
   "brand": "ZOJE",
   "image": "zoje-zj9820.jpg",
   "description": "Electronic Buttonhole Machine"
-}
- ,
+},
 {
   "name": "HIGHLEAD GC188",
   "brand": "HIGHLEAD",
@@ -697,8 +689,7 @@
   "brand": "HIGHLEAD",
   "image": "highlead-gc8500.jpg",
   "description": "Computerized Direct Drive Sewing Machine"
-} 
-  [
+  }, 
   {
     "name": "Single Needle Lock Stitch Machine",
     "brand": "INDUSTRIAL MACHINE",
@@ -818,8 +809,7 @@
     "brand": "INDUSTRIAL MACHINE",
     "image": "elastic.jpg",
     "description": "Elastic Sewing Machine"
-  }
-,
+},
 {
   "name":"Rotary Hook",
   "brand":"SPARE PARTS",
@@ -1181,7 +1171,6 @@
   "image":"thread-cutter.jpg",
   "description":"Automatic Thread Cutter Assembly"
 }  
- ,
 {
   "name":"KM Straight Knife 8 Inch",
   "brand":"CUTTING MACHINE",
@@ -1362,7 +1351,6 @@
   "image":"plotter.jpg",
   "description":"CAD Pattern Plotter"
 }   
- ,
 {
   "name":"Rotary Fusing Machine",
   "brand":"FINISHING EQUIPMENT",
@@ -1542,8 +1530,7 @@
   "brand":"FINISHING EQUIPMENT",
   "image":"boiler-water-pump.jpg",
   "description":"Industrial Boiler Feed Water Pump"
-} 
-   ,
+}, 
 {
   "name":"Piston Air Compressor",
   "brand":"AIR COMPRESSOR",
@@ -1723,8 +1710,7 @@
   "brand":"AIR COMPRESSOR",
   "image":"pu-air-tube.jpg",
   "description":"Polyurethane Pneumatic Tube"
-} 
- ,
+}, 
 {
   "name":"Plotter Cutting Blade",
   "brand":"PLOTTER SPARE PARTS",
