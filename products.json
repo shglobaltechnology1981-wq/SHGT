@@ -515,4 +515,65 @@
   "image": "kansai-dfb1412pmd.jpg",
   "description": "Direct Drive Feed Off The Arm Machine"
 } 
+ ,
+{
+  "name": "TYPICAL GC6150MD",
+  "brand": "TYPICAL",
+  "image": "typical-gc6150md.jpg",
+  "description": "Direct Drive Single Needle Lock Stitch Machine"
+},
+{
+  "name": "TYPICAL GC0303D",
+  "brand": "TYPICAL",
+  "image": "typical-gc0303d.jpg",
+  "description": "Walking Foot Sewing Machine"
+},
+{
+  "name": "TYPICAL GC20606",
+  "brand": "TYPICAL",
+  "image": "typical-gc20606.jpg",
+  "description": "Heavy Duty Double Needle Sewing Machine"
+},
+{
+  "name": "TYPICAL GN794",
+  "brand": "TYPICAL",
+  "image": "typical-gn794.jpg",
+  "description": "4 Thread High Speed Overlock Machine"
+},
+{
+  "name": "TYPICAL GN795",
+  "brand": "TYPICAL",
+  "image": "typical-gn795.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "TYPICAL GK31030",
+  "brand": "TYPICAL",
+  "image": "typical-gk31030.jpg",
+  "description": "Bag Closing Sewing Machine"
+},
+{
+  "name": "TYPICAL GT680",
+  "brand": "TYPICAL",
+  "image": "typical-gt680.jpg",
+  "description": "Cylinder Bed Interlock Machine"
+},
+{
+  "name": "TYPICAL TW3-28BL",
+  "brand": "TYPICAL",
+  "image": "typical-tw3-28bl.jpg",
+  "description": "Multi Needle Chain Stitch Machine"
+},
+{
+  "name": "TYPICAL GC6880",
+  "brand": "TYPICAL",
+  "image": "typical-gc6880.jpg",
+  "description": "Electronic Pattern Sewing Machine"
+},
+{
+  "name": "TYPICAL GC8720",
+  "brand": "TYPICAL",
+  "image": "typical-gc8720.jpg",
+  "description": "Computerized Lock Stitch Machine"
+} 
 ]
