@@ -576,4 +576,65 @@
   "image": "typical-gc8720.jpg",
   "description": "Computerized Lock Stitch Machine"
 } 
+  ,
+{
+  "name": "ZOJE A6000",
+  "brand": "ZOJE",
+  "image": "zoje-a6000.jpg",
+  "description": "Direct Drive Single Needle Lock Stitch Machine"
+},
+{
+  "name": "ZOJE A8000",
+  "brand": "ZOJE",
+  "image": "zoje-a8000.jpg",
+  "description": "Computerized Lock Stitch Machine"
+},
+{
+  "name": "ZOJE ZJ9000E",
+  "brand": "ZOJE",
+  "image": "zoje-zj9000e.jpg",
+  "description": "High Speed Lock Stitch Machine"
+},
+{
+  "name": "ZOJE ZJ5300A",
+  "brand": "ZOJE",
+  "image": "zoje-zj5300a.jpg",
+  "description": "Cylinder Bed Sewing Machine"
+},
+{
+  "name": "ZOJE ZJ9620",
+  "brand": "ZOJE",
+  "image": "zoje-zj9620.jpg",
+  "description": "Double Needle Lock Stitch Machine"
+},
+{
+  "name": "ZOJE B9500",
+  "brand": "ZOJE",
+  "image": "zoje-b9500.jpg",
+  "description": "4 Thread High Speed Overlock Machine"
+},
+{
+  "name": "ZOJE B9600",
+  "brand": "ZOJE",
+  "image": "zoje-b9600.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "ZOJE C5000",
+  "brand": "ZOJE",
+  "image": "zoje-c5000.jpg",
+  "description": "Cover Stitch Sewing Machine"
+},
+{
+  "name": "ZOJE ZJ1900",
+  "brand": "ZOJE",
+  "image": "zoje-zj1900.jpg",
+  "description": "Electronic Bartack Machine"
+},
+{
+  "name": "ZOJE ZJ9820",
+  "brand": "ZOJE",
+  "image": "zoje-zj9820.jpg",
+  "description": "Electronic Buttonhole Machine"
+}
 ]
