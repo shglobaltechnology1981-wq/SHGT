@@ -89,5 +89,65 @@
   "image": "pegasus-w662.jpg",
   "description": "Flat Seamer Machine"
 } 
-
+,
+{
+  "name": "SIRUBA 747K",
+  "brand": "SIRUBA",
+  "image": "siruba-747k.jpg",
+  "description": "4 Thread High Speed Overlock Machine"
+},
+{
+  "name": "SIRUBA 757K",
+  "brand": "SIRUBA",
+  "image": "siruba-757k.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "SIRUBA 737K",
+  "brand": "SIRUBA",
+  "image": "siruba-737k.jpg",
+  "description": "3 Thread Overlock Machine"
+},
+{
+  "name": "SIRUBA F007KD",
+  "brand": "SIRUBA",
+  "image": "siruba-f007kd.jpg",
+  "description": "Flatlock / Interlock Machine"
+},
+{
+  "name": "SIRUBA VC008",
+  "brand": "SIRUBA",
+  "image": "siruba-vc008.jpg",
+  "description": "Cylinder Bed Interlock Machine"
+},
+{
+  "name": "SIRUBA C007K",
+  "brand": "SIRUBA",
+  "image": "siruba-c007k.jpg",
+  "description": "Feed Off The Arm Machine"
+},
+{
+  "name": "SIRUBA BT290",
+  "brand": "SIRUBA",
+  "image": "siruba-bt290.jpg",
+  "description": "Bartack Sewing Machine"
+},
+{
+  "name": "SIRUBA BH780",
+  "brand": "SIRUBA",
+  "image": "siruba-bh780.jpg",
+  "description": "Button Hole Machine"
+},
+{
+  "name": "SIRUBA DL720",
+  "brand": "SIRUBA",
+  "image": "siruba-dl720.jpg",
+  "description": "Single Needle Lock Stitch Machine"
+},
+{
+  "name": "SIRUBA DL730",
+  "brand": "SIRUBA",
+  "image": "siruba-dl730.jpg",
+  "description": "Direct Drive Lock Stitch Machine"
+}
 ]
