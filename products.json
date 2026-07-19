@@ -150,4 +150,65 @@
   "image": "siruba-dl730.jpg",
   "description": "Direct Drive Lock Stitch Machine"
 }
+,
+{
+  "name": "YAMATO AZ8000",
+  "brand": "YAMATO",
+  "image": "yamato-az8000.jpg",
+  "description": "High Speed Overlock Machine"
+},
+{
+  "name": "YAMATO AZ8500",
+  "brand": "YAMATO",
+  "image": "yamato-az8500.jpg",
+  "description": "4 Thread Overlock Machine"
+},
+{
+  "name": "YAMATO AZ8400",
+  "brand": "YAMATO",
+  "image": "yamato-az8400.jpg",
+  "description": "5 Thread Safety Stitch Machine"
+},
+{
+  "name": "YAMATO FD62",
+  "brand": "YAMATO",
+  "image": "yamato-fd62.jpg",
+  "description": "Flatlock Sewing Machine"
+},
+{
+  "name": "YAMATO FD64",
+  "brand": "YAMATO",
+  "image": "yamato-fd64.jpg",
+  "description": "Cylinder Bed Flat Seamer"
+},
+{
+  "name": "YAMATO VG2700",
+  "brand": "YAMATO",
+  "image": "yamato-vg2700.jpg",
+  "description": "Feed Off The Arm Machine"
+},
+{
+  "name": "YAMATO VG3721",
+  "brand": "YAMATO",
+  "image": "yamato-vg3721.jpg",
+  "description": "Feed Off The Arm Double Chain Stitch Machine"
+},
+{
+  "name": "YAMATO CZ6120",
+  "brand": "YAMATO",
+  "image": "yamato-cz6120.jpg",
+  "description": "Interlock Sewing Machine"
+},
+{
+  "name": "YAMATO CM352",
+  "brand": "YAMATO",
+  "image": "yamato-cm352.jpg",
+  "description": "Cover Stitch Sewing Machine"
+},
+{
+  "name": "YAMATO AZF8420",
+  "brand": "YAMATO",
+  "image": "yamato-azf8420.jpg",
+  "description": "Industrial Overlock Machine"
+}
 ]
