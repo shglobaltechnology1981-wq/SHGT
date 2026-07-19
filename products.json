@@ -211,4 +211,65 @@
   "image": "yamato-azf8420.jpg",
   "description": "Industrial Overlock Machine"
 }
+,
+{
+  "name": "PFAFF 487",
+  "brand": "PFAFF",
+  "image": "pfaff-487.jpg",
+  "description": "High Speed Single Needle Lock Stitch Machine"
+},
+{
+  "name": "PFAFF 571",
+  "brand": "PFAFF",
+  "image": "pfaff-571.jpg",
+  "description": "Cylinder Bed Sewing Machine"
+},
+{
+  "name": "PFAFF 1245",
+  "brand": "PFAFF",
+  "image": "pfaff-1245.jpg",
+  "description": "Walking Foot Lockstitch Machine"
+},
+{
+  "name": "PFAFF 335",
+  "brand": "PFAFF",
+  "image": "pfaff-335.jpg",
+  "description": "Cylinder Arm Sewing Machine"
+},
+{
+  "name": "PFAFF 145",
+  "brand": "PFAFF",
+  "image": "pfaff-145.jpg",
+  "description": "Heavy Duty Lockstitch Machine"
+},
+{
+  "name": "PFAFF 591",
+  "brand": "PFAFF",
+  "image": "pfaff-591.jpg",
+  "description": "Post Bed Sewing Machine"
+},
+{
+  "name": "PFAFF 5483",
+  "brand": "PFAFF",
+  "image": "pfaff-5483.jpg",
+  "description": "Electronic Pattern Sewing Machine"
+},
+{
+  "name": "PFAFF 3590",
+  "brand": "PFAFF",
+  "image": "pfaff-3590.jpg",
+  "description": "Automatic Sewing Machine"
+},
+{
+  "name": "PFAFF 1525",
+  "brand": "PFAFF",
+  "image": "pfaff-1525.jpg",
+  "description": "Double Needle Sewing Machine"
+},
+{
+  "name": "PFAFF 467",
+  "brand": "PFAFF",
+  "image": "pfaff-467.jpg",
+  "description": "Industrial Lockstitch Sewing Machine"
+}
 ]
