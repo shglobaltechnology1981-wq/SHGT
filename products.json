@@ -1,62 +1,32 @@
 [
   {
-    "name": "JUKI MO-6800 Overlock Machine",
-    "price": "Contact Us",
-    "image": "juki-mo6800.jpg",
-    "description": "Industrial 3/4 Thread Overlock Sewing Machine"
+    "name": "JUKI Bartack Machine",
+    "image": "juki-bartack.jpg",
+    "description": "Electronic Bartack Sewing Machine"
   },
   {
-    "name": "JUKI LH-3568A Flat Bed Machine",
-    "price": "Contact Us",
-    "image": "juki-lh3568.jpg",
-    "description": "High Speed Two Needle Lock Stitch Machine"
+    "name": "JUKI LK-1900BN",
+    "image": "juki-lk1900bn.jpg",
+    "description": "Computer Controlled Button Attaching / Bartack Machine"
   },
   {
-    "name": "JUKI LBH-1790 Buttonhole Machine",
-    "price": "Contact Us",
-    "image": "juki-lbh1790.jpg",
-    "description": "Computer Controlled Buttonhole Sewing Machine"
+    "name": "JUKI MO-6714S",
+    "image": "juki-mo6714s.jpg",
+    "description": "Industrial Overlock Sewing Machine"
   },
   {
-    "name": "JUKI LK-1900 Bartack Machine",
-    "price": "Contact Us",
-    "image": "juki-lk1900.jpg",
-    "description": "Automatic Bartack Machine for Garments Industry"
+    "name": "JUKI Overlock Machine",
+    "image": "juki-overlock.jpg",
+    "description": "High Speed Overlock Sewing Machine"
   },
   {
-    "name": "JUKI MF-7500 Flatlock Machine",
-    "price": "Contact Us",
-    "image": "juki-mf7500.jpg",
-    "description": "High Speed Flat Seam Cover Stitch Machine"
+    "name": "JUKI PS-800",
+    "image": "juki-ps800.jpg",
+    "description": "Automatic Pocket Setter Machine"
   },
   {
-    "name": "JUKI MS-1190 Chain Stitch Machine",
-    "price": "Contact Us",
-    "image": "juki-ms1190.jpg",
-    "description": "Industrial Chain Stitch Sewing Machine"
-  },
-  {
-    "name": "JUKI DDL-8700 Lock Stitch Machine",
-    "price": "Contact Us",
-    "image": "juki-ddl8700.jpg",
-    "description": "Single Needle High Speed Lock Stitch Machine"
-  },
-  {
-    "name": "JUKI AMS-210EN Pattern Machine",
-    "price": "Contact Us",
-    "image": "juki-ams210.jpg",
-    "description": "Computer Controlled Pattern Sewing Machine"
-  },
-  {
-    "name": "JUKI APW-895 Pocket Welting Machine",
-    "price": "Contact Us",
-    "image": "juki-apw895.jpg",
-    "description": "Automatic Pocket Welting Sewing Machine"
-  },
-  {
-    "name": "JUKI MO-6714S Overlock Machine",
-    "price": "Contact Us",
-    "image": "juki-mo6714.jpg",
-    "description": "Industrial 4 Thread Overlock Machine"
+    "name": "JUKI Single Needle Machine",
+    "image": "juki-single-needle.jpg",
+    "description": "Single Needle Lock Stitch Machine"
   }
 ]
