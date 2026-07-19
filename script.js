@@ -1,13 +1,21 @@
-fetch("products.json")
-.then(response => {
-    if (!response.ok) {
-        throw new Error("Cannot load products.json");
-    }
-    return response.json();
-})
-.then(products => {
+let allProducts = [];
 
-    const container = document.getElementById("product-container");
+fetch("products.json")
+.then(response => response.json())
+.then(products => {
+    allProducts = products;
+    displayProducts(products);
+})
+.catch(error => {
+    console.log(error);
+    document.getElementById("product-list").innerHTML =
+    "Products failed to load.";
+});
+
+
+function displayProducts(products){
+
+    const container = document.getElementById("product-list");
 
     container.innerHTML = "";
 
@@ -15,18 +23,36 @@ fetch("products.json")
 
         container.innerHTML += `
         <div class="product-card">
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <b>${product.price}</b>
+
+        <img src="${product.image}" alt="${product.name}">
+
+        <h3>${product.name}</h3>
+
+        <p>${product.description}</p>
+
+        <strong>${product.price}</strong>
+
         </div>
         `;
 
     });
 
-})
-.catch(error => {
-    console.log(error);
-    document.getElementById("product-container").innerHTML =
-    "Products failed to load.";
-});
+}
+
+
+function filterBrand(brand){
+
+    if(brand=="all"){
+        displayProducts(allProducts);
+    }
+    else{
+
+        let filtered = allProducts.filter(
+            item => item.brand == brand
+        );
+
+        displayProducts(filtered);
+
+    }
+
+}
