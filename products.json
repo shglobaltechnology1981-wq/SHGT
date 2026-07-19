@@ -1542,6 +1542,187 @@
   "brand":"FINISHING EQUIPMENT",
   "image":"boiler-water-pump.jpg",
   "description":"Industrial Boiler Feed Water Pump"
-}   
+} 
+   ,
+{
+  "name":"Piston Air Compressor",
+  "brand":"AIR COMPRESSOR",
+  "image":"piston-air-compressor.jpg",
+  "description":"Industrial Piston Air Compressor"
+},
+{
+  "name":"Screw Air Compressor",
+  "brand":"AIR COMPRESSOR",
+  "image":"screw-air-compressor.jpg",
+  "description":"Rotary Screw Air Compressor"
+},
+{
+  "name":"Oil Free Air Compressor",
+  "brand":"AIR COMPRESSOR",
+  "image":"oil-free-air-compressor.jpg",
+  "description":"Oil Free Industrial Air Compressor"
+},
+{
+  "name":"Direct Drive Air Compressor",
+  "brand":"AIR COMPRESSOR",
+  "image":"direct-drive-air-compressor.jpg",
+  "description":"Direct Drive Air Compressor"
+},
+{
+  "name":"Belt Drive Air Compressor",
+  "brand":"AIR COMPRESSOR",
+  "image":"belt-drive-air-compressor.jpg",
+  "description":"Belt Driven Air Compressor"
+},
+{
+  "name":"Atlas Copco GA Series",
+  "brand":"ATLAS COPCO",
+  "image":"atlas-copco-ga.jpg",
+  "description":"Rotary Screw Air Compressor"
+},
+{
+  "name":"Ingersoll Rand R-Series",
+  "brand":"INGERSOLL RAND",
+  "image":"ingersoll-rand-rseries.jpg",
+  "description":"Industrial Screw Compressor"
+},
+{
+  "name":"Kaeser SX Series",
+  "brand":"KAESER",
+  "image":"kaeser-sx.jpg",
+  "description":"Energy Efficient Screw Compressor"
+},
+{
+  "name":"Hitachi OSP Series",
+  "brand":"HITACHI",
+  "image":"hitachi-osp.jpg",
+  "description":"Oil Injected Screw Compressor"
+},
+{
+  "name":"ELGi EG Series",
+  "brand":"ELGi",
+  "image":"elgi-eg.jpg",
+  "description":"Industrial Air Compressor"
+},
+{
+  "name":"Fusheng SA Series",
+  "brand":"FUSHENG",
+  "image":"fusheng-sa.jpg",
+  "description":"Rotary Screw Compressor"
+},
+{
+  "name":"Sullair LS Series",
+  "brand":"SULLAIR",
+  "image":"sullair-ls.jpg",
+  "description":"Industrial Screw Compressor"
+},
+{
+  "name":"Air Dryer",
+  "brand":"AIR COMPRESSOR",
+  "image":"air-dryer.jpg",
+  "description":"Refrigerated Air Dryer"
+},
+{
+  "name":"Desiccant Air Dryer",
+  "brand":"AIR COMPRESSOR",
+  "image":"desiccant-air-dryer.jpg",
+  "description":"Desiccant Air Dryer"
+},
+{
+  "name":"Air Receiver Tank",
+  "brand":"AIR COMPRESSOR",
+  "image":"air-receiver-tank.jpg",
+  "description":"Compressed Air Storage Tank"
+},
+{
+  "name":"Line Filter",
+  "brand":"AIR COMPRESSOR",
+  "image":"line-filter.jpg",
+  "description":"Compressed Air Line Filter"
+},
+{
+  "name":"Oil Separator",
+  "brand":"AIR COMPRESSOR",
+  "image":"oil-separator.jpg",
+  "description":"Oil Separator Element"
+},
+{
+  "name":"Air Filter Element",
+  "brand":"AIR COMPRESSOR",
+  "image":"air-filter-element.jpg",
+  "description":"Compressor Air Filter"
+},
+{
+  "name":"Oil Filter Element",
+  "brand":"AIR COMPRESSOR",
+  "image":"oil-filter-element.jpg",
+  "description":"Compressor Oil Filter"
+},
+{
+  "name":"Compressor Lubricant",
+  "brand":"AIR COMPRESSOR",
+  "image":"compressor-oil.jpg",
+  "description":"Synthetic Compressor Oil"
+},
+{
+  "name":"Pressure Gauge",
+  "brand":"AIR COMPRESSOR",
+  "image":"pressure-gauge.jpg",
+  "description":"Air Pressure Gauge"
+},
+{
+  "name":"Pressure Switch",
+  "brand":"AIR COMPRESSOR",
+  "image":"pressure-switch.jpg",
+  "description":"Automatic Pressure Switch"
+},
+{
+  "name":"Safety Valve",
+  "brand":"AIR COMPRESSOR",
+  "image":"safety-valve.jpg",
+  "description":"Air Receiver Safety Valve"
+},
+{
+  "name":"Drain Valve",
+  "brand":"AIR COMPRESSOR",
+  "image":"drain-valve.jpg",
+  "description":"Automatic Drain Valve"
+},
+{
+  "name":"Solenoid Valve",
+  "brand":"AIR COMPRESSOR",
+  "image":"solenoid-valve.jpg",
+  "description":"Pneumatic Solenoid Valve"
+},
+{
+  "name":"Air Hose",
+  "brand":"AIR COMPRESSOR",
+  "image":"air-hose.jpg",
+  "description":"High Pressure Air Hose"
+},
+{
+  "name":"Quick Coupler",
+  "brand":"AIR COMPRESSOR",
+  "image":"quick-coupler-air.jpg",
+  "description":"Air Line Quick Coupler"
+},
+{
+  "name":"FRL Unit",
+  "brand":"AIR COMPRESSOR",
+  "image":"frl-unit-air.jpg",
+  "description":"Filter Regulator Lubricator"
+},
+{
+  "name":"Air Regulator",
+  "brand":"AIR COMPRESSOR",
+  "image":"air-regulator.jpg",
+  "description":"Compressed Air Regulator"
+},
+{
+  "name":"PU Air Tube",
+  "brand":"AIR COMPRESSOR",
+  "image":"pu-air-tube.jpg",
+  "description":"Polyurethane Pneumatic Tube"
+} 
 ]
 
