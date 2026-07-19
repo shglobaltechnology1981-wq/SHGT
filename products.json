@@ -454,4 +454,65 @@
   "image": "veit-steam-iron.jpg",
   "description": "Industrial Steam Iron"
 } 
+ ,
+{
+  "name": "KANSAI SPECIAL DFB-1404P",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-dfb1404p.jpg",
+  "description": "Feed Off The Arm Double Chain Stitch Machine"
+},
+{
+  "name": "KANSAI SPECIAL DFB-1412P",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-dfb1412p.jpg",
+  "description": "Feed Off The Arm Sewing Machine"
+},
+{
+  "name": "KANSAI SPECIAL FX4404",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-fx4404.jpg",
+  "description": "Flat Seam Sewing Machine"
+},
+{
+  "name": "KANSAI SPECIAL NR9803",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-nr9803.jpg",
+  "description": "Elastic Attaching Machine"
+},
+{
+  "name": "KANSAI SPECIAL WX8803",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-wx8803.jpg",
+  "description": "Waistband Sewing Machine"
+},
+{
+  "name": "KANSAI SPECIAL B2000",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-b2000.jpg",
+  "description": "Double Chain Stitch Machine"
+},
+{
+  "name": "KANSAI SPECIAL DLR1502",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-dlr1502.jpg",
+  "description": "Cover Stitch Sewing Machine"
+},
+{
+  "name": "KANSAI SPECIAL RX9803",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-rx9803.jpg",
+  "description": "Multi Needle Chain Stitch Machine"
+},
+{
+  "name": "KANSAI SPECIAL FSX6604",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-fsx6604.jpg",
+  "description": "Flat Bed Cover Stitch Machine"
+},
+{
+  "name": "KANSAI SPECIAL DFB1412PMD",
+  "brand": "KANSAI SPECIAL",
+  "image": "kansai-dfb1412pmd.jpg",
+  "description": "Direct Drive Feed Off The Arm Machine"
+} 
 ]
