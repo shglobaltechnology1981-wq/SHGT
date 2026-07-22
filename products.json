@@ -1,32 +1,32 @@
 [
   {
-    "name": "juki-bartack.jpg",
-    "image": "images/juki-bartack.jpg"
-    "description": "Electronic Bartack Sewing Machine"
+    "name": "JUKI DDL-900",
+    "price": "Contact Us",
+    "image": "juki-single-needle.jpg",
+    "description": "Single Needle Lock Stitch Machine"
   },
   {
-    "name": "JUKI LK-1900BN",
+    "name": "JUKI Overlock",
+    "price": "Contact Us",
+    "image": "juki-overlock.jpg",
+    "description": "Industrial Overlock Machine"
+  },
+  {
+    "name": "JUKI LBH-1790",
+    "price": "Contact Us",
+    "image": "juki-lbh1790.jpg",
+    "description": "Button Hole Machine"
+  },
+  {
+    "name": "JUKI LK-1900",
+    "price": "Contact Us",
     "image": "juki-lk1900bn.jpg",
-    "description": "Computer Controlled Button Attaching / Bartack Machine"
+    "description": "Electronic Bartack Machine"
   },
   {
     "name": "JUKI MO-6714S",
+    "price": "Contact Us",
     "image": "juki-mo6714s.jpg",
-    "description": "Industrial Overlock Sewing Machine"
-  },
-  {
-    "name": "JUKI Overlock Machine",
-    "image": "juki-overlock.jpg",
-    "description": "High Speed Overlock Sewing Machine"
-  },
-  {
-    "name": "JUKI PS-800",
-    "image": "juki-ps800.jpg",
-    "description": "Automatic Pocket Setter Machine"
-  },
-  {
-    "name": "JUKI Single Needle Machine",
-    "image": "juki-single-needle.jpg",
-    "description": "Single Needle Lock Stitch Machine"
+    "description": "Industrial Overlock Machine"
   }
 ]
