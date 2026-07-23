@@ -1,32 +1,222 @@
 [
   {
-    "name": "JUKI DDL-900",
-    "price": "Contact Us",
-    "image": "juki-single-needle.jpg",
-    "description": "Single Needle Lock Stitch Machine"
+    "id": 1,
+    "category": "Machinery",
+    "name": "JUKI DDL-9000C",
+    "brand": "JUKI",
+    "model": "DDL-9000C",
+    "description": "Single Needle Lock Stitch Machine",
+    "image": "images/juki-ddl9000c.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
   },
   {
-    "name": "JUKI Overlock",
-    "price": "Contact Us",
-    "image": "juki-overlock.jpg",
-    "description": "Industrial Overlock Machine"
+    "id": 2,
+    "category": "Machinery",
+    "name": "JUKI MO-6814S",
+    "brand": "JUKI",
+    "model": "MO-6814S",
+    "description": "High Speed Overlock Machine",
+    "image": "images/juki-mo6814s.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
   },
   {
+    "id": 3,
+    "category": "Machinery",
     "name": "JUKI LBH-1790",
-    "price": "Contact Us",
-    "image": "juki-lbh1790.jpg",
-    "description": "Button Hole Machine"
+    "brand": "JUKI",
+    "model": "LBH-1790",
+    "description": "Computerized Button Hole Machine",
+    "image": "images/juki-lbh1790.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
   },
   {
-    "name": "JUKI LK-1900",
-    "price": "Contact Us",
-    "image": "juki-lk1900bn.jpg",
-    "description": "Electronic Bartack Machine"
+    "id": 4,
+    "category": "Machinery",
+    "name": "Brother S-7300A",
+    "brand": "Brother",
+    "model": "S-7300A",
+    "description": "Direct Drive Lock Stitch Machine",
+    "image": "images/brother-s7300a.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
   },
   {
-    "name": "JUKI MO-6714S",
-    "price": "Contact Us",
-    "image": "juki-mo6714s.jpg",
-    "description": "Industrial Overlock Machine"
+    "id": 5,
+    "category": "Machinery",
+    "name": "Pegasus M700",
+    "brand": "Pegasus",
+    "model": "M700",
+    "description": "Industrial Overlock Machine",
+    "image": "images/pegasus-m700.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+   {
+    "id": 6,
+    "category": "Machinery",
+    "name": "Kansai Special DFB-1404",
+    "brand": "Kansai Special",
+    "model": "DFB-1404",
+    "description": "Flat Bed Interlock Machine",
+    "image": "images/kansai-dfb1404.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 7,
+    "category": "Machinery",
+    "name": "Feed Off The Arm",
+    "brand": "Typical",
+    "model": "FOA",
+    "description": "Feed Off The Arm Sewing Machine",
+    "image": "images/feed-off-arm.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 8,
+    "category": "Machinery",
+    "name": "Flatlock Machine",
+    "brand": "Pegasus",
+    "model": "W500",
+    "description": "Industrial Flatlock Machine",
+    "image": "images/flatlock.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 9,
+    "category": "Machinery",
+    "name": "Button Attach Machine",
+    "brand": "JUKI",
+    "model": "MB-1377",
+    "description": "Industrial Button Sewing Machine",
+    "image": "images/button-attach.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 10,
+    "category": "Machinery",
+    "name": "Bartack Machine",
+    "brand": "JUKI",
+    "model": "LK-1900",
+    "description": "Computerized Bartack Machine",
+    "image": "images/bartack.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 11,
+    "category": "Machinery",
+    "name": "Interlock Machine",
+    "brand": "Brother",
+    "model": "Interlock",
+    "description": "High Speed Interlock Machine",
+    "image": "images/interlock.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 12,
+    "category": "Machinery",
+    "name": "Rotary Fusing Machine",
+    "brand": "HASHIMA",
+    "model": "NS-2410",
+    "description": "Industrial Rotary Fusing Press",
+    "image": "images/ns2410.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+    {
+    "id": 13,
+    "category": "Spare Parts",
+    "name": "Rotary Hook",
+    "brand": "Hirose",
+    "model": "Hook",
+    "description": "Genuine Rotary Hook",
+    "image": "images/rotary-hook.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 14,
+    "category": "Spare Parts",
+    "name": "Sewing Needle",
+    "brand": "Organ",
+    "model": "DBX1",
+    "description": "Industrial Sewing Machine Needle",
+    "image": "images/needle.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 15,
+    "category": "Spare Parts",
+    "name": "Looper",
+    "brand": "Pegasus",
+    "model": "Looper",
+    "description": "Overlock Machine Genuine Looper",
+    "image": "images/looper.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 16,
+    "category": "Spare Parts",
+    "name": "Bobbin Case",
+    "brand": "JUKI",
+    "model": "BC-01",
+    "description": "Industrial Bobbin Case",
+    "image": "images/bobbin-case.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 17,
+    "category": "Spare Parts",
+    "name": "Presser Foot",
+    "brand": "JUKI",
+    "model": "PF-01",
+    "description": "Industrial Presser Foot",
+    "image": "images/presser-foot.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 18,
+    "category": "Spare Parts",
+    "name": "Machine Knife",
+    "brand": "Pegasus",
+    "model": "Knife",
+    "description": "Upper & Lower Knife",
+    "image": "images/knife.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 19,
+    "category": "Spare Parts",
+    "name": "Servo Motor",
+    "brand": "Jack",
+    "model": "550W",
+    "description": "Energy Saving Servo Motor",
+    "image": "images/servo-motor.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 20,
+    "category": "Spare Parts",
+    "name": "Attachments Set",
+    "brand": "Universal",
+    "model": "Attachment",
+    "description": "Folders, Guides & Binders",
+    "image": "images/attachments.jpg",
+    "call": "+8801621007917",
+    "whatsapp": "+8801621007916"
   }
 ]
