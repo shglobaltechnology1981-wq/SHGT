@@ -1,61 +1,228 @@
-let allProducts = [];
+/*==========================================
+SH GLOBAL TECHNOLOGY
+Home Featured Products JavaScript
+Version 1.0
+==========================================*/
+
+"use strict";
+
+
+let homeProducts = [];
+
+
+
+/*==============================
+LOAD HOME PRODUCTS
+==============================*/
+
 
 fetch("products.json")
-  .then(response => response.json())
-  .then(products => {
-    allProducts = products;
-    displayProducts(products);
-  })
-  .catch(error => {
-    console.log(error);
-    document.getElementById("product-list").innerHTML =
-      "<h2>Products failed to load.</h2>";
-  });
 
-function displayProducts(products) {
+.then(response => response.json())
 
-  const container = document.getElementById("product-list");
-  container.innerHTML = "";
+.then(products => {
 
-  products.forEach(product => {
 
-    container.innerHTML += `
-      <div class="product-card" data-brand="${product.brand}">
+    homeProducts = products;
 
-        <img src="${product.image}"
-             alt="${product.name}"
-             onerror="this.src='logo.png'">
 
-        <h3>${product.name}</h3>
+    displayHomeProducts(
+        products.slice(0,6)
+    );
 
-        <p><b>Brand:</b> ${product.brand}</p>
 
-        <p>${product.description}</p>
+})
 
-        <a href="https://wa.me/8801621007916"
-           class="btn"
-           target="_blank">
-           WhatsApp Inquiry
-        </a>
 
-      </div>
-    `;
+.catch(error => {
 
-  });
+
+    console.log("Products Load Error:", error);
+
+
+    const container = document.getElementById("product-list");
+
+
+    if(container){
+
+        container.innerHTML =
+
+        "<h2>Products failed to load.</h2>";
+
+    }
+
+
+});
+
+
+
+
+
+/*==============================
+DISPLAY PRODUCTS
+==============================*/
+
+
+function displayHomeProducts(products){
+
+
+const container = document.getElementById("product-list");
+
+
+if(!container) return;
+
+
+
+container.innerHTML = "";
+
+
+
+products.forEach(product => {
+
+
+container.innerHTML += `
+
+
+<div class="product-card">
+
+
+<img src="${product.image}"
+
+alt="${product.name}"
+
+onerror="this.src='logo.png'">
+
+
+
+<div class="product-info">
+
+
+<span class="product-brand">
+
+${product.brand}
+
+</span>
+
+
+<h3>
+
+${product.name}
+
+</h3>
+
+
+
+<p>
+
+${product.description}
+
+</p>
+
+
+
+
+<a href="product-details.html?id=${product.id}"
+
+class="btn">
+
+View Details
+
+</a>
+
+
+
+
+<a href="https://wa.me/8801621007916?text=${encodeURIComponent("I need information about " + product.name)}"
+
+target="_blank"
+
+class="btn btn-success">
+
+WhatsApp
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+});
+
 
 }
 
-function filterBrand(brand) {
 
-  if (brand === "all") {
-    displayProducts(allProducts);
-    return;
-  }
 
-  const filtered = allProducts.filter(
-    item => item.brand === brand
-  );
 
-  displayProducts(filtered);
+
+/*==============================
+VIEW ALL PRODUCTS
+==============================*/
+
+
+const viewAllBtn = document.getElementById("viewAllProducts");
+
+
+if(viewAllBtn){
+
+
+viewAllBtn.addEventListener("click",()=>{
+
+
+window.location.href="products.html";
+
+
+});
+
 
 }
+/*==========================================
+SERVICE DETAILS BUTTON
+===========================================*/
+
+const serviceButtons = document.querySelectorAll(".service-btn");
+
+
+serviceButtons.forEach(button => {
+
+
+    button.addEventListener("click", function(){
+
+
+        const details = this.nextElementSibling;
+
+
+        if(details.style.display === "block"){
+
+
+            details.style.display = "none";
+
+
+            this.innerHTML = "View Details";
+
+
+        }
+
+        else{
+
+
+            details.style.display = "block";
+
+
+            this.innerHTML = "Hide Details";
+
+
+        }
+
+
+    });
+
+
+});
