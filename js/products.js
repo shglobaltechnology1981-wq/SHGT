@@ -4,7 +4,8 @@ Products JavaScript
 ==========================================*/
 
 "use strict";
-
+const loading = document.getElementById("loadingProducts");
+const noProduct = document.getElementById("noProductMessage");
 const productContainer = document.getElementById("product-container");
 const searchInput = document.getElementById("searchInput");
 const brandFilter = document.getElementById("brandFilter");
@@ -54,12 +55,23 @@ async function loadProducts() {
 /*==============================
 DISPLAY PRODUCTS
 ==============================*/
+if (loading) loading.style.display = "none";
+
+if (noProduct) noProduct.style.display = "none";
 
 function displayProducts(products) {
 
     productContainer.innerHTML = "";
 
-    if (products.length === 0) {
+    if (products.length === 0) {if (noProduct) {
+
+    noProduct.style.display = "block";
+
+}
+
+productContainer.innerHTML = "";
+
+return;
 
         productContainer.innerHTML = `
 
