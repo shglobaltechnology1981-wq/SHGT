@@ -1,34 +1,35 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
-Home Featured Products JavaScript
-Version 1.0
+Professional Website JavaScript
 ==========================================*/
 
-"use strict";
 
-
-let homeProducts = [];
+let allProducts = [];
 
 
 
-/*==============================
-LOAD HOME PRODUCTS
-==============================*/
+/*================ LOAD PRODUCTS ================*/
+
+
+const productContainer = document.getElementById("product-container");
+
+
+if(productContainer){
 
 
 fetch("products.json")
 
+
 .then(response => response.json())
+
 
 .then(products => {
 
 
-    homeProducts = products;
+allProducts = products;
 
 
-    displayHomeProducts(
-        products.slice(0,6)
-    );
+displayProducts(allProducts);
 
 
 })
@@ -37,108 +38,97 @@ fetch("products.json")
 .catch(error => {
 
 
-    console.log("Products Load Error:", error);
+productContainer.innerHTML = 
+"<h3>Product Loading Failed</h3>";
 
 
-    const container = document.getElementById("product-list");
-
-
-    if(container){
-
-        container.innerHTML =
-
-        "<h2>Products failed to load.</h2>";
-
-    }
+console.log(error);
 
 
 });
 
 
+}
 
 
 
-/*==============================
-DISPLAY PRODUCTS
-==============================*/
-
-
-function displayHomeProducts(products){
-
-
-const container = document.getElementById("product-list");
-
-
-if(!container) return;
 
 
 
-container.innerHTML = "";
+/*================ DISPLAY PRODUCT ================*/
+
+
+function displayProducts(products){
+
+
+if(!productContainer) return;
+
+
+
+productContainer.innerHTML = "";
+
+
+
+if(products.length === 0){
+
+
+productContainer.innerHTML =
+
+"<h3>No Product Found</h3>";
+
+
+return;
+
+
+}
+
+
 
 
 
 products.forEach(product => {
 
 
-container.innerHTML += `
+
+productContainer.innerHTML += `
 
 
 <div class="product-card">
 
 
-<img src="${product.image}"
+<img src="${product.image}" 
+alt="${product.name}">
 
-alt="${product.name}"
-
-onerror="this.src='logo.png'">
-
-
-
-<div class="product-info">
-
-
-<span class="product-brand">
-
-${product.brand}
-
-</span>
 
 
 <h3>
-
 ${product.name}
-
 </h3>
 
 
 
 <p>
-
-${product.description}
-
+Brand: ${product.brand}
 </p>
 
 
 
-
-<a href="product-details.html?id=${product.id}"
-
-class="btn">
-
-View Details
-
-</a>
+<p>
+Model: ${product.model}
+</p>
 
 
 
+<p>
+${product.description}
+</p>
 
-<a href="https://wa.me/8801621007916?text=${encodeURIComponent("I need information about " + product.name)}"
 
-target="_blank"
 
-class="btn btn-success">
+<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${product.name}">
 
-WhatsApp
+
+WhatsApp Inquiry
 
 </a>
 
@@ -146,13 +136,66 @@ WhatsApp
 
 </div>
 
-
-</div>
 
 
 `;
 
 
+
+});
+
+
+
+}
+
+
+
+
+
+
+
+/*================ SEARCH FUNCTION ================*/
+
+
+const searchBox = document.getElementById("search");
+
+
+
+if(searchBox){
+
+
+searchBox.addEventListener("keyup",function(){
+
+
+
+let value = this.value.toLowerCase();
+
+
+
+let filtered = allProducts.filter(product =>
+
+
+
+product.name.toLowerCase().includes(value)
+
+||
+
+product.brand.toLowerCase().includes(value)
+
+||
+
+product.model.toLowerCase().includes(value)
+
+
+
+);
+
+
+
+displayProducts(filtered);
+
+
+
 });
 
 
@@ -162,67 +205,56 @@ WhatsApp
 
 
 
-/*==============================
-VIEW ALL PRODUCTS
-==============================*/
 
 
-const viewAllBtn = document.getElementById("viewAllProducts");
+
+/*================ BRAND FILTER ================*/
 
 
-if(viewAllBtn){
+const brandFilter = document.getElementById("brandFilter");
 
 
-viewAllBtn.addEventListener("click",()=>{
+
+if(brandFilter){
 
 
-window.location.href="products.html";
+
+brandFilter.addEventListener("change",function(){
+
+
+
+let brand = this.value;
+
+
+
+if(brand === "all"){
+
+
+displayProducts(allProducts);
+
+
+}
+
+else{
+
+
+let filtered = allProducts.filter(product =>
+
+
+product.brand === brand
+
+
+);
+
+
+displayProducts(filtered);
+
+
+}
+
 
 
 });
 
 
 }
-/*==========================================
-SERVICE DETAILS BUTTON
-===========================================*/
-
-const serviceButtons = document.querySelectorAll(".service-btn");
-
-
-serviceButtons.forEach(button => {
-
-
-    button.addEventListener("click", function(){
-
-
-        const details = this.nextElementSibling;
-
-
-        if(details.style.display === "block"){
-
-
-            details.style.display = "none";
-
-
-            this.innerHTML = "View Details";
-
-
-        }
-
-        else{
-
-
-            details.style.display = "block";
-
-
-            this.innerHTML = "Hide Details";
-
-
-        }
-
-
-    });
-
-
-});
