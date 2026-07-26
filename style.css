@@ -35,7 +35,51 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
 
 }
+/*================ PRODUCT BUTTONS ================*/
 
+
+.whatsapp-btn{
+
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:10px 18px;
+    margin-top:10px;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+.whatsapp-btn:hover{
+
+    opacity:0.8;
+
+}
+
+
+
+.catalogue-btn{
+
+    display:inline-block;
+    background:#0b3d91;
+    color:white;
+    padding:10px 18px;
+    margin-top:10px;
+    margin-left:5px;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+.catalogue-btn:hover{
+
+    opacity:0.8;
+
+}
 
 
 .logo-area{
