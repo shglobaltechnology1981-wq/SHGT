@@ -104,7 +104,11 @@ const brandName = title.innerText;
 
 
 
-const count = brandList[brandName] || 0;
+const brandKey = Object.keys(brandList).find(
+    key => key.toLowerCase() === brandName.toLowerCase()
+);
+
+const count = brandKey ? brandList[brandKey] : 0;
 
 
 
