@@ -110,7 +110,11 @@ const brandKey = Object.keys(brandList).find(
 
 const count = brandKey ? brandList[brandKey] : 0;
 
+const oldCount = card.querySelector(".brand-product-count");
 
+if(oldCount){
+    oldCount.remove();
+}
 
 const countText = document.createElement("span");
 
