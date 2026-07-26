@@ -39,7 +39,7 @@ async function loadProducts() {
 
         productContainer.innerHTML = `
 
-            <div class="no-product">
+         <div class="product-card" data-brand="${product.brand}">
 
                 <h3>No Products Found</h3>
 
