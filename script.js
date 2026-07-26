@@ -86,7 +86,27 @@ return;
 
 products.forEach(product => {
 
+let catalogueButton = "";
 
+if (product.category === "Service") {
+
+    catalogueButton = `
+    <a href="service.html" class="catalogue-btn">
+        View Service
+    </a>
+    `;
+
+} else {
+
+    catalogueButton = `
+    <a href="Pdf/SHGT-Catalogue.pdf"
+       target="_blank"
+       class="catalogue-btn">
+        View Catalogue
+    </a>
+    `;
+
+}
 
 let catalogueButton = "";
 
