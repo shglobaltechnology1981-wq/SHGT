@@ -66,7 +66,8 @@ const brandList = {};
 
 products.forEach(product=>{
 
-
+if(!product.brand) return;
+    
 if(brandList[product.brand]){
 
 
