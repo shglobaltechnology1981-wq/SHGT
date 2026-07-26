@@ -1,17 +1,17 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
 Professional Website JavaScript
+Product + Search + Brand Filter + Catalogue PDF
 ==========================================*/
 
 
 let allProducts = [];
 
+const productContainer = document.getElementById("product-container");
+
 
 
 /*================ LOAD PRODUCTS ================*/
-
-
-const productContainer = document.getElementById("product-container");
 
 
 if(productContainer){
@@ -28,7 +28,6 @@ fetch("products.json")
 
 allProducts = products;
 
-
 displayProducts(allProducts);
 
 
@@ -38,11 +37,11 @@ displayProducts(allProducts);
 .catch(error => {
 
 
+console.log("Product Loading Error:", error);
+
+
 productContainer.innerHTML = 
 "<h3>Product Loading Failed</h3>";
-
-
-console.log(error);
 
 
 });
@@ -55,14 +54,14 @@ console.log(error);
 
 
 
-/*================ DISPLAY PRODUCT ================*/
+
+/*================ DISPLAY PRODUCTS ================*/
 
 
 function displayProducts(products){
 
 
 if(!productContainer) return;
-
 
 
 productContainer.innerHTML = "";
@@ -73,7 +72,6 @@ if(products.length === 0){
 
 
 productContainer.innerHTML =
-
 "<h3>No Product Found</h3>";
 
 
@@ -90,10 +88,46 @@ products.forEach(product => {
 
 
 
+let catalogueButton = "";
+
+
+
+if(product.catalogue){
+
+
+catalogueButton = `
+
+<a href="${product.catalogue}" 
+target="_blank"
+class="catalogue-btn">
+
+View Catalogue
+
+</a>
+
+`;
+
+}
+
+
+else{
+
+
+catalogueButton = "";
+
+}
+
+
+
+
+
+
+
 productContainer.innerHTML += `
 
 
 <div class="product-card">
+
 
 
 <img src="${product.image}" 
@@ -108,13 +142,13 @@ ${product.name}
 
 
 <p>
-Brand: ${product.brand}
+<strong>Brand:</strong> ${product.brand}
 </p>
 
 
 
 <p>
-Model: ${product.model}
+<strong>Model:</strong> ${product.model}
 </p>
 
 
@@ -125,17 +159,19 @@ ${product.description}
 
 
 
-<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${product.name}">
-
+<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${product.name}"
+class="whatsapp-btn">
 
 WhatsApp Inquiry
 
 </a>
 
 
+${catalogueButton}
+
+
 
 </div>
-
 
 
 `;
@@ -154,7 +190,8 @@ WhatsApp Inquiry
 
 
 
-/*================ SEARCH FUNCTION ================*/
+
+/*================ SEARCH ================*/
 
 
 const searchBox = document.getElementById("search");
@@ -164,27 +201,31 @@ const searchBox = document.getElementById("search");
 if(searchBox){
 
 
-searchBox.addEventListener("keyup",function(){
+searchBox.addEventListener("keyup", function(){
 
 
 
-let value = this.value.toLowerCase();
+let searchText = this.value.toLowerCase();
 
 
 
-let filtered = allProducts.filter(product =>
+let result = allProducts.filter(product =>
 
 
 
-product.name.toLowerCase().includes(value)
-
-||
-
-product.brand.toLowerCase().includes(value)
+product.name.toLowerCase().includes(searchText)
 
 ||
 
-product.model.toLowerCase().includes(value)
+product.brand.toLowerCase().includes(searchText)
+
+||
+
+product.model.toLowerCase().includes(searchText)
+
+||
+
+product.category.toLowerCase().includes(searchText)
 
 
 
@@ -192,7 +233,7 @@ product.model.toLowerCase().includes(value)
 
 
 
-displayProducts(filtered);
+displayProducts(result);
 
 
 
@@ -218,16 +259,15 @@ const brandFilter = document.getElementById("brandFilter");
 if(brandFilter){
 
 
-
-brandFilter.addEventListener("change",function(){
-
-
-
-let brand = this.value;
+brandFilter.addEventListener("change", function(){
 
 
 
-if(brand === "all"){
+let selectedBrand = this.value;
+
+
+
+if(selectedBrand === "all"){
 
 
 displayProducts(allProducts);
@@ -238,16 +278,17 @@ displayProducts(allProducts);
 else{
 
 
-let filtered = allProducts.filter(product =>
+let result = allProducts.filter(product =>
 
 
-product.brand === brand
+product.brand === selectedBrand
 
 
 );
 
 
-displayProducts(filtered);
+
+displayProducts(result);
 
 
 }
