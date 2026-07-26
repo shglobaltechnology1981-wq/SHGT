@@ -1,321 +1,186 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
 Professional Website JavaScript
-Product + Search + Brand Filter + Catalogue PDF
 ==========================================*/
-
 
 let allProducts = [];
 
 const productContainer = document.getElementById("product-container");
 
-
-
 /*================ LOAD PRODUCTS ================*/
 
+if (productContainer) {
 
-if(productContainer){
+    fetch("products.json")
+        .then(response => response.json())
+        .then(products => {
 
+            allProducts = products;
+            displayProducts(allProducts);
 
-fetch("products.json")
+        })
+        .catch(error => {
 
+            console.error("Product Loading Error:", error);
 
-.then(response => response.json())
+            productContainer.innerHTML = `
+                <h2 style="text-align:center;color:red;">
+                    Product Loading Failed
+                </h2>
+            `;
 
-
-.then(products => {
-
-
-allProducts = products;
-
-displayProducts(allProducts);
-
-
-})
-
-
-.catch(error => {
-
-
-console.log("Product Loading Error:", error);
-
-
-productContainer.innerHTML = 
-"<h3>Product Loading Failed</h3>";
-
-
-});
-
+        });
 
 }
-
-
-
-
-
 
 
 /*================ DISPLAY PRODUCTS ================*/
 
+function displayProducts(products) {
 
-function displayProducts(products){
+    if (!productContainer) return;
 
+    productContainer.innerHTML = "";
 
-if(!productContainer) return;
+    if (products.length === 0) {
 
+        productContainer.innerHTML = `
+            <h2 style="text-align:center;">
+                No Product Found
+            </h2>
+        `;
 
-productContainer.innerHTML = "";
+        return;
 
+    }
 
+    products.forEach(product => {
 
-if(products.length === 0){
+        let catalogueButton = "";
 
+        if (product.category === "Service") {
 
-productContainer.innerHTML =
-"<h3>No Product Found</h3>";
+            catalogueButton = `
+                <a href="service.html"
+                   class="catalogue-btn">
+                   View Service
+                </a>
+            `;
 
+        } else {
 
-return;
+            catalogueButton = `
+                <a href="Pdf/SHGT-Catalogue.pdf"
+                   target="_blank"
+                   class="catalogue-btn">
+                   View Catalogue
+                </a>
+            `;
 
+        }
+
+        productContainer.innerHTML += `
+
+        <div class="product-card">
+
+            <img src="${product.image}"
+                 alt="${product.name}">
+
+            <h3>${product.name}</h3>
+
+            <p>
+                <strong>Brand:</strong>
+                ${product.brand}
+            </p>
+
+            <p>
+                <strong>Model:</strong>
+                ${product.model}
+            </p>
+
+            <p>
+                ${product.description}
+            </p>
+
+            <a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${encodeURIComponent(product.name)}"
+               target="_blank"
+               class="whatsapp-btn">
+
+               WhatsApp Inquiry
+
+            </a>
+
+            ${catalogueButton}
+
+        </div>
+
+        `;
+
+    });
 
 }
-
-
-
-
-
-products.forEach(product => {
-
-let catalogueButton = "";
-
-if (product.category === "Service") {
-
-    catalogueButton = `
-    <a href="service.html" class="catalogue-btn">
-        View Service
-    </a>
-    `;
-
-} else {
-
-    catalogueButton = `
-    <a href="Pdf/SHGT-Catalogue.pdf"
-       target="_blank"
-       class="catalogue-btn">
-        View Catalogue
-    </a>
-    `;
-
-}
-
-let catalogueButton = "";
-
-
-
-if(product.catalogue){
-
-
-catalogueButton = `
-
-<a href="${product.catalogue}" 
-target="_blank"
-class="catalogue-btn">
-
-View Catalogue
-
-</a>
-
-`;
-
-}
-
-
-else{
-
-
-catalogueButton = "";
-
-}
-
-
-
-
-
-
-
-productContainer.innerHTML += `
-
-
-<div class="product-card">
-
-
-
-<img src="${product.image}" 
-alt="${product.name}">
-
-
-
-<h3>
-${product.name}
-</h3>
-
-
-
-<p>
-<strong>Brand:</strong> ${product.brand}
-</p>
-
-
-
-<p>
-<strong>Model:</strong> ${product.model}
-</p>
-
-
-
-<p>
-${product.description}
-</p>
-
-
-
-<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${product.name}"
-class="whatsapp-btn">
-
-WhatsApp Inquiry
-
-</a>
-
-
-${catalogueButton}
-
-
-
-</div>
-
-
-`;
-
-
-
-});
-
-
-
-}
-
-
-
-
-
-
-
-
-/*================ SEARCH ================*/
-
+/*================ SEARCH =================*/
 
 const searchBox = document.getElementById("search");
 
+if (searchBox) {
 
+    searchBox.addEventListener("keyup", function () {
 
-if(searchBox){
+        const searchText = this.value.trim().toLowerCase();
 
+        const filteredProducts = allProducts.filter(product => {
 
-searchBox.addEventListener("keyup", function(){
+            return (
+                product.name.toLowerCase().includes(searchText) ||
+                product.brand.toLowerCase().includes(searchText) ||
+                product.model.toLowerCase().includes(searchText) ||
+                product.category.toLowerCase().includes(searchText) ||
+                product.description.toLowerCase().includes(searchText)
+            );
 
+        });
 
+        displayProducts(filteredProducts);
 
-let searchText = this.value.toLowerCase();
-
-
-
-let result = allProducts.filter(product =>
-
-
-
-product.name.toLowerCase().includes(searchText)
-
-||
-
-product.brand.toLowerCase().includes(searchText)
-
-||
-
-product.model.toLowerCase().includes(searchText)
-
-||
-
-product.category.toLowerCase().includes(searchText)
-
-
-
-);
-
-
-
-displayProducts(result);
-
-
-
-});
-
+    });
 
 }
 
 
-
-
-
-
-
-
-/*================ BRAND FILTER ================*/
-
+/*================ BRAND FILTER =================*/
 
 const brandFilter = document.getElementById("brandFilter");
 
+if (brandFilter) {
 
+    brandFilter.addEventListener("change", function () {
 
-if(brandFilter){
+        const selectedBrand = this.value;
 
+        if (selectedBrand === "all") {
 
-brandFilter.addEventListener("change", function(){
+            displayProducts(allProducts);
 
+        } else {
 
+            const filteredProducts = allProducts.filter(product =>
+                product.brand === selectedBrand
+            );
 
-let selectedBrand = this.value;
+            displayProducts(filteredProducts);
 
+        }
 
-
-if(selectedBrand === "all"){
-
-
-displayProducts(allProducts);
-
-
-}
-
-else{
-
-
-let result = allProducts.filter(product =>
-
-
-product.brand === selectedBrand
-
-
-);
-
-
-
-displayProducts(result);
-
+    });
 
 }
 
 
+/*================ PAGE LOADED =================*/
+
+window.addEventListener("load", () => {
+
+    console.log("SH Global Technology Website Loaded Successfully");
 
 });
-
-
-}
