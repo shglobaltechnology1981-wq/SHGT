@@ -1,73 +1,158 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
-Brand Filter JavaScript
-Version 2.0
+Brands JavaScript
+Version 1.0
 ==========================================*/
 
 "use strict";
 
-const brandButtons = document.querySelectorAll(".brand-btn");
-const productCards = document.querySelectorAll(".product-card");
-const brandCounter = document.getElementById("brandCount");
 
 /*==============================
-FILTER FUNCTION
+BRAND CLICK SYSTEM
 ==============================*/
 
-function filterBrand(brand) {
 
-    let visible = 0;
+const brandButtons = document.querySelectorAll(".brand-card a");
 
-    productCards.forEach(card => {
 
-        const cardBrand = card.dataset.brand;
-
-        if (brand === "all" || cardBrand === brand) {
-
-            card.style.display = "block";
-
-            visible++;
-
-        } else {
-
-            card.style.display = "none";
-
-        }
-
-    });
-
-    if (brandCounter) {
-
-        brandCounter.textContent = visible;
-
-    }
-
-}
-
-/*==============================
-BUTTON CLICK
-==============================*/
 
 brandButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
 
-        brandButtons.forEach(btn => {
+    button.addEventListener("click", function(e){
 
-            btn.classList.remove("active");
 
-        });
+        const link = this.getAttribute("href");
 
-        button.classList.add("active");
 
-        filterBrand(button.dataset.brand);
+        if(link.includes("products.html")){
+
+
+            return true;
+
+
+        }
+
 
     });
 
+
 });
 
+
+
+
 /*==============================
-DEFAULT
+BRAND COUNT
 ==============================*/
 
-filterBrand("all");
+
+async function loadBrandCount(){
+
+
+try{
+
+
+const response = await fetch("products.json");
+
+
+const products = await response.json();
+
+
+
+const brandList = {};
+
+
+
+products.forEach(product=>{
+
+
+if(brandList[product.brand]){
+
+
+brandList[product.brand]++;
+
+
+}
+
+else{
+
+
+brandList[product.brand]=1;
+
+
+}
+
+
+});
+
+
+
+document.querySelectorAll(".brand-card")
+
+.forEach(card=>{
+
+
+const title = card.querySelector("h3");
+
+
+if(!title) return;
+
+
+
+const brandName = title.innerText;
+
+
+
+const count = brandList[brandName] || 0;
+
+
+
+const countText = document.createElement("span");
+
+
+countText.className="brand-product-count";
+
+
+countText.innerHTML =
+
+count + " Products";
+
+
+
+card.appendChild(countText);
+
+
+
+});
+
+
+
+}
+
+catch(error){
+
+
+console.log("Brand Count Error",error);
+
+
+}
+
+
+}
+
+
+
+
+/*==============================
+START
+==============================*/
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+loadBrandCount();
+
+
+});
