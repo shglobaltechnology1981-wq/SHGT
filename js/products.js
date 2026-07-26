@@ -1,14 +1,20 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
 Products JavaScript
+Version 3.0
 ==========================================*/
 
 "use strict";
-const loading = document.getElementById("loadingProducts");
-const noProduct = document.getElementById("noProductMessage");
+
+/*==============================
+ELEMENTS
+==============================*/
+
 const productContainer = document.getElementById("product-container");
 const searchInput = document.getElementById("searchInput");
 const brandFilter = document.getElementById("brandFilter");
+const loading = document.getElementById("loadingProducts");
+const noProduct = document.getElementById("noProductMessage");
 
 let allProducts = [];
 
@@ -22,12 +28,14 @@ async function loadProducts() {
 
     try {
 
+        if (loading) {
+            loading.style.display = "flex";
+        }
+
         const response = await fetch("products.json");
 
         if (!response.ok) {
-
-            throw new Error("Products not found");
-
+            throw new Error("Unable to load products.json");
         }
 
         allProducts = await response.json();
@@ -38,60 +46,49 @@ async function loadProducts() {
 
         console.error(error);
 
+        if (loading) {
+            loading.style.display = "none";
+        }
+
         productContainer.innerHTML = `
-
-         <div class="product-card" data-brand="${product.brand}">
-
+            <div class="no-product">
                 <h3>No Products Found</h3>
-
+                <p>Unable to load products.json</p>
             </div>
-
         `;
-
     }
-
 }
 
 /*==============================
 DISPLAY PRODUCTS
 ==============================*/
-if (loading) loading.style.display = "none";
-
-if (noProduct) noProduct.style.display = "none";
 
 function displayProducts(products) {
 
+    if (loading) {
+        loading.style.display = "none";
+    }
+
+    if (noProduct) {
+        noProduct.style.display = "none";
+    }
+
     productContainer.innerHTML = "";
 
-    if (products.length === 0) {if (noProduct) {
+    if (products.length === 0) {
 
-    noProduct.style.display = "block";
-
-}
-
-productContainer.innerHTML = "";
-
-return;
-
-        productContainer.innerHTML = `
-
-            <div class="no-product">
-
-                <h3>No Products Available</h3>
-
-            </div>
-
-        `;
+        if (noProduct) {
+            noProduct.style.display = "block";
+        }
 
         return;
-
     }
 
     products.forEach(product => {
 
         productContainer.innerHTML += `
 
-<div class="product-card">
+<div class="product-card" data-brand="${product.brand}">
 
     <img src="${product.image}" alt="${product.name}">
 
@@ -105,16 +102,16 @@ return;
 
         <div class="product-buttons">
 
-            <a href="${product.catalogue}" target="_blank" class="btn btn-primary">
+            <a href="${product.catalogue}"
+               target="_blank"
+               class="btn btn-primary">
 
                 Catalogue
 
             </a>
 
-            <a href="https://wa.me/8801621007916?text=I want information about ${encodeURIComponent(product.name)}"
-
+            <a href="https://wa.me/8801621007916?text=${encodeURIComponent("I want information about " + product.name)}"
                target="_blank"
-
                class="btn btn-success">
 
                 WhatsApp
@@ -127,7 +124,7 @@ return;
 
 </div>
 
-        `;
+`;
 
     });
 
@@ -139,21 +136,14 @@ SEARCH
 
 if (searchInput) {
 
-    searchInput.addEventListener("keyup", function () {
+    searchInput.addEventListener("input", function () {
 
-        const keyword = this.value.toLowerCase();
+        const keyword = this.value.trim().toLowerCase();
 
-        const filtered = allProducts.filter(product =>
+        const brand =
+            brandFilter ? brandFilter.value : "All";
 
-            product.name.toLowerCase().includes(keyword) ||
-
-            product.brand.toLowerCase().includes(keyword) ||
-
-            product.model.toLowerCase().includes(keyword)
-
-        );
-
-        displayProducts(filtered);
+        filterProducts(keyword, brand);
 
     });
 
@@ -167,25 +157,44 @@ if (brandFilter) {
 
     brandFilter.addEventListener("change", function () {
 
-        const brand = this.value;
+        const keyword =
+            searchInput ? searchInput.value.trim().toLowerCase() : "";
 
-        if (brand === "All") {
-
-            displayProducts(allProducts);
-
-            return;
-
-        }
-
-        const filtered = allProducts.filter(product =>
-
-            product.brand === brand
-
-        );
-
-        displayProducts(filtered);
+        filterProducts(keyword, this.value);
 
     });
+
+}
+
+/*==============================
+FILTER
+==============================*/
+
+function filterProducts(keyword, brand) {
+
+    const filtered = allProducts.filter(product => {
+
+        const matchKeyword =
+
+            product.name.toLowerCase().includes(keyword) ||
+
+            product.brand.toLowerCase().includes(keyword) ||
+
+            product.model.toLowerCase().includes(keyword) ||
+
+            product.category.toLowerCase().includes(keyword);
+
+        const matchBrand =
+
+            brand === "All" ||
+
+            product.brand === brand;
+
+        return matchKeyword && matchBrand;
+
+    });
+
+    displayProducts(filtered);
 
 }
 
@@ -193,4 +202,8 @@ if (brandFilter) {
 START
 ==============================*/
 
-loadProducts();
+document.addEventListener("DOMContentLoaded", () => {
+
+    loadProducts();
+
+});
