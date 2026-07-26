@@ -1,209 +1,440 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
 Products JavaScript
-Version 3.0
+Version 4.0
 ==========================================*/
 
 "use strict";
 
-/*==============================
-ELEMENTS
-==============================*/
 
 const productContainer = document.getElementById("product-container");
+
 const searchInput = document.getElementById("searchInput");
+
 const brandFilter = document.getElementById("brandFilter");
+
+const categoryFilter = document.getElementById("categoryFilter");
+
 const loading = document.getElementById("loadingProducts");
+
 const noProduct = document.getElementById("noProductMessage");
 
+const currentPageText = document.getElementById("currentPage");
+
+const totalPagesText = document.getElementById("totalPages");
+
+const prevPage = document.getElementById("prevPage");
+
+const nextPage = document.getElementById("nextPage");
+
+
 let allProducts = [];
+
+let filteredProducts = [];
+
+let currentPage = 1;
+
+const productsPerPage = 12;
+
+
 
 /*==============================
 LOAD PRODUCTS
 ==============================*/
 
-async function loadProducts() {
 
-    if (!productContainer) return;
+async function loadProducts(){
 
-    try {
+    if(!productContainer) return;
 
-        if (loading) {
-            loading.style.display = "flex";
+
+    try{
+
+
+        if(loading){
+
+            loading.style.display="flex";
+
         }
+
 
         const response = await fetch("products.json");
 
-        if (!response.ok) {
-            throw new Error("Unable to load products.json");
-        }
 
         allProducts = await response.json();
 
-        displayProducts(allProducts);
 
-    } catch (error) {
+        filteredProducts = allProducts;
 
-        console.error(error);
 
-        if (loading) {
-            loading.style.display = "none";
-        }
+        displayProducts();
 
-        productContainer.innerHTML = `
-            <div class="no-product">
-                <h3>No Products Found</h3>
-                <p>Unable to load products.json</p>
-            </div>
-        `;
+
     }
+
+    catch(error){
+
+
+        console.log(error);
+
+
+        productContainer.innerHTML=`
+
+        <div class="no-product">
+
+        <h3>Products Loading Error</h3>
+
+        </div>
+
+        `;
+
+    }
+
 }
+
+
 
 /*==============================
 DISPLAY PRODUCTS
 ==============================*/
 
-function displayProducts(products) {
 
-    if (loading) {
-        loading.style.display = "none";
+function displayProducts(){
+
+
+    if(loading){
+
+        loading.style.display="none";
+
     }
 
-    if (noProduct) {
-        noProduct.style.display = "none";
-    }
 
-    productContainer.innerHTML = "";
+    productContainer.innerHTML="";
 
-    if (products.length === 0) {
 
-        if (noProduct) {
-            noProduct.style.display = "block";
+    if(filteredProducts.length===0){
+
+
+        if(noProduct){
+
+            noProduct.style.display="block";
+
         }
 
+
         return;
+
     }
 
-    products.forEach(product => {
 
-        productContainer.innerHTML += `
+    if(noProduct){
 
-<div class="product-card" data-brand="${product.brand}">
+        noProduct.style.display="none";
 
-    <img src="${product.image}" alt="${product.name}">
+    }
 
-    <div class="product-info">
 
-        <span class="product-brand">${product.brand}</span>
 
-        <h3>${product.name}</h3>
+    let start =
+    (currentPage-1)*productsPerPage;
 
-        <p>${product.description}</p>
 
-        <div class="product-buttons">
+    let end =
+    start+productsPerPage;
 
-            <a href="${product.catalogue}"
-               target="_blank"
-               class="btn btn-primary">
 
-                Catalogue
+    let products =
+    filteredProducts.slice(start,end);
 
-            </a>
 
-            <a href="https://wa.me/8801621007916?text=${encodeURIComponent("I want information about " + product.name)}"
-               target="_blank"
-               class="btn btn-success">
 
-                WhatsApp
+    products.forEach(product=>{
 
-            </a>
 
-        </div>
+        productContainer.innerHTML +=`
 
-    </div>
+
+<div class="product-card"
+data-brand="${product.brand}">
+
+
+<img src="${product.image}"
+alt="${product.name}">
+
+
+
+<div class="product-info">
+
+
+<span class="product-brand">
+
+${product.brand}
+
+</span>
+
+
+<h3>
+
+${product.name}
+
+</h3>
+
+
+<p>
+
+${product.description}
+
+</p>
+
+
+
+<div class="product-buttons">
+
+
+<a href="product-details.html?id=${product.id}"
+
+class="btn btn-primary">
+
+View Details
+
+</a>
+
+
+
+<a href="${product.catalogue}"
+
+target="_blank"
+
+class="btn">
+
+PDF
+
+</a>
+
 
 </div>
 
+
+
+</div>
+
+
+</div>
+
+
 `;
 
+
+
     });
 
+
+updatePagination();
+
+
 }
+
+
 
 /*==============================
-SEARCH
+FILTER SYSTEM
 ==============================*/
 
-if (searchInput) {
 
-    searchInput.addEventListener("input", function () {
+function applyFilter(){
 
-        const keyword = this.value.trim().toLowerCase();
 
-        const brand =
-            brandFilter ? brandFilter.value : "All";
+let keyword =
+searchInput ?
+searchInput.value.toLowerCase()
+:"";
 
-        filterProducts(keyword, brand);
 
-    });
+let brand =
+brandFilter ?
+brandFilter.value
+:"All";
+
+
+let category =
+categoryFilter ?
+categoryFilter.value
+:"All";
+
+
+
+filteredProducts =
+allProducts.filter(product=>{
+
+
+let searchMatch =
+
+product.name.toLowerCase().includes(keyword)
+
+||
+
+product.brand.toLowerCase().includes(keyword)
+
+||
+
+product.model.toLowerCase().includes(keyword);
+
+
+
+let brandMatch =
+
+brand==="All"
+
+||
+
+product.brand===brand;
+
+
+
+let categoryMatch =
+
+category==="All"
+
+||
+
+product.category===category;
+
+
+
+return searchMatch && brandMatch && categoryMatch;
+
+
+});
+
+
+currentPage=1;
+
+
+displayProducts();
+
 
 }
+
+
+
 
 /*==============================
-BRAND FILTER
+EVENTS
 ==============================*/
 
-if (brandFilter) {
 
-    brandFilter.addEventListener("change", function () {
+if(searchInput){
 
-        const keyword =
-            searchInput ? searchInput.value.trim().toLowerCase() : "";
-
-        filterProducts(keyword, this.value);
-
-    });
+searchInput.addEventListener("input",applyFilter);
 
 }
+
+
+if(brandFilter){
+
+brandFilter.addEventListener("change",applyFilter);
+
+}
+
+
+if(categoryFilter){
+
+categoryFilter.addEventListener("change",applyFilter);
+
+}
+
+
+
 
 /*==============================
-FILTER
+PAGINATION
 ==============================*/
 
-function filterProducts(keyword, brand) {
 
-    const filtered = allProducts.filter(product => {
+function updatePagination(){
 
-        const matchKeyword =
 
-            product.name.toLowerCase().includes(keyword) ||
+let totalPages =
 
-            product.brand.toLowerCase().includes(keyword) ||
+Math.ceil(filteredProducts.length/productsPerPage);
 
-            product.model.toLowerCase().includes(keyword) ||
 
-            product.category.toLowerCase().includes(keyword);
 
-        const matchBrand =
+if(totalPagesText){
 
-            brand === "All" ||
-
-            product.brand === brand;
-
-        return matchKeyword && matchBrand;
-
-    });
-
-    displayProducts(filtered);
+totalPagesText.innerHTML=totalPages;
 
 }
+
+
+if(currentPageText){
+
+currentPageText.innerHTML=currentPage;
+
+}
+
+
+}
+
+
+
+if(nextPage){
+
+
+nextPage.addEventListener("click",()=>{
+
+
+let totalPages =
+
+Math.ceil(filteredProducts.length/productsPerPage);
+
+
+
+if(currentPage < totalPages){
+
+currentPage++;
+
+displayProducts();
+
+}
+
+
+});
+
+
+}
+
+
+
+if(prevPage){
+
+
+prevPage.addEventListener("click",()=>{
+
+
+if(currentPage>1){
+
+currentPage--;
+
+displayProducts();
+
+}
+
+
+});
+
+
+}
+
+
 
 /*==============================
 START
 ==============================*/
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    loadProducts();
+document.addEventListener("DOMContentLoaded",()=>{
+
+loadProducts();
 
 });
