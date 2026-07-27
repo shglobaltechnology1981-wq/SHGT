@@ -1,450 +1,268 @@
-/*========================================
+/* ==========================
 SH GLOBAL TECHNOLOGY
-FINAL WEBSITE CSS
-========================================*/
-
+FINAL CSS
+========================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,sans-serif;
 }
-
 
 body{
-
     background:#f5f5f5;
     color:#333;
-    line-height:1.6;
-
 }
 
-
-/*================ HEADER ================*/
-
+/* Header */
 
 header{
-
-    background:#0b3d91;
-    color:white;
-    padding:15px 5%;
-
+    background:#003366;
+    color:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    flex-wrap:wrap;
-
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-
-
-.logo-area{
-
+.logo{
     display:flex;
     align-items:center;
-    gap:15px;
-
 }
 
-
-.logo-area img{
-
-    width:80px;
-    height:auto;
-
+.logo img{
+    width:60px;
+    margin-right:10px;
 }
 
-
-.logo-area h1{
-
+.logo h2{
     font-size:22px;
-
 }
 
-
-
-
+nav{
+    display:flex;
+    gap:20px;
+}
 
 nav a{
-
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin:0 10px;
     font-weight:bold;
-
 }
-
 
 nav a:hover{
-
     color:#ffd700;
-
 }
 
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
 
+/* Slider */
 
-/*================ HERO ================*/
+.slider{
+    position:relative;
+    width:100%;
+    height:450px;
+    overflow:hidden;
+}
 
+.slide{
+    display:none;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
 
-.hero{
+.slide.active{
+    display:block;
+}
 
-    min-height:450px;
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
-    background:
+.caption{
+    position:absolute;
+    bottom:50px;
+    left:50px;
+    color:#fff;
+    background:rgba(0,0,0,.5);
+    padding:20px;
+    border-radius:8px;
+}
 
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
-    ),
+.caption h1{
+    font-size:40px;
+}
 
-    url("../images/machines/banner.jpg");
+.caption p{
+    font-size:18px;
+}
 
+/* Search */
 
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
+.search-area{
     text-align:center;
-
-    color:white;
-
+    padding:30px;
 }
 
-
-
-.hero-content h2{
-
-    font-size:42px;
-    margin-bottom:20px;
-
+#searchBox{
+    width:80%;
+    max-width:500px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:30px;
+    font-size:16px;
 }
 
+/* Products */
 
+#products{
+    padding:50px 20px;
+}
 
-.hero-content p{
-
-    font-size:20px;
+#products h2{
+    text-align:center;
     margin-bottom:30px;
-
 }
-
-
-
-
-.btn{
-
-    display:inline-block;
-
-    background:#007bff;
-
-    color:white;
-
-    padding:12px 25px;
-
-    margin:5px;
-
-    border-radius:5px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-}
-
-
-.btn:hover{
-
-    background:#0056b3;
-
-}
-
-
-.whatsapp{
-
-    background:#25D366;
-
-}
-
-
-.whatsapp:hover{
-
-    background:#128C7E;
-
-}
-
-
-
-/*================ SECTION ================*/
-
-
-section{
-
-    padding:50px 5%;
-
-}
-
-
-
-section h2{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-    color:#0b3d91;
-
-}
-
-
-
-
-
-/*================ ABOUT ================*/
-
-
-.about{
-
-    background:white;
-
-    text-align:center;
-
-}
-
-
-
-
-/*================ PRODUCTS ================*/
-
 
 #product-container{
-
-
     display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(250px,1fr));
-
-
-    gap:25px;
-
-
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
 }
-
-
-
 
 .product-card{
-
-
-    background:white;
-
+    background:#fff;
     border-radius:10px;
-
-    padding:20px;
-
-    text-align:center;
-
+    overflow:hidden;
     box-shadow:0 3px 10px rgba(0,0,0,.15);
-
+    text-align:center;
 }
-
-
 
 .product-card img{
-
-
     width:100%;
-
-    height:200px;
-
+    height:220px;
     object-fit:contain;
-
+    background:#fff;
 }
-
-
 
 .product-card h3{
-
-    color:#0b3d91;
-
-    margin:15px 0;
-
+    padding:15px 10px;
 }
 
-
+.product-card p{
+    padding:0 15px 15px;
+}
 
 .product-card a{
-
     display:inline-block;
-
-    background:#28a745;
-
-    color:white;
-
+    margin:15px;
     padding:10px 20px;
-
-    border-radius:5px;
-
+    background:#007bff;
+    color:#fff;
     text-decoration:none;
-
+    border-radius:5px;
 }
-
-
-
 
 .product-card a:hover{
-
-    background:#1e7e34;
-
+    background:#0056b3;
 }
 
+/* About */
 
-
-
-/*================ SERVICE ================*/
-
-
-.service{
-
-    background:#ffffff;
-
-}
-
-
-
-.service-box{
-
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(250px,1fr));
-
-
-    gap:20px;
-
-
-}
-
-
-
-.service-box div{
-
-
-    background:#f1f1f1;
-
-    padding:25px;
-
+#about{
+    background:#fff;
+    padding:60px 20px;
     text-align:center;
-
-    border-radius:10px;
-
-
 }
 
-
-
-
-
-/*================ CONTACT ================*/
-
-
-.contact{
-
-    background:#0b3d91;
-
-    color:white;
-
-    text-align:center;
-
+#about h2{
+    margin-bottom:20px;
 }
 
+/* WhatsApp */
 
-
-.contact h2{
-
-    color:white;
-
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    text-decoration:none;
 }
 
-
-
-
-
-/*================ FOOTER ================*/
-
+/* Footer */
 
 footer{
-
-    background:#111;
-
-    color:white;
-
+    background:#003366;
+    color:#fff;
     text-align:center;
-
     padding:20px;
-
 }
 
-
-
-/*================ MOBILE ================*/
-
+/* Mobile */
 
 @media(max-width:768px){
 
-
-header{
-
-    flex-direction:column;
-
-}
-
-
-
-.logo-area h1{
-
-    font-size:18px;
-
-}
-
-
 nav{
-
-    margin-top:15px;
-
+    display:none;
+    position:absolute;
+    top:75px;
+    right:0;
+    width:220px;
+    background:#003366;
+    flex-direction:column;
 }
-
 
 nav a{
-
-    display:inline-block;
-
-    margin:5px;
-
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,.2);
 }
 
-
-.hero-content h2{
-
-    font-size:28px;
-
+nav.show{
+    display:flex;
 }
 
-
-.hero-content p{
-
-    font-size:16px;
-
+.menu-btn{
+    display:block;
 }
 
+.logo h2{
+    font-size:18px;
+}
 
+.slider{
+    height:250px;
+}
+
+.caption{
+    left:20px;
+    bottom:20px;
+}
+
+.caption h1{
+    font-size:22px;
+}
+
+.caption p{
+    font-size:14px;
+}
 
 }
