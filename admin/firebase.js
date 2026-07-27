@@ -1,28 +1,59 @@
-// ==============================
-// SHGT Firebase Configuration
-// ==============================
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+import {
+getAuth,
+signInWithEmailAndPassword,
+signOut
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDRE2OHU5p1Kwx0-rydYjDx2wk9PJ-mtQo",
-  authDomain: "global-f7363.firebaseapp.com",
-  projectId: "global-f7363",
-storageBucket: "global-f7363.appspot.com",
-  messagingSenderId: "35836716641",
-  appId: "1:35836716641:web:7b7728fd2950c6f9b8ec20"
+
+apiKey: "YOUR_API_KEY",
+
+authDomain: "YOUR_PROJECT.firebaseapp.com",
+
+projectId: "YOUR_PROJECT_ID",
+
+storageBucket: "YOUR_PROJECT.appspot.com",
+
+messagingSenderId: "YOUR_SENDER_ID",
+
+appId: "YOUR_APP_ID"
+
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Services
 const auth = getAuth(app);
-const db = getFirestore(app);
-const storage = getStorage(app);
 
-// Export
-export { auth, db, storage };
+window.login = function(){
+
+const email=document.getElementById("email").value;
+
+const password=document.getElementById("password").value;
+
+signInWithEmailAndPassword(auth,email,password)
+
+.then(()=>{
+
+location.href="dashboard.html";
+
+})
+
+.catch(error=>{
+
+alert(error.message);
+
+});
+
+}
+
+window.logout=function(){
+
+signOut(auth).then(()=>{
+
+location.href="login.html";
+
+});
+
+}
