@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHGT - Add Product</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    max-width:800px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:25px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+textarea{
+    height:120px;
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#003366;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055aa;
+}
+
+.preview{
+    width:200px;
+    display:block;
+    margin:15px auto;
+    border-radius:8px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Add New Product</h2>
+
+<input type="text" id="name" placeholder="Product Name">
+
+<input type="text" id="brand" placeholder="Brand">
+
+<input type="text" id="model" placeholder="Model">
+
+<input type="text" id="price" placeholder="Price">
+
+<textarea id="description" placeholder="Description"></textarea>
+
+<input type="file" id="image" accept="image/*">
+
+<img id="preview" class="preview" style="display:none;">
+
+<button onclick="saveProduct()">Save Product</button>
+
+</div>
+
+<script>
+const image=document.getElementById("image");
+
+image.onchange=function(){
+
+const file=image.files[0];
+
+if(file){
+
+document.getElementById("preview").src=URL.createObjectURL(file);
+
+document.getElementById("preview").style.display="block";
+
+}
+
+}
+
+function saveProduct(){
+
+const product={
+
+name:document.getElementById("name").value,
+
+brand:document.getElementById("brand").value,
+
+model:document.getElementById("model").value,
+
+price:document.getElementById("price").value,
+
+description:document.getElementById("description").value
+
+};
+
+console.log(product);
+
+alert("Product Ready to Save");
+
+}
+</script>
+
+</body>
+</html>
