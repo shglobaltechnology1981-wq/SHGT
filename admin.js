@@ -1,9 +1,9 @@
 // =============================
 // SHGT ADMIN PANEL
 // =============================
-console.log("SHGT Admin Panel Loaded");
 import { auth, db, storage } from "./firebase.js";
 
+console.log("SHGT Admin Panel Loaded");
 import {
     addDoc,
     collection
