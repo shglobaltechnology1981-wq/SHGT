@@ -1,96 +1,102 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
-Professional Website JavaScript
+JavaScript
 ==========================================*/
 
 let allProducts = [];
 
 const productContainer = document.getElementById("product-container");
 
-/*================ LOAD PRODUCTS ================*/
-
 if (productContainer) {
 
     fetch("products.json")
         .then(response => response.json())
-        .then(products => {
+        .then(data => {
 
-            allProducts = products;
+            allProducts = data;
             displayProducts(allProducts);
 
         })
         .catch(error => {
 
-            console.error("Product Loading Error:", error);
+            console.error(error);
 
-            productContainer.innerHTML = `
-                <h2 style="text-align:center;color:red;">
-                    Product Loading Failed
-                </h2>
-            `;
+            productContainer.innerHTML =
+                "<h2>Product Loading Failed</h2>";
 
         });
 
 }
 
+function displayProducts(products) {
 
-/*================ DISPLAY PRODUCTS ================*/
+    productContainer.innerHTML = "";
 
-productContainer.innerHTML += `
+    if (products.length === 0) {
 
-<div class="product-card">
+        productContainer.innerHTML =
+            "<h2>No Product Found</h2>";
 
-<img src="${product.image}" alt="${product.name}">
+        return;
+    }
 
-<h3>${product.name}</h3>
+    products.forEach(product => {
 
-<p><strong>Brand:</strong> ${product.brand}</p>
+        productContainer.innerHTML += `
 
-<p><strong>Model:</strong> ${product.model}</p>
+        <div class="product-card">
 
-<p>${product.description}</p>
+            <img src="${product.image}" alt="${product.name}">
 
-<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${encodeURIComponent(product.name)}"
-target="_blank"
-class="whatsapp-btn">
+            <h3>${product.name}</h3>
 
-WhatsApp Inquiry
+            <p><b>Brand:</b> ${product.brand}</p>
 
-</a>
+            <p><b>Model:</b> ${product.model}</p>
 
-</div>
+            <p>${product.description}</p>
 
-`;
-/*================ SEARCH =================*/
+            <a href="https://wa.me/8801621007916?text=Hello, I need information about ${encodeURIComponent(product.name)}"
+            target="_blank"
+            class="whatsapp-btn">
 
-const searchBox = document.getElementById("search");
+            WhatsApp Inquiry
 
-if (searchBox) {
+            </a>
 
-    searchBox.addEventListener("keyup", function () {
+        </div>
 
-        const searchText = this.value.trim().toLowerCase();
-
-        const filteredProducts = allProducts.filter(product => {
-
-            return (
-                product.name.toLowerCase().includes(searchText) ||
-                product.brand.toLowerCase().includes(searchText) ||
-                product.model.toLowerCase().includes(searchText) ||
-                product.category.toLowerCase().includes(searchText) ||
-                product.description.toLowerCase().includes(searchText)
-            );
-
-        });
-
-        displayProducts(filteredProducts);
+        `;
 
     });
 
 }
 
+/*========== Search ==========*/
 
-/*================ BRAND FILTER =================*/
+const search = document.getElementById("search");
+
+if (search) {
+
+    search.addEventListener("keyup", function () {
+
+        const text = this.value.toLowerCase();
+
+        const result = allProducts.filter(product =>
+
+            product.name.toLowerCase().includes(text) ||
+            product.brand.toLowerCase().includes(text) ||
+            product.model.toLowerCase().includes(text)
+
+        );
+
+        displayProducts(result);
+
+    });
+
+}
+
+/*========== Brand Filter ==========*/
 
 const brandFilter = document.getElementById("brandFilter");
 
@@ -98,31 +104,20 @@ if (brandFilter) {
 
     brandFilter.addEventListener("change", function () {
 
-        const selectedBrand = this.value;
-
-        if (selectedBrand === "all") {
+        if (this.value === "all") {
 
             displayProducts(allProducts);
 
         } else {
 
-            const filteredProducts = allProducts.filter(product =>
-                product.brand === selectedBrand
+            const result = allProducts.filter(product =>
+                product.brand === this.value
             );
 
-            displayProducts(filteredProducts);
+            displayProducts(result);
 
         }
 
     });
 
 }
-
-
-/*================ PAGE LOADED =================*/
-
-window.addEventListener("load", () => {
-
-    console.log("SH Global Technology Website Loaded Successfully");
-
-});
