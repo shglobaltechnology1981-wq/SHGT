@@ -1,62 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SHGT Dashboard</title>
+<title>SHGT Admin Dashboard</title>
 
 <link rel="stylesheet" href="admin.css">
 
-</head>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+}
 
+header{
+background:#003366;
+color:#fff;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin:5px;
+}
+
+.save{
+background:#28a745;
+color:#fff;
+}
+
+.logout{
+background:#dc3545;
+color:#fff;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th,table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:left;
+}
+
+table th{
+background:#003366;
+color:#fff;
+}
+</style>
+
+</head>
 <body>
 
 <header>
 
-<h1>SH Global Technology Admin</h1>
+<h2>SH Global Technology Admin</h2>
 
-<button onclick="logout()">
-
+<button class="logout" onclick="logout()">
 Logout
-
 </button>
 
 </header>
 
-<div class="dashboard">
+<div class="container">
 
-<h2>Dashboard</h2>
+<div class="card">
 
-<p>
+<h3>Add Product</h3>
 
-Welcome Admin
+<input type="text" id="name" placeholder="Product Name">
 
-</p>
+<input type="text" id="brand" placeholder="Brand">
 
-<hr>
+<input type="text" id="image" placeholder="Image URL">
 
-<h3>
+<textarea id="description" placeholder="Description"></textarea>
 
-Manage Products
-
-</h3>
-
-<p>
-
-Edit data/products.json to add products.
-
-</p>
+<button class="save" onclick="addProduct()">
+Save Product
+</button>
 
 </div>
 
-<script type="module" src="firebase.js"></script>
-<script type="module" src="firebase.js"></script>
-<script src="admin.js"></script>
-<script type="module" src="admin.js"></script>
-</body>
+<div class="card">
 
+<h3>Product List</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Brand</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="productTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
 </html>
