@@ -1,190 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gallery</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | SH Global Technology</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.gallery{
+
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+
+}
+
+.gallery h1{
+
+text-align:center;
+margin-bottom:30px;
+color:#003366;
+
+}
+
+.gallery-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+.lightbox{
+
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+
+}
+
+.lightbox img{
+
+max-width:90%;
+max-height:90%;
+
+}
+
+.close{
+
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:#fff;
+cursor:pointer;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-<h1 style="text-align:center;">Machine Gallery</h1>
+<header>
 
-<div class="products">
+<div class="logo">
 
-<div class="product">
-<img src="juki-single-needle.jpg">
-<p>JUKI DDL-900</p>
-</div>
+<img src="images/logo.png" width="60">
 
-<div class="product">
-<img src="juki-overlock.jpg">
-<p>JUKI Overlock</p>
-</div>
-
-<div class="product">
-<img src="juki-lbh1790.jpg">
-<p>JUKI LBH-1790</p>
-</div>
+<h2>SH GLOBAL TECHNOLOGY</h2>
 
 </div>
 
-</body>
-</html>
-<div class="gallery-item">
+<nav>
 
-<img src="images/gallery/gallery5.jpg" alt="Bartack Machine">
+<a href="index.html">Home</a>
 
-<h3>JUKI Bartack Machine</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery6.jpg" alt="Button Attach Machine">
-
-<h3>Button Attach Machine</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery7.jpg" alt="Machine Installation">
-
-<h3>Machine Installation</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery8.jpg" alt="Machine Maintenance">
-
-<h3>Machine Maintenance</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery9.jpg" alt="Factory Service">
-
-<h3>Factory Service Support</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery10.jpg" alt="Spare Parts">
-
-<h3>Original Spare Parts</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery11.jpg" alt="Technical Support">
-
-<h3>Technical Support</h3>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery/gallery12.jpg" alt="Customer Factory">
-
-<h3>Customer Factory Visit</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about">
-
-<h2>Gallery Information</h2>
-
-<p>
-
-Our gallery showcases industrial sewing machines, genuine spare parts,
-machine installations, maintenance work, technical support and factory service activities carried out by SH Global Technology.
-
-</p>
-
-<br>
-
-<a class="catalogue-btn"
-href="Pdf/SHGT-Catalogue.pdf"
-target="_blank">
-
-View Company Catalogue
-
-</a>
-
-<a class="whatsapp-btn"
-href="https://wa.me/8801621007916?text=Hello SH Global Technology, I would like more information."
-target="_blank">
-
-WhatsApp Inquiry
-
-</a>
-
-</section>
-<section class="contact">
-
-<h2>Contact SH Global Technology</h2>
-
-<p><strong>Cell:</strong> +8801621007917</p>
-
-<p><strong>WhatsApp:</strong> +8801621007916</p>
-
-<p><strong>Email:</strong> shglobaltechnology@gmail.com</p>
-
-<p><strong>Address:</strong> Uttara House Building, Near Public College Rail Gate, Dhaka, Bangladesh</p>
-
-<br>
-
-<a class="whatsapp-btn"
-href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need more information."
-target="_blank">
-
-Contact on WhatsApp
-
-</a>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<h3>SH GLOBAL TECHNOLOGY</h3>
-
-<p>
-Industrial Sewing Machine | Spare Parts | Maintenance Service
-</p>
-
-<p>
-© 2026 SH Global Technology. All Rights Reserved.
-</p>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a> |
-
-<a href="catalogue.html">Catalogue</a> |
-
-<a href="service.html">Services</a> |
-
-<a href="gallery.html">Gallery</a> |
+<a href="gallery.html">Gallery</a>
 
 <a href="contact.html">Contact</a>
 
-</div>
+</nav>
+
+</header>
+
+<section class="gallery">
+
+<h1>Machine Gallery</h1>
+
+<div class="gallery-grid">
+
+<img src="images/gallery/gallery1.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery2.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery3.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery4.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery5.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery6.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery7.jpg" onclick="showImage(this.src)">
+<img src="images/gallery/gallery8.jpg" onclick="showImage(this.src)">
 
 </div>
 
-</footer>
+</section>
 
-<script src="script.js"></script>
+<div class="lightbox" id="lightbox">
+
+<span class="close" onclick="closeImage()">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<script>
+
+function showImage(src){
+
+document.getElementById("lightbox").style.display="flex";
+
+document.getElementById("lightbox-img").src=src;
+
+}
+
+function closeImage(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+</script>
 
 </body>
 </html>
