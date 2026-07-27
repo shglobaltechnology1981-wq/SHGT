@@ -1,123 +1,228 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
-JavaScript
+Home Featured Products JavaScript
+Version 1.0
 ==========================================*/
 
-let allProducts = [];
+"use strict";
 
-const productContainer = document.getElementById("product-container");
 
-if (productContainer) {
+let homeProducts = [];
 
-    fetch("products.json")
-        .then(response => response.json())
-        .then(data => {
 
-            allProducts = data;
-            displayProducts(allProducts);
 
-        })
-        .catch(error => {
+/*==============================
+LOAD HOME PRODUCTS
+==============================*/
 
-            console.error(error);
 
-            productContainer.innerHTML =
-                "<h2>Product Loading Failed</h2>";
+fetch("products.json")
 
-        });
+.then(response => response.json())
 
-}
+.then(products => {
 
-function displayProducts(products) {
 
-    productContainer.innerHTML = "";
+    homeProducts = products;
 
-    if (products.length === 0) {
 
-        productContainer.innerHTML =
-            "<h2>No Product Found</h2>";
+    displayHomeProducts(
+        products.slice(0,6)
+    );
 
-        return;
+
+})
+
+
+.catch(error => {
+
+
+    console.log("Products Load Error:", error);
+
+
+    const container = document.getElementById("product-list");
+
+
+    if(container){
+
+        container.innerHTML =
+
+        "<h2>Products failed to load.</h2>";
+
     }
 
-    products.forEach(product => {
 
-        productContainer.innerHTML += `
+});
 
-        <div class="product-card">
 
-            <img src="${product.image}" alt="${product.name}">
 
-            <h3>${product.name}</h3>
 
-            <p><b>Brand:</b> ${product.brand}</p>
 
-            <p><b>Model:</b> ${product.model}</p>
+/*==============================
+DISPLAY PRODUCTS
+==============================*/
 
-            <p>${product.description}</p>
 
-            <a href="https://wa.me/8801621007916?text=Hello, I need information about ${encodeURIComponent(product.name)}"
-            target="_blank"
-            class="whatsapp-btn">
+function displayHomeProducts(products){
 
-            WhatsApp Inquiry
 
-            </a>
+const container = document.getElementById("product-list");
 
-        </div>
 
-        `;
+if(!container) return;
 
-    });
+
+
+container.innerHTML = "";
+
+
+
+products.forEach(product => {
+
+
+container.innerHTML += `
+
+
+<div class="product-card">
+
+
+<img src="${product.image}"
+
+alt="${product.name}"
+
+onerror="this.src='logo.png'">
+
+
+
+<div class="product-info">
+
+
+<span class="product-brand">
+
+${product.brand}
+
+</span>
+
+
+<h3>
+
+${product.name}
+
+</h3>
+
+
+
+<p>
+
+${product.description}
+
+</p>
+
+
+
+
+<a href="product-details.html?id=${product.id}"
+
+class="btn">
+
+View Details
+
+</a>
+
+
+
+
+<a href="https://wa.me/8801621007916?text=${encodeURIComponent("I need information about " + product.name)}"
+
+target="_blank"
+
+class="btn btn-success">
+
+WhatsApp
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+});
+
 
 }
 
-/*========== Search ==========*/
 
-const search = document.getElementById("search");
 
-if (search) {
 
-    search.addEventListener("keyup", function () {
 
-        const text = this.value.toLowerCase();
+/*==============================
+VIEW ALL PRODUCTS
+==============================*/
 
-        const result = allProducts.filter(product =>
 
-            product.name.toLowerCase().includes(text) ||
-            product.brand.toLowerCase().includes(text) ||
-            product.model.toLowerCase().includes(text)
+const viewAllBtn = document.getElementById("viewAllProducts");
 
-        );
 
-        displayProducts(result);
+if(viewAllBtn){
 
-    });
+
+viewAllBtn.addEventListener("click",()=>{
+
+
+window.location.href="products.html";
+
+
+});
+
 
 }
+/*==========================================
+SERVICE DETAILS BUTTON
+===========================================*/
 
-/*========== Brand Filter ==========*/
+const serviceButtons = document.querySelectorAll(".service-btn");
 
-const brandFilter = document.getElementById("brandFilter");
 
-if (brandFilter) {
+serviceButtons.forEach(button => {
 
-    brandFilter.addEventListener("change", function () {
 
-        if (this.value === "all") {
+    button.addEventListener("click", function(){
 
-            displayProducts(allProducts);
 
-        } else {
+        const details = this.nextElementSibling;
 
-            const result = allProducts.filter(product =>
-                product.brand === this.value
-            );
 
-            displayProducts(result);
+        if(details.style.display === "block"){
+
+
+            details.style.display = "none";
+
+
+            this.innerHTML = "View Details";
+
 
         }
 
+        else{
+
+
+            details.style.display = "block";
+
+
+            this.innerHTML = "Hide Details";
+
+
+        }
+
+
     });
 
-}
+
+});
