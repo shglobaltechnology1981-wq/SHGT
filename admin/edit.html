@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Edit Product</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+padding:30px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px 20px;
+background:#003366;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Edit Product</h2>
+
+<input id="name" placeholder="Product Name">
+
+<input id="brand" placeholder="Brand">
+
+<input id="model" placeholder="Model">
+
+<input id="price" placeholder="Price">
+
+<textarea id="description"></textarea>
+
+<button onclick="updateProduct()">
+Update Product
+</button>
+
+</div>
+
+<script type="module">
+
+import { db } from "./firebase.js";
+
+import {
+doc,
+getDoc,
+updateDoc
+
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+const id=new URLSearchParams(location.search).get("id");
+
+async function loadProduct(){
+
+const snap=await getDoc(doc(db,"products",id));
+
+const p=snap.data();
+
+name.value=p.name;
+brand.value=p.brand;
+model.value=p.model;
+price.value=p.price;
+description.value=p.description;
+
+}
+
+window.updateProduct=async()=>{
+
+await updateDoc(doc(db,"products",id),{
+
+name:name.value,
+brand:brand.value,
+model:model.value,
+price:price.value,
+description:description.value
+
+});
+
+alert("Updated Successfully");
+
+location="products.html";
+
+}
+
+loadProduct();
+
+</script>
+
+</body>
+</html>
