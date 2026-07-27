@@ -64,7 +64,9 @@ window.saveProduct = async function () {
     });
 
     alert("Product Uploaded Successfully");
-
+    
+    alert("Upload Failed");
+   
     document.querySelector("form")?.reset();
 
     if (preview) {
