@@ -761,3 +761,194 @@ JAVASCRIPT
 
 </body>
 </html>
+<div class="product-specification">
+
+<h3>Machine Specifications</h3>
+
+<table class="spec-table">
+
+<tr>
+<th>Brand</th>
+<td id="specBrand">-</td>
+</tr>
+
+<tr>
+<th>Model</th>
+<td id="specModel">-</td>
+</tr>
+
+<tr>
+<th>Category</th>
+<td id="specCategory">-</td>
+</tr>
+
+<tr>
+<th>Condition</th>
+<td>Brand New</td>
+</tr>
+
+<tr>
+<th>Warranty</th>
+<td>Service Support Available</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="Pdf/SHGT-Catalogue.pdf"
+target="_blank"
+class="catalogue-btn">
+
+Download Catalogue
+
+</a>
+
+<a href="quotation.html"
+class="catalogue-btn">
+
+Request Quotation
+
+</a>
+
+<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about this machine."
+target="_blank"
+class="whatsapp-btn">
+
+WhatsApp Inquiry
+
+</a>
+
+<br><br>
+
+<a href="index.html#machinery"
+class="catalogue-btn">
+
+← Back to Products
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>Why Choose SH Global Technology?</h2>
+
+<ul>
+
+<li>✔ Genuine Industrial Sewing Machines</li>
+
+<li>✔ Original Spare Parts</li>
+
+<li>✔ Professional Installation</li>
+
+<li>✔ Preventive Maintenance</li>
+
+<li>✔ Technical Support</li>
+
+<li>✔ Fast Delivery Across Bangladesh</li>
+
+</ul>
+
+</section>
+<section class="contact">
+
+<h2>Contact SH Global Technology</h2>
+
+<p><strong>📞 Mobile:</strong> +8801621007917</p>
+
+<p><strong>💬 WhatsApp:</strong> +8801621007916</p>
+
+<p><strong>📧 Email:</strong> shglobaltechnology@gmail.com</p>
+
+<p><strong>📍 Address:</strong><br>
+Uttara House Building,<br>
+Near Public College Rail Gate,<br>
+Dhaka, Bangladesh
+</p>
+
+<br>
+
+<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about this machine."
+target="_blank"
+class="whatsapp-btn">
+
+Contact on WhatsApp
+
+</a>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<h3>SH GLOBAL TECHNOLOGY</h3>
+
+<p>
+Industrial Sewing Machine | Spare Parts | Maintenance Service
+</p>
+
+<p>
+© 2026 SH Global Technology. All Rights Reserved.
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a> |
+
+<a href="catalogue.html">Catalogue</a> |
+
+<a href="service.html">Services</a> |
+
+<a href="gallery.html">Gallery</a> |
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+/* Read product ID from URL */
+const params = new URLSearchParams(window.location.search);
+const productId = parseInt(params.get("id"));
+
+fetch("products.json")
+.then(response => response.json())
+.then(products => {
+
+const product = products.find(p => p.id === productId);
+
+if(product){
+
+document.getElementById("productImage").src = product.image;
+
+document.getElementById("productName").textContent = product.name;
+
+document.getElementById("productBrand").textContent = product.brand;
+document.getElementById("productModel").textContent = product.model;
+document.getElementById("productCategory").textContent = product.category;
+document.getElementById("productDescription").textContent = product.description;
+
+document.getElementById("specBrand").textContent = product.brand;
+document.getElementById("specModel").textContent = product.model;
+document.getElementById("specCategory").textContent = product.category;
+
+}
+
+});
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
