@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHGT Admin Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:240px;
+    height:100vh;
+    background:#003366;
+    color:#fff;
+}
+
+.sidebar h2{
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#0055aa;
+}
+
+.main{
+    margin-left:240px;
+    padding:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#28a745;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#003366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#0055aa;
+}
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>SHGT ADMIN</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+
+<a href="upload.html">➕ Add Product</a>
+
+<a href="products.html">📦 Products</a>
+
+<a href="#">✏ Edit Product</a>
+
+<a href="#">🗑 Delete Product</a>
+
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Products</h3>
+<p id="totalProducts">0</p>
+</div>
+
+<div class="card">
+<h3>Add Product</h3>
+<a href="upload.html" class="btn">Open</a>
+</div>
+
+<div class="card">
+<h3>Manage Products</h3>
+<a href="products.html" class="btn">Open</a>
+</div>
+
+<div class="card">
+<h3>Website</h3>
+<a href="../index.html" class="btn">View Site</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById("totalProducts").innerHTML="0";
+</script>
+
+</body>
+</html>
