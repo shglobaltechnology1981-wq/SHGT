@@ -5,9 +5,8 @@
     "brand": "JUKI",
     "model": "DDL-9000C",
     "name": "JUKI DDL-9000C",
-    "description": "Computerized High Speed Single Needle Lock Stitch Machine",
-    "image": "images/machines/juki-ddl9000c.jpg",
-    
+    "description": "High Speed Single Needle Lock Stitch Machine",
+    "image": "images/machines/juki-ddl9000c.jpg"
   },
   {
     "id": 2,
@@ -15,9 +14,8 @@
     "brand": "JUKI",
     "model": "DDL-8700",
     "name": "JUKI DDL-8700",
-    "description": "High Speed Single Needle Lock Stitch Machine",
-    "image": "images/machines/juki-ddl8700.jpg",
-    
+    "description": "High Speed Industrial Lock Stitch Machine",
+    "image": "images/machines/juki-ddl8700.jpg"
   },
   {
     "id": 3,
@@ -26,28 +24,25 @@
     "model": "MO-6716S",
     "name": "JUKI MO-6716S",
     "description": "High Speed Overlock Machine",
-    "image": "images/machines/juki-mo6716s.jpg",
-    
+    "image": "images/machines/juki-mo6716s.jpg"
   },
   {
     "id": 4,
-    "category": "Button Hole",
+    "category": "Overlock",
     "brand": "JUKI",
-    "model": "LBH-1790A",
-    "name": "JUKI LBH-1790A",
-    "description": "Computerized Button Hole Machine",
-    "image": "images/machines/juki-lbh1790a.jpg",
-    
+    "model": "MO-6814S",
+    "name": "JUKI MO-6814S",
+    "description": "Industrial Overlock Machine",
+    "image": "images/machines/juki-mo6814s.jpg"
   },
   {
     "id": 5,
-    "category": "Button Attach",
+    "category": "Overlock",
     "brand": "JUKI",
-    "model": "MB-1377",
-    "name": "JUKI MB-1377",
-    "description": "Button Sewing Machine",
-    "image": "images/machines/juki-mb1377.jpg",
-    
+    "model": "MO-6916S",
+    "name": "JUKI MO-6916S",
+    "description": "Industrial Overlock Machine",
+    "image": "images/machines/JUKI-MO6916S-Main-1.webp"
   },
   {
     "id": 6,
@@ -55,448 +50,106 @@
     "brand": "JUKI",
     "model": "LK-1900BN",
     "name": "JUKI LK-1900BN",
-    "description": "Computerized Bartacking Machine",
-    "image": "images/machines/juki-lk1900bn.jpg",
-   
+    "description": "Computerized Bartack Machine",
+    "image": "images/machines/lk1900bn_1.jpg"
   },
   {
     "id": 7,
-    "category": "Brother",
-    "brand": "Brother",
-    "model": "S-7300A",
-    "name": "Brother S-7300A",
-    "description": "Direct Drive Lock Stitch Machine",
-    "image": "images/machines/brother-s7300a.jpg",
-    
+    "category": "Button Hole",
+    "brand": "JUKI",
+    "model": "LBH-1790",
+    "name": "JUKI LBH-1790",
+    "description": "Computerized Button Hole Machine",
+    "image": "images/machines/juki-lbh1790.jpg"
   },
   {
     "id": 8,
-    "category": "Brother",
-    "brand": "Brother",
-    "model": "HE-800C",
-    "name": "Brother HE-800C",
-    "description": "Electronic Button Hole Machine",
-    "image": "images/machines/brother-he800c.jpg",
-   
+    "category": "Button Hole",
+    "brand": "JUKI",
+    "model": "LBH-1790A",
+    "name": "JUKI LBH-1790A",
+    "description": "Automatic Button Hole Machine",
+    "image": "images/machines/juki-lbh1790a.jpg"
   },
   {
     "id": 9,
-    "category": "Pegasus",
-    "brand": "Pegasus",
-    "model": "M700",
-    "name": "Pegasus M700",
-    "description": "Industrial Overlock Machine",
-    "image": "images/machines/pegasus-m700.jpg",
-   
+    "category": "Button Attach",
+    "brand": "JUKI",
+    "model": "MB-1377",
+    "name": "JUKI MB-1377",
+    "description": "Industrial Button Sewing Machine",
+    "image": "images/machines/juki-mb1377.jpg"
   },
   {
     "id": 10,
-    "category": "Siruba",
-    "brand": "Siruba",
+    "category": "Pattern Sewing",
+    "brand": "JUKI",
+    "model": "AMS-221EN",
+    "name": "JUKI AMS-221EN",
+    "description": "Computer Controlled Pattern Sewing Machine",
+    "image": "images/machines/juki-ams221en.jpg"
+  },
+  {
+    "id": 11,
+    "category": "Lock Stitch",
+    "brand": "JACK",
+    "model": "C5",
+    "name": "JACK C5",
+    "description": "Direct Drive Lock Stitch Machine",
+    "image": "images/machines/jack-c5.jpg"
+  },
+  {
+    "id": 12,
+    "category": "Overlock",
+    "brand": "PEGASUS",
+    "model": "M700",
+    "name": "PEGASUS M700",
+    "description": "Industrial Overlock Machine",
+    "image": "images/machines/pegasus-m700.jpg"
+  },
+  {
+    "id": 13,
+    "category": "Flat Lock",
+    "brand": "PEGASUS",
+    "model": "W562",
+    "name": "PEGASUS W562",
+    "description": "Industrial Flat Lock Machine",
+    "image": "images/machines/pegasus-w562.jpg"
+  },
+  {
+    "id": 14,
+    "category": "Overlock",
+    "brand": "SIRUBA",
     "model": "747K",
-    "name": "Siruba 747K",
-    "description": "High Speed Overlock Machine",
-    "image": "images/machines/siruba-747k.jpg",
-    
+    "name": "SIRUBA 747K",
+    "description": "Industrial Overlock Machine",
+    "image": "images/machines/siruba-747k.jpg"
+  },
+  {
+    "id": 15,
+    "category": "Flat Lock",
+    "brand": "SIRUBA",
+    "model": "F007KD",
+    "name": "SIRUBA F007KD",
+    "description": "Industrial Flat Lock Machine",
+    "image": "images/machines/siruba-f007kd.jpg"
+  },
+  {
+    "id": 16,
+    "category": "Flat Lock",
+    "brand": "YAMATO",
+    "model": "CM364",
+    "name": "YAMATO CM364",
+    "description": "Industrial Flat Lock Machine",
+    "image": "images/machines/yamato-cm364.jpg"
+  },
+  {
+    "id": 17,
+    "category": "Feed Off The Arm",
+    "brand": "YAMATO",
+    "model": "FD62G",
+    "name": "YAMATO FD62G",
+    "description": "Feed Off The Arm Sewing Machine",
+    "image": "images/machines/yamato-fd62g.jpg"
   }
-,
-{
-  "id": 11,
-  "category": "Interlock",
-  "brand": "Kansai Special",
-  "model": "FX-4404",
-  "name": "Kansai Special FX-4404",
-  "description": "High Speed Flat Seamer Machine",
-  "image": "images/machines/kansai-fx4404.jpg",
-  "catalogue": "Pdf/KANSAI-FX4404.pdf"
-},
-{
-  "id": 12,
-  "category": "Interlock",
-  "brand": "Yamato",
-  "model": "AZ8000",
-  "name": "Yamato AZ8000",
-  "description": "Cylinder Bed Interlock Machine",
-  "image": "images/machines/yamato-az8000.jpg",
- 
-},
-{
-  "id": 13,
-  "category": "Lock Stitch",
-  "brand": "Jack",
-  "model": "A4B",
-  "name": "Jack A4B",
-  "description": "Computerized Direct Drive Lock Stitch Machine",
-  "image": "images/machines/jack-a4b.jpg",
-  "catalogue": "Pdf/JACK-A4B.pdf"
-},
-{
-  "id": 14,
-  "category": "Overlock",
-  "brand": "Jack",
-  "model": "E4S",
-  "name": "Jack E4S",
-  "description": "Direct Drive Overlock Machine",
-  "image": "images/machines/jack-e4s.jpg",
- 
-{
-  "id": 15,
-  "category": "Lock Stitch",
-  "brand": "Typical",
-  "model": "GC6-7",
-  "name": "Typical GC6-7",
-  "description": "High Speed Single Needle Lock Stitch Machine",
-  "image": "images/machines/typical-gc67.jpg",
-  "catalogue": "Pdf/TYPICAL-GC67.pdf"
-},
-{
-  "id": 16,
-  "category": "Overlock",
-  "brand": "Typical",
-  "model": "GN794",
-  "name": "Typical GN794",
-  "description": "Industrial Overlock Machine",
-  "image": "images/machines/typical-gn794.jpg",
-  
-},
-{
-  "id": 17,
-  "category": "Lock Stitch",
-  "brand": "Highlead",
-  "model": "GC20618",
-  "name": "Highlead GC20618",
-  "description": "Heavy Duty Walking Foot Sewing Machine",
-  "image": "images/machines/highlead-gc20618.jpg",
-  "catalogue": "Pdf/HIGHLEAD-GC20618.pdf"
-},
-{
-  "id": 18,
-  "category": "Lock Stitch",
-  "brand": "ZOJE",
-  "model": "A6000",
-  "name": "ZOJE A6000",
-  "description": "Computerized Direct Drive Lock Stitch Machine",
-  "image": "images/machines/zoje-a6000.jpg",
-  
-{
-  "id": 19,
-  "category": "Button Attach",
-  "brand": "Brother",
-  "model": "BE-438HX",
-  "name": "Brother BE-438HX",
-  "description": "Electronic Button Sewing Machine",
-  "image": "images/machines/brother-be438hx.jpg",
-  
-},
-{
-  "id": 20,
-  "category": "Bartack",
-  "brand": "JUKI",
-  "model": "LK-1903BN",
-  "name": "JUKI LK-1903BN",
-  "description": "Computerized Electronic Bartacking Machine",
-  "image": "images/machines/juki-lk1903bn.jpg",
-  
- ,
-{
-  "id": 21,
-  "category": "Pattern Sewing",
-  "brand": "JUKI",
-  "model": "AMS-221EN",
-  "name": "JUKI AMS-221EN",
-  "description": "Computer Controlled Pattern Sewing Machine",
-  "image": "images/machines/juki-ams221en.jpg",
-  "catalogue": "Pdf/JUKI-AMS221EN.pdf"
-},
-{
-  "id": 22,
-  "category": "Pattern Sewing",
-  "brand": "Brother",
-  "model": "BAS-326H",
-  "name": "Brother BAS-326H",
-  "description": "Electronic Pattern Sewing Machine",
-  "image": "images/machines/brother-bas326h.jpg",
- 
-},
-{
-  "id": 23,
-  "category": "Overlock",
-  "brand": "Pegasus",
-  "model": "W562",
-  "name": "Pegasus W562",
-  "description": "High Speed Flat Bed Overlock Machine",
-  "image": "images/machines/pegasus-w562.jpg",
- 
-},
-{
-  "id": 24,
-  "category": "Interlock",
-  "brand": "Siruba",
-  "model": "F007KD",
-  "name": "Siruba F007KD",
-  "description": "Cylinder Bed Interlock Machine",
-  "image": "images/machines/siruba-f007kd.jpg",
-  
-},
-{
-  "id": 25,
-  "category": "Multi Needle",
-  "brand": "Kansai Special",
-  "model": "NR9803",
-  "name": "Kansai Special NR9803",
-  "description": "Multi Needle Chain Stitch Machine",
-  "image": "images/machines/kansai-nr9803.jpg",
-  
-{
-  "id": 26,
-  "category": "Overlock",
-  "brand": "Yamato",
-  "model": "VG2700",
-  "name": "Yamato VG2700",
-  "description": "Direct Drive Overlock Machine",
-  "image": "images/machines/yamato-vg2700.jpg",
-  "catalogue": "Pdf/YAMATO-VG2700.pdf"
-},
-{
-  "id": 27,
-  "category": "Overlock",
-  "brand": "Jack",
-  "model": "C5",
-  "name": "Jack C5",
-  "description": "Automatic Direct Drive Overlock Machine",
-  "image": "images/machines/jack-c5.jpg",
-  
-},
-{
-  "id": 28,
-  "category": "Lock Stitch",
-  "brand": "ZOJE",
-  "model": "ZJ9000E",
-  "name": "ZOJE ZJ9000E",
-  "description": "Computerized Lock Stitch Machine",
-  "image": "images/machines/zoje-zj9000e.jpg",
-  
-},
-{
-  "id": 29,
-  "category": "Walking Foot",
-  "brand": "Highlead",
-  "model": "GC24618",
-  "name": "Highlead GC24618",
-  "description": "Heavy Duty Walking Foot Sewing Machine",
-  "image": "images/machines/highlead-gc24618.jpg",
- 
-},
-{
-  "id": 30,
-  "category": "Button Hole",
-  "brand": "JUKI",
-  "model": "LBH-780U",
-  "name": "JUKI LBH-780U",
-  "description": "Industrial Button Hole Sewing Machine",
-  "image": "images/machines/juki-lbh780u.jpg",
- 
-}
- ,
-{
-  "id": 31,
-  "category": "Button Attach",
-  "brand": "JUKI",
-  "model": "MB-1800A",
-  "name": "JUKI MB-1800A",
-  "description": "Computerized Button Sewing Machine",
-  "image": "images/machines/juki-mb1800a.jpg",
-  
-},
-{
-  "id": 32,
-  "category": "Bartack",
-  "brand": "Brother",
-  "model": "KE-430HX",
-  "name": "Brother KE-430HX",
-  "description": "Electronic Bartacking Machine",
-  "image": "images/machines/brother-ke430hx.jpg",
-  "catalogue": "Pdf/BROTHER-KE430HX.pdf"
-},
-{
-  "id": 33,
-  "category": "Feed Off The Arm",
-  "brand": "Pegasus",
-  "model": "EXT5214",
-  "name": "Pegasus EXT5214",
-  "description": "Feed Off The Arm Sewing Machine",
-  "image": "images/machines/pegasus-ext5214.jpg",
-  "catalogue": "Pdf/PEGASUS-EXT5214.pdf"
-},
-{
-  "id": 34,
-  "category": "Flatlock",
-  "brand": "Siruba",
-  "model": "F007J",
-  "name": "Siruba F007J",
-  "description": "Industrial Flatlock Sewing Machine",
-  "image": "images/machines/siruba-f007j.jpg",
-  "catalogue": "Pdf/SIRUBA-F007J.pdf"
-},
-{
-  "id": 35,
-  "category": "Multi Needle",
-  "brand": "Kansai Special",
-  "model": "DFB1412",
-  "name": "Kansai Special DFB1412",
-  "description": "Double Chain Stitch Multi Needle Machine",
-  "image": "images/machines/kansai-dfb1412.jpg",
-  "catalogue": "Pdf/KANSAI-DFB1412.pdf"
-},
-{
-  "id": 36,
-  "category": "Interlock",
-  "brand": "Yamato",
-  "model": "FD62G",
-  "name": "Yamato FD62G",
-  "description": "Flat Bed Interlock Sewing Machine",
-  "image": "images/machines/yamato-fd62g.jpg",
-  "catalogue": "Pdf/YAMATO-FD62G.pdf"
-},
-{
-  "id": 37,
-  "category": "Lock Stitch",
-  "brand": "Jack",
-  "model": "A5E",
-  "name": "Jack A5E",
-  "description": "AI Computerized Lock Stitch Machine",
-  "image": "images/machines/jack-a5e.jpg",
-  "catalogue": "Pdf/JACK-A5E.pdf"
-},
-{
-  "id": 38,
-  "category": "Overlock",
-  "brand": "ZOJE",
-  "model": "B9500",
-  "name": "ZOJE B9500",
-  "description": "Direct Drive High Speed Overlock Machine",
-  "image": "images/machines/zoje-b9500.jpg",
-  "catalogue": "Pdf/ZOJE-B9500.pdf"
-},
-{
-  "id": 39,
-  "category": "Cylinder Bed",
-  "brand": "Highlead",
-  "model": "GC2698",
-  "name": "Highlead GC2698",
-  "description": "Cylinder Bed Heavy Duty Sewing Machine",
-  "image": "images/machines/highlead-gc2698.jpg",
-  "catalogue": "Pdf/HIGHLEAD-GC2698.pdf"
-},
-{
-  "id": 40,
-  "category": "Zigzag",
-  "brand": "JUKI",
-  "model": "LZ-2290A",
-  "name": "JUKI LZ-2290A",
-  "description": "Computerized Zigzag Sewing Machine",
-  "image": "images/machines/juki-lz2290a.jpg",
-  "catalogue": "Pdf/JUKI-LZ2290A.pdf"
-}
- ,
-{
-  "id": 41,
-  "category": "Lock Stitch",
-  "brand": "Brother",
-  "model": "S-7250A",
-  "name": "Brother S-7250A",
-  "description": "Computerized Direct Drive Lock Stitch Machine",
-  "image": "images/machines/brother-s7250a.jpg",
-  "catalogue": "Pdf/BROTHER-S7250A.pdf"
-},
-{
-  "id": 42,
-  "category": "Button Hole",
-  "brand": "Jack",
-  "model": "JK-T782G",
-  "name": "Jack JK-T782G",
-  "description": "Computerized Button Hole Machine",
-  "image": "images/machines/jack-t782g.jpg",
-  "catalogue": "Pdf/JACK-T782G.pdf"
-},
-{
-  "id": 43,
-  "category": "Bartack",
-  "brand": "ZOJE",
-  "model": "ZJ1900D",
-  "name": "ZOJE ZJ1900D",
-  "description": "Electronic Bartacking Machine",
-  "image": "images/machines/zoje-zj1900d.jpg",
-  "catalogue": "Pdf/ZOJE-ZJ1900D.pdf"
-},
-{
-  "id": 44,
-  "category": "Interlock",
-  "brand": "Siruba",
-  "model": "VC008",
-  "name": "Siruba VC008",
-  "description": "High Speed Cylinder Bed Interlock Machine",
-  "image": "images/machines/siruba-vc008.jpg",
-  "catalogue": "Pdf/SIRUBA-VC008.pdf"
-},
-{
-  "id": 45,
-  "category": "Overlock",
-  "brand": "Pegasus",
-  "model": "EX5214",
-  "name": "Pegasus EX5214",
-  "description": "Direct Drive Industrial Overlock Machine",
-  "image": "images/machines/pegasus-ex5214.jpg",
-  "catalogue": "Pdf/PEGASUS-EX5214.pdf"
-},
-{
-  "id": 46,
-  "category": "Multi Needle",
-  "brand": "Kansai Special",
-  "model": "WX8803",
-  "name": "Kansai Special WX8803",
-  "description": "Multi Needle Double Chain Stitch Machine",
-  "image": "images/machines/kansai-wx8803.jpg",
-  "catalogue": "Pdf/KANSAI-WX8803.pdf"
-},
-{
-  "id": 47,
-  "category": "Interlock",
-  "brand": "Yamato",
-  "model": "CM364",
-  "name": "Yamato CM364",
-  "description": "Industrial Flat Seamer Machine",
-  "image": "images/machines/yamato-cm364.jpg",
-  "catalogue": "Pdf/YAMATO-CM364.pdf"
-},
-{
-  "id": 48,
-  "category": "Heavy Duty",
-  "brand": "Highlead",
-  "model": "GC20518",
-  "name": "Highlead GC20518",
-  "description": "Heavy Duty Walking Foot Lock Stitch Machine",
-  "image": "images/machines/highlead-gc20518.jpg",
-  "catalogue": "Pdf/HIGHLEAD-GC20518.pdf"
-},
-{
-  "id": 49,
-  "category": "Lock Stitch",
-  "brand": "JUKI",
-  "model": "DDL-8000A",
-  "name": "JUKI DDL-8000A",
-  "description": "Computerized Lock Stitch Sewing Machine",
-  "image": "images/machines/juki-ddl8000a.jpg",
-  "catalogue": "Pdf/JUKI-DDL8000A.pdf"
-},
-{
-  "id": 50,
-  "category": "Lock Stitch",
-  "brand": "Typical",
-  "model": "GC6890",
-  "name": "Typical GC6890",
-  "description": "Direct Drive Industrial Lock Stitch Machine",
-  "image": "images/machines/typical-gc6890.jpg",
-  "catalogue": "Pdf/TYPICAL-GC6890.pdf"
-}
-] 
+]
