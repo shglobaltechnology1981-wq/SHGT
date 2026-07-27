@@ -1,134 +1,148 @@
 /*==========================================
 SH GLOBAL TECHNOLOGY
-Smart Search System
-Version 2.0
+Professional Website JavaScript
 ==========================================*/
 
-"use strict";
+let allProducts = [];
 
-const searchBox = document.getElementById("searchInput");
-const searchResult = document.getElementById("searchResult");
+const productContainer = document.getElementById("product-container");
 
-let products = [];
+/*================ LOAD PRODUCTS ================*/
 
-/*==============================
-LOAD PRODUCTS
-==============================*/
+if (productContainer) {
 
-async function loadSearchData() {
+    fetch("products.json")
+        .then(response => response.json())
+        .then(products => {
 
-    try {
+            allProducts = products;
+            displayProducts(allProducts);
 
-        const response = await fetch("products.json");
+        })
+        .catch(error => {
 
-        products = await response.json();
+            console.error("Product Loading Error:", error);
 
-    } catch (error) {
+            productContainer.innerHTML = `
+                <h2 style="text-align:center;color:red;">
+                    Product Loading Failed
+                </h2>
+            `;
 
-        console.error("Search Data Load Error", error);
-
-    }
+        });
 
 }
 
-loadSearchData();
+/*================ DISPLAY PRODUCTS ================*/
 
-/*==============================
-LIVE SEARCH
-==============================*/
+function displayProducts(products) {
 
-if (searchBox) {
+    if (!productContainer) return;
 
-    searchBox.addEventListener("input", function () {
+    productContainer.innerHTML = "";
 
-        const keyword = this.value.trim().toLowerCase();
+    if (products.length === 0) {
 
-        if (!searchResult) return;
+        productContainer.innerHTML = `
+            <h2 style="text-align:center;">
+                No Product Found
+            </h2>
+        `;
 
-        searchResult.innerHTML = "";
+        return;
 
-        if (keyword.length < 2) {
+    }
 
-            searchResult.style.display = "none";
+    products.forEach(product => {
 
-            return;
+        productContainer.innerHTML += `
 
-        }
+        <div class="product-card">
 
-        const result = products.filter(product =>
+            <img src="${product.image}" alt="${product.name}">
 
-            product.name.toLowerCase().includes(keyword) ||
+            <h3>${product.name}</h3>
 
-            product.brand.toLowerCase().includes(keyword) ||
+            <p><strong>Brand:</strong> ${product.brand}</p>
 
-            product.model.toLowerCase().includes(keyword) ||
+            <p><strong>Model:</strong> ${product.model}</p>
 
-            product.category.toLowerCase().includes(keyword)
+            <p>${product.description}</p>
 
-        );
+            <a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${encodeURIComponent(product.name)}"
+               target="_blank"
+               class="whatsapp-btn">
 
-        if (result.length === 0) {
+               WhatsApp Inquiry
 
-            searchResult.innerHTML = `
+            </a>
 
-                <div class="search-empty">
+        </div>
 
-                    No products found.
-
-                </div>
-
-            `;
-
-        } else {
-
-            result.slice(0,8).forEach(product => {
-
-                searchResult.innerHTML += `
-
-<div class="search-item">
-
-    <img src="${product.image}" alt="${product.name}">
-
-    <div class="search-info">
-
-        <h4>${product.name}</h4>
-
-        <small>${product.brand}</small>
-
-    </div>
-
-    <a href="https://wa.me/8801621007916?text=I want information about ${encodeURIComponent(product.name)}">
-
-        Inquiry
-
-    </a>
-
-</div>
-
-`;
-
-            });
-
-        }
-
-        searchResult.style.display = "block";
+        `;
 
     });
 
 }
 
-/*==============================
-HIDE SEARCH RESULT
-==============================*/
+/*================ SEARCH ================*/
 
-document.addEventListener("click", function(e){
+const searchBox = document.getElementById("search");
 
-    if(!searchBox || !searchResult) return;
+if (searchBox) {
 
-    if(!searchBox.contains(e.target) && !searchResult.contains(e.target)){
+    searchBox.addEventListener("keyup", function () {
 
-        searchResult.style.display="none";
+        const searchText = this.value.trim().toLowerCase();
 
-    }
+        const filteredProducts = allProducts.filter(product =>
+
+            product.name.toLowerCase().includes(searchText) ||
+            product.brand.toLowerCase().includes(searchText) ||
+            product.model.toLowerCase().includes(searchText) ||
+            product.category.toLowerCase().includes(searchText) ||
+            product.description.toLowerCase().includes(searchText)
+
+        );
+
+        displayProducts(filteredProducts);
+
+    });
+
+}
+
+/*================ BRAND FILTER ================*/
+
+const brandFilter = document.getElementById("brandFilter");
+
+if (brandFilter) {
+
+    brandFilter.addEventListener("change", function () {
+
+        const selectedBrand = this.value;
+
+        if (selectedBrand === "all") {
+
+            displayProducts(allProducts);
+
+        } else {
+
+            const filteredProducts = allProducts.filter(product =>
+                product.brand === selectedBrand
+            );
+
+            displayProducts(filteredProducts);
+
+        }
+
+    });
+
+}
+
+/*================ PAGE LOADED ================*/
+
+window.addEventListener("load", () => {
+
+    console.log("SH Global Technology Website Loaded Successfully");
 
 });
