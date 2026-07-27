@@ -7,7 +7,7 @@
     "name": "JUKI DDL-9000C",
     "description": "Computerized High Speed Single Needle Lock Stitch Machine",
     "image": "images/machines/juki-ddl9000c.jpg",
-    "catalogue": "Pdf/JUKI-DDL9000C.pdf"
+    
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "name": "JUKI DDL-8700",
     "description": "High Speed Single Needle Lock Stitch Machine",
     "image": "images/machines/juki-ddl8700.jpg",
-    "catalogue": "Pdf/JUKI-DDL8700.pdf"
+    
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "name": "JUKI MO-6716S",
     "description": "High Speed Overlock Machine",
     "image": "images/machines/juki-mo6716s.jpg",
-    "catalogue": "Pdf/JUKI-MO6716S.pdf"
+    
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "name": "JUKI LBH-1790A",
     "description": "Computerized Button Hole Machine",
     "image": "images/machines/juki-lbh1790a.jpg",
-    "catalogue": "Pdf/JUKI-LBH1790A.pdf"
+    
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "name": "JUKI MB-1377",
     "description": "Button Sewing Machine",
     "image": "images/machines/juki-mb1377.jpg",
-    "catalogue": "Pdf/JUKI-MB1377.pdf"
+    
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "name": "JUKI LK-1900BN",
     "description": "Computerized Bartacking Machine",
     "image": "images/machines/juki-lk1900bn.jpg",
-    "catalogue": "Pdf/JUKI-LK1900BN.pdf"
+   
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "name": "Brother S-7300A",
     "description": "Direct Drive Lock Stitch Machine",
     "image": "images/machines/brother-s7300a.jpg",
-    "catalogue": "Pdf/BROTHER-S7300A.pdf"
+    
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "name": "Brother HE-800C",
     "description": "Electronic Button Hole Machine",
     "image": "images/machines/brother-he800c.jpg",
-    "catalogue": "Pdf/BROTHER-HE800C.pdf"
+   
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "name": "Pegasus M700",
     "description": "Industrial Overlock Machine",
     "image": "images/machines/pegasus-m700.jpg",
-    "catalogue": "Pdf/PEGASUS-M700.pdf"
+   
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "name": "Siruba 747K",
     "description": "High Speed Overlock Machine",
     "image": "images/machines/siruba-747k.jpg",
-    "catalogue": "Pdf/SIRUBA-747K.pdf"
+    
   }
 ,
 {
@@ -118,7 +118,7 @@
   "name": "Yamato AZ8000",
   "description": "Cylinder Bed Interlock Machine",
   "image": "images/machines/yamato-az8000.jpg",
-  "catalogue": "Pdf/YAMATO-AZ8000.pdf"
+ 
 },
 {
   "id": 13,
@@ -138,8 +138,7 @@
   "name": "Jack E4S",
   "description": "Direct Drive Overlock Machine",
   "image": "images/machines/jack-e4s.jpg",
-  "catalogue": "Pdf/JACK-E4S.pdf"
-},
+ 
 {
   "id": 15,
   "category": "Lock Stitch",
@@ -158,7 +157,7 @@
   "name": "Typical GN794",
   "description": "Industrial Overlock Machine",
   "image": "images/machines/typical-gn794.jpg",
-  "catalogue": "Pdf/TYPICAL-GN794.pdf"
+  
 },
 {
   "id": 17,
@@ -178,8 +177,7 @@
   "name": "ZOJE A6000",
   "description": "Computerized Direct Drive Lock Stitch Machine",
   "image": "images/machines/zoje-a6000.jpg",
-  "catalogue": "Pdf/ZOJE-A6000.pdf"
-},
+  
 {
   "id": 19,
   "category": "Button Attach",
@@ -188,7 +186,7 @@
   "name": "Brother BE-438HX",
   "description": "Electronic Button Sewing Machine",
   "image": "images/machines/brother-be438hx.jpg",
-  "catalogue": "Pdf/BROTHER-BE438HX.pdf"
+  
 },
 {
   "id": 20,
@@ -198,8 +196,7 @@
   "name": "JUKI LK-1903BN",
   "description": "Computerized Electronic Bartacking Machine",
   "image": "images/machines/juki-lk1903bn.jpg",
-  "catalogue": "Pdf/JUKI-LK1903BN.pdf"
-}
+  
  ,
 {
   "id": 21,
@@ -219,7 +216,7 @@
   "name": "Brother BAS-326H",
   "description": "Electronic Pattern Sewing Machine",
   "image": "images/machines/brother-bas326h.jpg",
-  "catalogue": "Pdf/BROTHER-BAS326H.pdf"
+ 
 },
 {
   "id": 23,
@@ -229,7 +226,7 @@
   "name": "Pegasus W562",
   "description": "High Speed Flat Bed Overlock Machine",
   "image": "images/machines/pegasus-w562.jpg",
-  "catalogue": "Pdf/PEGASUS-W562.pdf"
+ 
 },
 {
   "id": 24,
@@ -239,7 +236,7 @@
   "name": "Siruba F007KD",
   "description": "Cylinder Bed Interlock Machine",
   "image": "images/machines/siruba-f007kd.jpg",
-  "catalogue": "Pdf/SIRUBA-F007KD.pdf"
+  
 },
 {
   "id": 25,
@@ -249,8 +246,7 @@
   "name": "Kansai Special NR9803",
   "description": "Multi Needle Chain Stitch Machine",
   "image": "images/machines/kansai-nr9803.jpg",
-  "catalogue": "Pdf/KANSAI-NR9803.pdf"
-},
+  
 {
   "id": 26,
   "category": "Overlock",
@@ -269,7 +265,7 @@
   "name": "Jack C5",
   "description": "Automatic Direct Drive Overlock Machine",
   "image": "images/machines/jack-c5.jpg",
-  "catalogue": "Pdf/JACK-C5.pdf"
+  
 },
 {
   "id": 28,
@@ -279,7 +275,7 @@
   "name": "ZOJE ZJ9000E",
   "description": "Computerized Lock Stitch Machine",
   "image": "images/machines/zoje-zj9000e.jpg",
-  "catalogue": "Pdf/ZOJE-ZJ9000E.pdf"
+  
 },
 {
   "id": 29,
@@ -289,7 +285,7 @@
   "name": "Highlead GC24618",
   "description": "Heavy Duty Walking Foot Sewing Machine",
   "image": "images/machines/highlead-gc24618.jpg",
-  "catalogue": "Pdf/HIGHLEAD-GC24618.pdf"
+ 
 },
 {
   "id": 30,
@@ -299,7 +295,7 @@
   "name": "JUKI LBH-780U",
   "description": "Industrial Button Hole Sewing Machine",
   "image": "images/machines/juki-lbh780u.jpg",
-  "catalogue": "Pdf/JUKI-LBH780U.pdf"
+ 
 }
  ,
 {
@@ -310,7 +306,7 @@
   "name": "JUKI MB-1800A",
   "description": "Computerized Button Sewing Machine",
   "image": "images/machines/juki-mb1800a.jpg",
-  "catalogue": "Pdf/JUKI-MB1800A.pdf"
+  
 },
 {
   "id": 32,
