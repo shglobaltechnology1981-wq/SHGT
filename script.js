@@ -68,7 +68,6 @@ console.error("Products Load Error:", error);
 });
 
 }
-
 /*==========================================
 PART-2
 SEARCH + GALLERY + VIEW DETAILS
@@ -123,38 +122,6 @@ function searchProduct(){
 filterProducts();
 
 }
-const galleryContainer = document.getElementById("gallery-container");
-
-if (galleryContainer) {
-
-fetch("products.json")
-.then(res => res.json())
-.then(products => {
-
-galleryContainer.innerHTML = "";
-
-products.forEach(product => {
-
-galleryContainer.innerHTML += `
-<div class="product-card">
-<img src="${product.image}" alt="${product.name}">
-<h3>${product.name}</h3>
-<p>${product.description}</p>
-
-<a href="https://wa.me/${(product.whatsapp || "8801621007916").replace("+","")}"
-class="whatsapp-btn"
-target="_blank">
-WhatsApp
-</a>
-
-</div>
-`;
-
-});
-
-});
-
-}
 
 /*========== VIEW DETAILS ==========*/
 
@@ -193,7 +160,6 @@ modal.style.display = "none";
 }
 
 });
-
 /*==========================================
 PART-3
 IMAGE EFFECTS + HEADER + FOOTER
@@ -299,7 +265,6 @@ Industrial Sewing Machines & Genuine Spare Parts<br>
 All Rights Reserved.`;
 
 }
-
 /*==========================================
 PART-4
 VIEW DETAILS MODAL
@@ -356,7 +321,6 @@ document.addEventListener("mouseout", function(e){
 });
 
 console.log("SH Global Technology Loaded Successfully");
-
 /*==========================================
 PART-5
 LOADER + PROGRESS BAR + DARK MODE
@@ -432,7 +396,6 @@ if(visitor){
 visitor.innerText = visits;
 
 }
-
 /*==========================================
 PART-6
 NEWSLETTER + CUSTOMER INQUIRY + EXTRA
