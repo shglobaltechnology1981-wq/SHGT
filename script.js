@@ -110,7 +110,14 @@ function displayProducts(products) {
 
             </a>
 
-            ${catalogueButton}
+<a href="product.html?id=${product.id}"
+class="catalogue-btn">
+
+View Details
+
+</a>
+
+${catalogueButton}
 
         </div>
 
