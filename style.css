@@ -1,7 +1,7 @@
-/*==========================================
+/*========================================
 SH GLOBAL TECHNOLOGY
-Professional Website CSS
-==========================================*/
+FINAL WEBSITE CSS
+========================================*/
 
 
 *{
@@ -15,11 +15,10 @@ Professional Website CSS
 body{
 
     background:#f5f5f5;
-    color:#222;
+    color:#333;
     line-height:1.6;
 
 }
-
 
 
 /*================ HEADER ================*/
@@ -27,59 +26,18 @@ body{
 
 header{
 
-    background:#ffffff;
+    background:#0b3d91;
+    color:white;
+    padding:15px 5%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 5%;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 
-}
-/*================ PRODUCT BUTTONS ================*/
-
-
-.whatsapp-btn{
-
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:10px 18px;
-    margin-top:10px;
-    border-radius:20px;
-    text-decoration:none;
-    font-weight:bold;
+    flex-wrap:wrap;
 
 }
 
-
-.whatsapp-btn:hover{
-
-    opacity:0.8;
-
-}
-
-
-
-.catalogue-btn{
-
-    display:inline-block;
-    background:#0b3d91;
-    color:white;
-    padding:10px 18px;
-    margin-top:10px;
-    margin-left:5px;
-    border-radius:20px;
-    text-decoration:none;
-    font-weight:bold;
-
-}
-
-
-.catalogue-btn:hover{
-
-    opacity:0.8;
-
-}
 
 
 .logo-area{
@@ -93,31 +51,27 @@ header{
 
 .logo-area img{
 
-    width:70px;
-    height:70px;
-    object-fit:contain;
+    width:80px;
+    height:auto;
 
 }
-
 
 
 .logo-area h1{
 
-    font-size:24px;
-    color:#0b3d91;
+    font-size:22px;
 
 }
 
 
 
-/*================ MENU ================*/
 
 
 nav a{
 
+    color:white;
     text-decoration:none;
-    color:#222;
-    margin-left:20px;
+    margin:0 10px;
     font-weight:bold;
 
 }
@@ -125,11 +79,9 @@ nav a{
 
 nav a:hover{
 
-    color:#0b3d91;
+    color:#ffd700;
 
 }
-
-
 
 
 
@@ -138,34 +90,43 @@ nav a:hover{
 
 .hero{
 
-    background:linear-gradient(
+    min-height:450px;
+
+    background:
+
+    linear-gradient(
     rgba(0,0,0,.55),
     rgba(0,0,0,.55)
     ),
-    url("images/banner.jpg");
+
+    url("../images/machines/banner.jpg");
+
 
     background-size:cover;
     background-position:center;
 
-    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
     text-align:center;
 
-    padding:80px 20px;
+    color:white;
 
 }
 
 
 
-.hero h2{
+.hero-content h2{
 
-    font-size:40px;
-    margin-bottom:15px;
+    font-size:42px;
+    margin-bottom:20px;
 
 }
 
 
-.hero p{
+
+.hero-content p{
 
     font-size:20px;
     margin-bottom:30px;
@@ -174,17 +135,20 @@ nav a:hover{
 
 
 
-.whatsapp{
+
+.btn{
 
     display:inline-block;
 
-    background:#25D366;
+    background:#007bff;
 
     color:white;
 
-    padding:12px 30px;
+    padding:12px 25px;
 
-    border-radius:30px;
+    margin:5px;
+
+    border-radius:5px;
 
     text-decoration:none;
 
@@ -193,70 +157,40 @@ nav a:hover{
 }
 
 
+.btn:hover{
+
+    background:#0056b3;
+
+}
+
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+
 .whatsapp:hover{
 
-    opacity:.8;
+    background:#128C7E;
 
 }
 
 
 
+/*================ SECTION ================*/
 
 
-/*================ SEARCH ================*/
+section{
 
-
-.search-box{
-
-    text-align:center;
-
-    padding:40px 20px;
-
-    background:white;
+    padding:50px 5%;
 
 }
 
 
 
-.search-box h2{
-
-    margin-bottom:20px;
-
-}
-
-
-
-.search-box input,
-.search-box select{
-
-    width:280px;
-
-    padding:12px;
-
-    margin:8px;
-
-    border:1px solid #ccc;
-
-    border-radius:5px;
-
-}
-
-
-
-
-
-/*================ PRODUCT SECTION ================*/
-
-
-#machinery{
-
-    padding:40px 5%;
-
-}
-
-
-
-.title{
+section h2{
 
     text-align:center;
 
@@ -266,6 +200,25 @@ nav a:hover{
 
 }
 
+
+
+
+
+/*================ ABOUT ================*/
+
+
+.about{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+
+/*================ PRODUCTS ================*/
 
 
 #product-container{
@@ -277,11 +230,11 @@ nav a:hover{
 
     repeat(auto-fit,minmax(250px,1fr));
 
+
     gap:25px;
 
 
 }
-
 
 
 
@@ -297,10 +250,7 @@ nav a:hover{
 
     text-align:center;
 
-    box-shadow:
-
-    0 5px 15px rgba(0,0,0,.1);
-
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 
 }
 
@@ -315,27 +265,15 @@ nav a:hover{
 
     object-fit:contain;
 
-
 }
 
 
 
 .product-card h3{
 
-
     color:#0b3d91;
 
-    margin:10px 0;
-
-
-}
-
-
-
-.product-card p{
-
-
-    font-size:14px;
+    margin:15px 0;
 
 }
 
@@ -343,58 +281,96 @@ nav a:hover{
 
 .product-card a{
 
-
     display:inline-block;
 
-    margin-top:10px;
+    background:#28a745;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+}
+
+
+
+
+.product-card a:hover{
+
+    background:#1e7e34;
+
+}
+
+
+
+
+/*================ SERVICE ================*/
+
+
+.service{
+
+    background:#ffffff;
+
+}
+
+
+
+.service-box{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:20px;
+
+
+}
+
+
+
+.service-box div{
+
+
+    background:#f1f1f1;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+/*================ CONTACT ================*/
+
+
+.contact{
 
     background:#0b3d91;
 
     color:white;
 
-    padding:8px 20px;
-
-    border-radius:20px;
-
-    text-decoration:none;
-
-
-}
-
-
-
-
-
-
-
-/*================ ABOUT ================*/
-
-
-.about,
-.contact{
-
-
-    background:white;
-
-    margin:30px 5%;
-
-    padding:30px;
-
-    border-radius:10px;
-
     text-align:center;
 
-
 }
 
 
 
-.about h2,
 .contact h2{
 
-    color:#0b3d91;
-
-    margin-bottom:15px;
+    color:white;
 
 }
 
@@ -407,7 +383,6 @@ nav a:hover{
 
 footer{
 
-
     background:#111;
 
     color:white;
@@ -416,12 +391,7 @@ footer{
 
     padding:20px;
 
-    margin-top:30px;
-
-
 }
-
-
 
 
 
@@ -439,24 +409,6 @@ header{
 
 
 
-nav{
-
-    margin-top:15px;
-
-}
-
-
-
-nav a{
-
-    display:inline-block;
-
-    margin:8px;
-
-}
-
-
-
 .logo-area h1{
 
     font-size:18px;
@@ -464,134 +416,35 @@ nav a{
 }
 
 
+nav{
 
-.hero h2{
+    margin-top:15px;
+
+}
+
+
+nav a{
+
+    display:inline-block;
+
+    margin:5px;
+
+}
+
+
+.hero-content h2{
 
     font-size:28px;
 
 }
 
 
-.search-box input,
-.search-box select{
-
-    width:90%;
-
-}
-
-
-}
-/*================ PRODUCT BUTTONS ================*/
-
-
-.whatsapp-btn{
-
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:10px 18px;
-    margin-top:10px;
-    border-radius:20px;
-    text-decoration:none;
-    font-weight:bold;
-
-}
-
-
-.whatsapp-btn:hover{
-
-    opacity:0.8;
-
-}
-
-
-
-.catalogue-btn{
-
-    display:inline-block;
-    background:#0b3d91;
-    color:white;
-    padding:10px 18px;
-    margin-top:10px;
-    margin-left:5px;
-    border-radius:20px;
-    text-decoration:none;
-    font-weight:bold;
-
-}
-
-
-.catalogue-btn:hover{
-
-    opacity:0.8;
-
-}
-
-/*================ HERO =================*/
-
-.hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-}
-
-.hero-slider{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-.hero-slider .slide{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    transition:1s;
-}
-
-.hero-slider .slide.active{
-    opacity:1;
-}
-
-.overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.45);
-    z-index:1;
-}
-
-.hero-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:2;
-    text-align:center;
-    width:100%;
-    padding:0 20px;
-}
-
-.hero-content h1{
-    color:#fff;
-    font-size:60px;
-    margin-bottom:20px;
-}
-
 .hero-content p{
-    color:#fff;
-    font-size:24px;
-    margin-bottom:30px;
+
+    font-size:16px;
+
 }
 
-.hero-content .btn{
-    display:inline-block;
+
+
 }
