@@ -36,96 +36,31 @@ if (productContainer) {
 
 /*================ DISPLAY PRODUCTS ================*/
 
-function displayProducts(products) {
+productContainer.innerHTML += `
 
-    if (!productContainer) return;
+<div class="product-card">
 
-    productContainer.innerHTML = "";
+<img src="${product.image}" alt="${product.name}">
 
-    if (products.length === 0) {
+<h3>${product.name}</h3>
 
-        productContainer.innerHTML = `
-            <h2 style="text-align:center;">
-                No Product Found
-            </h2>
-        `;
+<p><strong>Brand:</strong> ${product.brand}</p>
 
-        return;
+<p><strong>Model:</strong> ${product.model}</p>
 
-    }
+<p>${product.description}</p>
 
-    products.forEach(product => {
+<a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${encodeURIComponent(product.name)}"
+target="_blank"
+class="whatsapp-btn">
 
-        let catalogueButton = "";
-
-        if (product.category === "Service") {
-
-            catalogueButton = `
-                <a href="service.html"
-                   class="catalogue-btn">
-                   View Service
-                </a>
-            `;
-
-        } else {
-
-            catalogueButton = `
-                <a href="Pdf/SHGT-Catalogue.pdf"
-                   target="_blank"
-                   class="catalogue-btn">
-                   View Catalogue
-                </a>
-            `;
-
-        }
-
-        productContainer.innerHTML += `
-
-        <div class="product-card">
-
-            <img src="${product.image}"
-                 alt="${product.name}">
-
-            <h3>${product.name}</h3>
-
-            <p>
-                <strong>Brand:</strong>
-                ${product.brand}
-            </p>
-
-            <p>
-                <strong>Model:</strong>
-                ${product.model}
-            </p>
-
-            <p>
-                ${product.description}
-            </p>
-
-            <a href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need information about ${encodeURIComponent(product.name)}"
-               target="_blank"
-               class="whatsapp-btn">
-
-               WhatsApp Inquiry
-
-            </a>
-
-<a href="product.html?id=${product.id}"
-class="catalogue-btn">
-
-View Details
+WhatsApp Inquiry
 
 </a>
 
-${catalogueButton}
+</div>
 
-        </div>
-
-        `;
-
-    });
-
-}
+`;
 /*================ SEARCH =================*/
 
 const searchBox = document.getElementById("search");
