@@ -67,3 +67,6 @@ window.saveProduct = async function () {
     }
 
 }
+<script type="module" src="admin.js"></script>
+</body>
+</html>
