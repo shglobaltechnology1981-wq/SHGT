@@ -97,44 +97,21 @@ button:hover{
 </div>
 
 <script>
-const image=document.getElementById("image");
+const image = document.getElementById("image");
 
-image.onchange=function(){
+image.onchange = function () {
 
-const file=image.files[0];
+    const file = image.files[0];
 
-if(file){
+    if (file) {
 
-document.getElementById("preview").src=URL.createObjectURL(file);
+        document.getElementById("preview").src = URL.createObjectURL(file);
 
-document.getElementById("preview").style.display="block";
+        document.getElementById("preview").style.display = "block";
 
-}
-
-}
-
-function saveProduct(){
-
-const product={
-
-name:document.getElementById("name").value,
-
-brand:document.getElementById("brand").value,
-
-model:document.getElementById("model").value,
-
-price:document.getElementById("price").value,
-
-description:document.getElementById("description").value
-
-};
-
-console.log(product);
-
-alert("Product Ready to Save");
+    }
 
 }
 </script>
+
 <script type="module" src="admin.js"></script>
-</body>
-</html>
