@@ -10,8 +10,12 @@ import {
   uploadBytes,
   getDownloadURL
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
-  async function saveProduct() {
-  document.getElementById("saveBtn").addEventListener("click", saveProduct);
+
+// =====================
+// SAVE PRODUCT
+// =====================
+async function saveProduct() {
+
   const name = document.getElementById("name").value.trim();
   const brand = document.getElementById("brand").value.trim();
   const model = document.getElementById("model").value.trim();
@@ -25,6 +29,7 @@ import {
   }
 
   try {
+
     const storageRef = ref(storage, "products/" + Date.now() + "-" + file.name);
 
     await uploadBytes(storageRef, file);
@@ -47,8 +52,15 @@ import {
     document.getElementById("preview").style.display = "none";
 
   } catch (error) {
+
     console.error(error);
     alert(error.message);
+
   }
 
-};
+}
+
+// =====================
+// BUTTON EVENT
+// =====================
+document.getElementById("saveBtn").addEventListener("click", saveProduct);
