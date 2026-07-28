@@ -51,7 +51,13 @@ window.saveProduct = async function () {
 
     alert("✅ Product Saved Successfully");
 
-    document.querySelector("form").reset();
+  document.getElementById("name").value = "";
+document.getElementById("brand").value = "";
+document.getElementById("model").value = "";
+document.getElementById("price").value = "";
+document.getElementById("description").value = "";
+document.getElementById("image").value = "";
+document.getElementById("preview").style.display = "none";
 
   } catch (error) {
 
@@ -62,6 +68,3 @@ window.saveProduct = async function () {
   }
 
 };
-<script type="module" src="admin.js"></script>
-</body>
-</html>
