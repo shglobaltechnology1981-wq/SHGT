@@ -1,336 +1,86 @@
-/*========================================
-SH GLOBAL TECHNOLOGY
-FINAL WEBSITE JAVASCRIPT
-========================================*/
+// =======================================
+// SH GLOBAL TECHNOLOGY
+// Live Product Loading
+// =======================================
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 
-// ================= LOAD PRODUCTS =================
+import {
+    getFirestore,
+    collection,
+    getDocs
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
+// Firebase Config
 
-const productContainer = document.getElementById("product-container");
+const firebaseConfig = {
 
+  apiKey: "AIzaSyCWszOZc27idF_IWhTWVOv7P7jOS-Eq3Uc",
 
-if(productContainer){
+  authDomain: "shgt-global.firebaseapp.com",
 
+  projectId: "shgt-global",
 
-fetch("data/products.json")
+  storageBucket: "shgt-global.firebasestorage.app",
 
+  messagingSenderId: "825797264866",
 
-.then(response=>{
+  appId: "1:825797264866:web:966bc7af6bdb9843f725bb"
 
+};
 
-if(!response.ok){
+const app = initializeApp(firebaseConfig);
 
-throw new Error("Product file not found");
+const db = getFirestore(app);
 
-}
+// ==========================
+// Load Products
+// ==========================
 
+async function loadProducts(){
 
-return response.json();
+const grid = document.getElementById("productsGrid");
 
+if(!grid) return;
 
-})
+grid.innerHTML="<h3>Loading...</h3>";
 
+const snapshot = await getDocs(collection(db,"products"));
 
-.then(products=>{
+let html="";
 
+snapshot.forEach((doc)=>{
 
-productContainer.innerHTML="";
+const p = doc.data();
 
-
-
-products.forEach(product=>{
-
-
-
-productContainer.innerHTML += `
-
+html += `
 
 <div class="product-card">
 
+<img src="${p.image}" alt="${p.name}">
 
-<img src="${product.image}" 
-alt="${product.name}">
+<h3>${p.name}</h3>
 
+<p>${p.brand}</p>
 
-<h3>${product.name}</h3>
+<p>${p.model}</p>
 
+<p>${p.price}</p>
 
-<p>
-Brand: ${product.brand}
-</p>
-
-
-<p>
-${product.description || ""}
-</p>
-
-
-
-<a href="product.html?id=${product.id}">
+<a href="product.html?id=${doc.id}" class="catalogue-btn">
 
 View Details
 
 </a>
 
-
 </div>
 
-
 `;
 
-
-
 });
 
-
-})
-
-
-
-.catch(error=>{
-
-
-productContainer.innerHTML=`
-
-<p style="color:red">
-
-Product Loading Failed
-
-</p>
-
-`;
-
-
-console.log(error);
-
-
-});
-
+grid.innerHTML = html;
 
 }
 
-
-
-
-
-
-// ================= PRODUCT DETAILS PAGE =================
-
-
-
-const productDetails = document.getElementById("product-details");
-
-
-if(productDetails){
-
-
-
-const urlParams = new URLSearchParams(window.location.search);
-
-
-const productId = urlParams.get("id");
-
-
-
-fetch("data/products.json")
-
-.then(response=>response.json())
-
-
-.then(products=>{
-
-
-const product = products.find(
-
-item => item.id == productId
-
-);
-
-
-
-if(product){
-
-
-
-productDetails.innerHTML = `
-
-
-<div class="product-details-box">
-
-
-<img src="${product.image}">
-
-
-<h2>${product.name}</h2>
-
-
-<h3>
-Brand : ${product.brand}
-</h3>
-
-
-<p>
-${product.description}
-</p>
-
-
-<a class="btn whatsapp"
-
-href="https://wa.me/8801621007916?text=Hello SH Global Technology, I need ${product.name} information">
-
-
-WhatsApp Inquiry
-
-
-</a>
-
-
-</div>
-
-
-`;
-
-
-
-}
-
-else{
-
-
-productDetails.innerHTML=
-
-"<h3>Product Not Found</h3>";
-
-
-}
-
-
-
-});
-
-
-
-}
-
-
-
-
-
-
-// ================= SEARCH SYSTEM =================
-
-
-
-function searchProduct(){
-
-
-let input = document
-
-.getElementById("searchBox")
-
-.value
-
-.toLowerCase();
-
-
-
-let cards=document
-
-.querySelectorAll(".product-card");
-
-
-
-cards.forEach(card=>{
-
-
-let text=card.innerText.toLowerCase();
-
-
-
-if(text.includes(input)){
-
-
-card.style.display="block";
-
-
-}
-
-else{
-
-
-card.style.display="none";
-
-
-}
-
-
-
-});
-
-
-}
-
-
-
-
-
-
-// ================= BRAND FILTER =================
-
-
-
-function filterBrand(brand){
-
-
-
-let cards=document
-
-.querySelectorAll(".product-card");
-
-
-
-cards.forEach(card=>{
-
-
-let productBrand = card
-
-.querySelector("p")
-
-.innerText
-
-.toLowerCase();
-
-
-
-if(
-
-brand=="all" ||
-
-productBrand.includes(
-
-brand.toLowerCase()
-
-)
-
-){
-
-
-card.style.display="block";
-
-
-}
-
-else{
-
-
-card.style.display="none";
-
-
-}
-
-
-});
-
-
-}
+loadProducts();
