@@ -4,12 +4,13 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebas
 import { getStorage } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfsyRl1h-egJ6cq8fEB-6sWndX20KNsD4",
-  authDomain: "shgt-d629e.firebaseapp.com",
-  projectId: "shgt-d629e",
-  storageBucket: "shgt-d629e.appspot.com",
-  messagingSenderId: "884656945032",
-  appId: "1:884656945032:web:0a5d2788213388c2a36c3d"
+  apiKey: "AIzaSyCWszOZc27idF_IWhTWVOv7P7jOS-Eq3Uc",
+  authDomain: "shgt-global.firebaseapp.com",
+  projectId: "shgt-global",
+  storageBucket: "shgt-global.firebasestorage.app",
+  messagingSenderId: "825797264866",
+  appId: "1:825797264866:web:966bc7af6bdb9843f725bb",
+  measurementId: "G-F0HTF7M0LX"
 };
 
 const app = initializeApp(firebaseConfig);
