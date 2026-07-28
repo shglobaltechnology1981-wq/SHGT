@@ -10,9 +10,8 @@ import {
   uploadBytes,
   getDownloadURL
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
-
-window.saveProduct = async function () {
-
+  async function saveProduct() {
+  
   const name = document.getElementById("name").value.trim();
   const brand = document.getElementById("brand").value.trim();
   const model = document.getElementById("model").value.trim();
