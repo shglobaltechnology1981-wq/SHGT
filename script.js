@@ -1,17 +1,20 @@
-// =======================================
+// =============================================
 // SH GLOBAL TECHNOLOGY
-// Live Product Loading
-// =======================================
+// FINAL SCRIPT PART-9A
+// Firebase Live Product Loading
+// =============================================
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 
 import {
-    getFirestore,
-    collection,
-    getDocs
+  getFirestore,
+  collection,
+  getDocs
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
+// =============================================
 // Firebase Config
+// =============================================
 
 const firebaseConfig = {
 
@@ -33,41 +36,106 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-// ==========================
+// =============================================
+// Product Container
+// =============================================
+
+const productsGrid = document.getElementById("productsGrid");
+
+let allProducts = [];
+
+// =============================================
 // Load Products
-// ==========================
+// =============================================
 
-async function loadProducts(){
+async function loadProducts() {
 
-const grid = document.getElementById("productsGrid");
+    if (!productsGrid) return;
 
-if(!grid) return;
+    productsGrid.innerHTML = `
+        <h2 style="text-align:center;padding:40px;">
+            Loading Products...
+        </h2>
+    `;
 
-grid.innerHTML="<h3>Loading...</h3>";
+    try {
 
-const snapshot = await getDocs(collection(db,"products"));
+        const snapshot = await getDocs(collection(db, "products"));
 
-let html="";
+        allProducts = [];
 
-snapshot.forEach((doc)=>{
+        snapshot.forEach((doc) => {
 
-const p = doc.data();
+            allProducts.push({
 
-html += `
+                id: doc.id,
+
+                ...doc.data()
+
+            });
+
+        });
+
+        displayProducts(allProducts);
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        productsGrid.innerHTML = `
+            <h2 style="text-align:center;color:red;">
+                Failed to load products.
+            </h2>
+        `;
+
+    }
+
+}
+
+// =============================================
+// Display Products
+// =============================================
+
+function displayProducts(products) {
+
+    if (products.length === 0) {
+
+        productsGrid.innerHTML = `
+            <h2 style="text-align:center;">
+                No Products Found
+            </h2>
+        `;
+
+        return;
+
+    }
+
+    let html = "";
+
+    products.forEach((product) => {
+
+        html += `
 
 <div class="product-card">
 
-<img src="${p.image}" alt="${p.name}">
+<img
+src="${product.image}"
+alt="${product.name}"
+loading="lazy">
 
-<h3>${p.name}</h3>
+<h3>${product.name}</h3>
 
-<p>${p.brand}</p>
+<p>${product.brand}</p>
 
-<p>${p.model}</p>
+<p>${product.model}</p>
 
-<p>${p.price}</p>
+<p>${product.price}</p>
 
-<a href="product.html?id=${doc.id}" class="catalogue-btn">
+<a
+href="product.html?id=${product.id}"
+class="catalogue-btn">
 
 View Details
 
@@ -77,9 +145,9 @@ View Details
 
 `;
 
-});
+    });
 
-grid.innerHTML = html;
+    productsGrid.innerHTML = html;
 
 }
 
