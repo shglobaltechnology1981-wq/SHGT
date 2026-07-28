@@ -1,72 +1,67 @@
-// =============================
-// SHGT ADMIN PANEL
-// =============================
-import { auth, db, storage } from "./firebase.js";
+import { db, storage } from "./firebase.js";
 
-console.log("SHGT Admin Panel Loaded");
 import {
-    addDoc,
-    collection
+  addDoc,
+  collection
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
 import {
-    ref,
-    uploadBytes,
-    getDownloadURL
+  ref,
+  uploadBytes,
+  getDownloadURL
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
-
-// =============================
-// SAVE PRODUCT
-// =============================
 
 window.saveProduct = async function () {
 
-    const name = document.getElementById("name").value;
-    const brand = document.getElementById("brand").value;
-    const model = document.getElementById("model").value;
-    const price = document.getElementById("price").value;
-    const description = document.getElementById("description").value;
+  const name = document.getElementById("name").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const model = document.getElementById("model").value.trim();
+  const price = document.getElementById("price").value.trim();
+  const description = document.getElementById("description").value.trim();
 
-    const file = document.getElementById("image").files[0];
+  const file = document.getElementById("image").files[0];
 
-    if (!file) {
-        alert("Please Select Image");
-        return;
-    }
+  if (!name || !brand || !model || !price || !description) {
+    alert("Please fill all fields.");
+    return;
+  }
 
-    try {
+  if (!file) {
+    alert("Please select an image.");
+    return;
+  }
 
-        const storageRef = ref(storage, "products/" + Date.now() + "-" + file.name);
+  try {
 
-        await uploadBytes(storageRef, file);
+    const storageRef = ref(storage, "products/" + Date.now() + "-" + file.name);
 
-        const imageUrl = await getDownloadURL(storageRef);
+    await uploadBytes(storageRef, file);
 
-        await addDoc(collection(db, "products"), {
+    const imageUrl = await getDownloadURL(storageRef);
 
-            name,
-            brand,
-            model,
-            price,
-            description,
-            image: imageUrl,
-            createdAt: new Date()
+    await addDoc(collection(db, "products"), {
+      name,
+      brand,
+      model,
+      price,
+      description,
+      image: imageUrl,
+      createdAt: new Date()
+    });
 
-        });
+    alert("✅ Product Saved Successfully");
 
-        alert("Product Saved Successfully");
+    document.querySelector("form").reset();
 
-        location.reload();
+  } catch (error) {
 
-    } catch (err) {
+    console.error(error);
 
-        console.error(err);
+    alert("Error: " + error.message);
 
-        alert("Upload Failed");
+  }
 
-    }
-
-}
+};
 <script type="module" src="admin.js"></script>
 </body>
 </html>
