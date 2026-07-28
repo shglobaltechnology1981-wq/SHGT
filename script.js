@@ -161,27 +161,3 @@ placeholder="Search Machine...">
 
 <select id="brandFilter">
 
-<option value="all">All Brands</option>
-
-<option value="JUKI">JUKI</option>
-<option value="Brother">Brother</option>
-<option value="Pegasus">Pegasus</option>
-<option value="Jack">Jack</option>
-<option value="Siruba">Siruba</option>
-<option value="Typical">Typical</option>
-<option value="Yamato">Yamato</option>
-<option value="Sunstar">Sunstar</option>
-
-</select>
-
-<select id="categoryFilter">
-
-<option value="all">All Categories</option>
-
-<option value="Machine">Machine</option>
-
-<option value="Spare Part">Spare Part</option>
-
-</select>
-
-</div>
