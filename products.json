@@ -1,86 +1,202 @@
 [
   {
     "id": 1,
-    "name": "JUKI DDL-9000C",
+    "category": "Machine",
     "brand": "JUKI",
-    "image": "images/machines/juki-ddl9000c.jpg",
-    "description": "High-speed lockstitch industrial sewing machine."
+    "name": "JUKI DDL-9000C",
+    "model": "DDL-9000C",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-DDL9000C.webp",
+    "description": "High-speed Direct Drive Lockstitch Sewing Machine",
+    "status": "Available"
   },
   {
     "id": 2,
-    "name": "JUKI MO-6716S",
+    "category": "Machine",
     "brand": "JUKI",
-    "image": "images/machines/juki-mo6716s.jpg",
-    "description": "High-speed overlock machine."
+    "name": "JUKI DDL-8700",
+    "model": "DDL-8700",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-DDL8700.webp",
+    "description": "High-speed Single Needle Lockstitch Machine",
+    "status": "Available"
   },
   {
     "id": 3,
-    "name": "JUKI LBH-1790",
+    "category": "Machine",
     "brand": "JUKI",
-    "image": "images/machines/juki-lbh1790.jpg",
-    "description": "Computerized buttonhole machine."
+    "name": "JUKI MO-6916S",
+    "model": "MO-6916S",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-MO6916S-Main-1_fze3kc.webp",
+    "description": "High-speed Overlock Sewing Machine",
+    "status": "Available"
   },
   {
     "id": 4,
-    "name": "JUKI LK-1900BN",
+    "category": "Machine",
     "brand": "JUKI",
-    "image": "images/machines/juki-lk1900bn.jpg",
-    "description": "Computerized bartack machine."
+    "name": "JUKI LK-1900BN",
+    "model": "LK-1900BN",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-LK1900BN.webp",
+    "description": "Electronic Bartacking Machine",
+    "status": "Available"
   },
   {
     "id": 5,
-    "name": "Brother S-7300A",
-    "brand": "Brother",
-    "image": "images/machines/brother-s7300a.jpg",
-    "description": "Direct-drive lockstitch sewing machine."
+    "category": "Machine",
+    "brand": "JUKI",
+    "name": "JUKI LBH-1790S",
+    "model": "LBH-1790S",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-LBH1790S.webp",
+    "description": "Computerized Buttonhole Machine",
+    "status": "Available"
   },
   {
     "id": 6,
-    "name": "Brother S-1000A",
-    "brand": "Brother",
-    "image": "images/machines/brother-s1000a.jpg",
-    "description": "Industrial single needle machine."
+    "category": "Machine",
+    "brand": "JUKI",
+    "name": "JUKI AMS-210EN",
+    "model": "AMS-210EN",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JUKI-AMS210EN.webp",
+    "description": "Electronic Pattern Sewing Machine",
+    "status": "Available"
   },
   {
     "id": 7,
-    "name": "Brother HE-800C",
+    "category": "Machine",
     "brand": "Brother",
-    "image": "images/machines/brother-he800c.jpg",
-    "description": "Electronic buttonhole sewing machine."
+    "name": "Brother S-7300A",
+    "model": "S-7300A",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/BROTHER-S7300A.webp",
+    "description": "Direct Drive Lockstitch Machine",
+    "status": "Available"
   },
   {
     "id": 8,
-    "name": "Pegasus M700",
-    "brand": "Pegasus",
-    "image": "images/machines/pegasus-m700.jpg",
-    "description": "Industrial overlock sewing machine."
+    "category": "Machine",
+    "brand": "Brother",
+    "name": "Brother S-7180A",
+    "model": "S-7180A",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/BROTHER-S7180A.webp",
+    "description": "Industrial Lockstitch Machine",
+    "status": "Available"
   },
   {
     "id": 9,
-    "name": "Pegasus W500",
-    "brand": "Pegasus",
-    "image": "images/machines/pegasus-w500.jpg",
-    "description": "Flatseam sewing machine."
+    "category": "Machine",
+    "brand": "Brother",
+    "name": "Brother BAS-311HN",
+    "model": "BAS-311HN",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/BROTHER-BAS311HN.webp",
+    "description": "Electronic Pattern Sewing Machine",
+    "status": "Available"
   },
   {
     "id": 10,
-    "name": "Feed Off The Arm Machine",
-    "brand": "SHGT",
-    "image": "images/machines/feed-off-arm.jpg",
-    "description": "Feed Off The Arm industrial sewing machine."
+    "category": "Machine",
+    "brand": "Brother",
+    "name": "Brother HE-800C",
+    "model": "HE-800C",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/BROTHER-HE800C.webp",
+    "description": "Electronic Buttonhole Machine",
+    "status": "Available"
   },
   {
     "id": 11,
-    "name": "Button Attach Machine",
-    "brand": "SHGT",
-    "image": "images/machines/button-attach.jpg",
-    "description": "Industrial button attaching machine."
+    "category": "Machine",
+    "brand": "Pegasus",
+    "name": "Pegasus M700",
+    "model": "M700",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/PEGASUS-M700.webp",
+    "description": "Industrial Overlock Machine",
+    "status": "Available"
   },
   {
     "id": 12,
-    "name": "Button Hole Machine",
-    "brand": "SHGT",
-    "image": "images/machines/button-hole.jpg",
-    "description": "Industrial buttonhole sewing machine."
+    "category": "Machine",
+    "brand": "Pegasus",
+    "name": "Pegasus W500",
+    "model": "W500",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/PEGASUS-W500.webp",
+    "description": "Flatbed Interlock Machine",
+    "status": "Available"
+  },
+  {
+    "id": 13,
+    "category": "Machine",
+    "brand": "Pegasus",
+    "name": "Pegasus FS700",
+    "model": "FS700",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/PEGASUS-FS700.webp",
+    "description": "Feed-off-the-Arm Machine",
+    "status": "Available"
+  },
+  {
+    "id": 14,
+    "category": "Machine",
+    "brand": "Siruba",
+    "name": "Siruba 747K",
+    "model": "747K",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/SIRUBA-747K.webp",
+    "description": "High-speed Overlock Machine",
+    "status": "Available"
+  },
+  {
+    "id": 15,
+    "category": "Machine",
+    "brand": "Siruba",
+    "name": "Siruba VC008",
+    "model": "VC008",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/SIRUBA-VC008.webp",
+    "description": "Cylinder Bed Interlock Machine",
+    "status": "Available"
+  },
+  {
+    "id": 16,
+    "category": "Machine",
+    "brand": "Kansai Special",
+    "name": "Kansai Special DFB1404",
+    "model": "DFB1404",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/KANSAI-DFB1404.webp",
+    "description": "Flat Seam Machine",
+    "status": "Available"
+  },
+  {
+    "id": 17,
+    "category": "Machine",
+    "brand": "Kansai Special",
+    "name": "Kansai Special FX4404",
+    "model": "FX4404",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/KANSAI-FX4404.webp",
+    "description": "Feed-off-the-Arm Machine",
+    "status": "Available"
+  },
+  {
+    "id": 18,
+    "category": "Machine",
+    "brand": "Jack",
+    "name": "Jack A4B",
+    "model": "A4B",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JACK-A4B.webp",
+    "description": "Direct Drive Lockstitch Machine",
+    "status": "Available"
+  },
+  {
+    "id": 19,
+    "category": "Machine",
+    "brand": "Jack",
+    "name": "Jack C4",
+    "model": "C4",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JACK-C4.webp",
+    "description": "High-speed Overlock Machine",
+    "status": "Available"
+  },
+  {
+    "id": 20,
+    "category": "Machine",
+    "brand": "Jack",
+    "name": "Jack E4S",
+    "model": "E4S",
+    "image": "https://res.cloudinary.com/ywxg2gao/image/upload/v1785225161/JACK-E4S.webp",
+    "description": "Direct Drive Interlock Machine",
+    "status": "Available"
   }
 ]
