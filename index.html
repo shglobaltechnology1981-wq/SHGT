@@ -1,181 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SH Global Technology</title>
+<title>SH Global Technology | Industrial Sewing Machine & Service</title>
+
+<meta name="description" content="SH Global Technology provides Industrial Sewing Machine, Spare Parts, Installation and Maintenance Service in Bangladesh.">
+
+<link rel="icon" href="favicon.png">
 
 <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 
 <body>
 
-<!-- Header -->
+
+<!-- HEADER -->
+
 <header>
 
-<div class="logo">
-<img src="images/logo.png" alt="SHGT Logo">
-<h2>SH GLOBAL TECHNOLOGY</h2>
+<div class="logo-area">
+
+<img src="images/logo.png" alt="SH Global Technology Logo">
+
+<div>
+
+<h1>SH GLOBAL TECHNOLOGY</h1>
+
+<p>Industrial Sewing Machine & Spare Parts Solution</p>
+
 </div>
 
-<nav id="menu">
+</div>
+
+
+<nav>
 
 <a href="index.html">Home</a>
-<a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="gallery.html">Gallery</a>
+
 <a href="catalogue.html">Catalogue</a>
+
+<a href="quotation.html">Quotation</a>
+
 <a href="contact.html">Contact</a>
 
 </nav>
 
-<div class="menu-btn" onclick="toggleMenu()">
-<i class="fa fa-bars"></i>
-</div>
 
 </header>
 
-<!-- Slider -->
 
-<section class="slider">
 
-<div class="slide active">
+<!-- HERO SECTION -->
 
-<img src="images/slider/slide1.jpg">
+<section class="hero">
 
-<div class="caption">
-<h1>Industrial Sewing Machine</h1>
-<p>Sales • Spare Parts • Maintenance</p>
-</div>
 
-</div>
+<h2>
+Professional Industrial Sewing Machine Solution
+</h2>
 
-<div class="slide">
-
-<img src="images/slider/slide2.jpg">
-
-<div class="caption">
-<h1>Professional Service</h1>
-<p>JUKI • Brother • Pegasus</p>
-</div>
-
-</div>
-
-<div class="slide">
-
-<img src="images/slider/slide3.jpg">
-
-<div class="caption">
-<h1>SH Global Technology</h1>
-<p>Your Trusted Partner</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Search -->
-
-<section class="search-area">
-
-<input
-type="text"
-id="searchBox"
-placeholder="Search Machine..."
-onkeyup="searchProduct()">
-
-</section>
-
-<!-- Products -->
-
-<section id="products">
-
-<h2>Our Products</h2>
-
-<div class="filter-bar">
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search Machine...">
-
-<select id="brandFilter">
-
-<option value="all">All Brands</option>
-<option value="JUKI">JUKI</option>
-<option value="Brother">Brother</option>
-<option value="Pegasus">Pegasus</option>
-<option value="Jack">Jack</option>
-<option value="Siruba">Siruba</option>
-<option value="Typical">Typical</option>
-<option value="Yamato">Yamato</option>
-<option value="Sunstar">Sunstar</option>
-
-</select>
-
-<select id="categoryFilter">
-
-<option value="all">All Categories</option>
-<option value="Machine">Machine</option>
-<option value="Spare Part">Spare Part</option>
-
-</select>
-
-</div>
-
-<div id="productsGrid">
-
-Loading Products...
-
-</div>
-
-</section>
-
-<!-- About -->
-
-<section id="about">
-
-<h2>About SH Global Technology</h2>
 
 <p>
-
-SH Global Technology is a professional supplier of Industrial Sewing Machines,
-Spare Parts and Maintenance Service in Bangladesh.
-
+JUKI | Brother | Pegasus | Industrial Sewing Machine
 </p>
 
-</section>
 
-<!-- WhatsApp -->
+<a href="catalogue.html" class="btn">
+View Catalogue
+</a>
 
-<a
-href="https://wa.me/8801621007916"
-class="whatsapp"
-target="_blank">
 
-<i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/8801621007916?text=Hello%20SH%20Global%20Technology,%20I%20need%20information"
+class="btn whatsapp">
+
+WhatsApp Inquiry
 
 </a>
 
-<!-- Footer -->
 
-<footer>
+</section>
+
+
+
+
+
+<!-- SEARCH SECTION -->
+
+
+<section class="search-box">
+
+
+<h2>
+Search Machine
+</h2>
+
+
+<input 
+type="text"
+id="searchInput"
+placeholder="Search machine name..."
+>
+
+
+</section>
+
+
+
+
+
+<!-- BRAND FILTER -->
+
+
+<section class="brand-filter">
+
+
+<h2>
+Select Brand
+</h2>
+
+
+<button onclick="filterBrand('All')">
+All
+</button>
+
+
+<button onclick="filterBrand('JUKI')">
+JUKI
+</button>
+
+
+<button onclick="filterBrand('Brother')">
+Brother
+</button>
+
+
+<button onclick="filterBrand('Pegasus')">
+Pegasus
+</button>
+
+
+<button onclick="filterBrand('SHGT Service')">
+SHGT Service
+</button>
+
+
+
+</section>
+
+
+
+
+
+<!-- PRODUCT AREA -->
+
+
+<section>
+
+
+<h2 class="title">
+Featured Products
+</h2>
+
+
+
+<div id="productContainer"
+class="product-container">
+
+
+<!-- Products Load From products.json -->
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section class="about">
+
+
+<h2>
+About SH Global Technology
+</h2>
+
 
 <p>
 
-© 2026 SH Global Technology
-All Rights Reserved.
+SH Global Technology is a professional Industrial Sewing Machine supplier and maintenance service provider in Bangladesh.
+
+We provide Sewing Machine Sales, Spare Parts, Installation, Troubleshooting and Technical Support for Garments Industries.
 
 </p>
 
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<h3>
+SH GLOBAL TECHNOLOGY
+</h3>
+
+
+<p>
+Industrial Sewing Machine Solution
+</p>
+
+
+<p>
+WhatsApp: +8801621007916
+</p>
+
+
+<p>
+Cell: +8801621007917
+</p>
+
+
+<p>
+UTTORA HOUSE BUILDING NEAR OF PUBLIC COLLAGE RAIL GATE
+</p>
+
+
+<p>
+© 2026 SH Global Technology. All Rights Reserved.
+</p>
+
+
 </footer>
+
+
+
+
 
 <script type="module" src="js/script.js"></script>
 
+
 </body>
 
-</html> 
+</html>
