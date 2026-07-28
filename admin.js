@@ -1,4 +1,4 @@
-import { db, storage } from "./firebase.js";
+import { db, storage } from "./admin/firebase.js";
 console.log("Admin.js Loaded");
 import {
   addDoc,
