@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Product | SH Global Technology</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/cloudinary.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+
+<h1>Add New Product</h1>
+
+<a href="dashboard.html">
+<button>Dashboard</button>
+</a>
+
+</header>
+
+<div class="login-box" style="width:100%;max-width:900px;margin:30px auto;">
+
+<h2>Add Product</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Product Name">
+
+<select id="brand">
+
+<option value="">Select Brand</option>
+
+<option>JUKI</option>
+
+<option>Brother</option>
+
+<option>Pegasus</option>
+
+<option>Jack</option>
+
+<option>Siruba</option>
+
+<option>Kansai Special</option>
+
+<option>Yamato</option>
+
+<option>Typical</option>
+
+<option>Sunstar</option>
+
+<option>Others</option>
+
+</select>
+
+<br><br>
+
+<select id="category">
+
+<option value="">Select Category</option>
+
+<option>Machine</option>
+
+<option>Spare Part</option>
+
+</select>
+
+<br><br>
+
+<input
+type="text"
+id="model"
+placeholder="Model Number">
+
+<input
+type="text"
+id="price"
+placeholder="Price">
+
+<textarea
+
+id="description"
+
+placeholder="Product Description"
+
+style="width:100%;
+height:140px;
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+margin-top:20px;
+font-size:16px;">
+
+</textarea>
+
+<br><br>
+
+<label>
+
+<b>Select Product Image</b>
+
+</label>
+
+<br><br>
+
+<input
+
+type="file"
+
+id="image"
+
+accept="image/*">
+
+<br><br>
+
+<img
+
+id="preview"
+
+src=""
+
+style="width:220px;
+display:none;
+border-radius:10px;">
+
+<br><br>
+
+<button id="uploadBtn">
+
+Upload Product
+
+</button>
+
+<p
+
+id="msg"
+
+style="margin-top:20px;
+font-weight:bold;">
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
