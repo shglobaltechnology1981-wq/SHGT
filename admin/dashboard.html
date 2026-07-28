@@ -1,120 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SHGT Admin Dashboard</title>
 
-<link rel="stylesheet" href="admin.css">
+<link rel="stylesheet" href="css/admin.css">
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-}
-
-header{
-background:#003366;
-color:#fff;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.container{
-padding:20px;
-}
-
-.card{
-background:#fff;
-padding:20px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 2px 8px rgba(0,0,0,.15);
-}
-
-input,textarea{
-width:100%;
-padding:10px;
-margin:8px 0;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-padding:10px 20px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-margin:5px;
-}
-
-.save{
-background:#28a745;
-color:#fff;
-}
-
-.logout{
-background:#dc3545;
-color:#fff;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
-}
-
-table th,table td{
-border:1px solid #ddd;
-padding:10px;
-text-align:left;
-}
-
-table th{
-background:#003366;
-color:#fff;
-}
-</style>
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/dashboard.js"></script>
 
 </head>
+
 <body>
 
-<header>
+<div class="container">
 
-<h2>SH Global Technology Admin</h2>
+<header class="header">
 
-<button class="logout" onclick="logout()">
+<h1>SH GLOBAL TECHNOLOGY</h1>
+
+<button id="logoutBtn" class="logout">
+
 Logout
+
 </button>
 
 </header>
 
-<div class="container">
+<div class="cards">
 
 <div class="card">
 
-<h3>Add Product</h3>
+<h3>Total Products</h3>
 
-<input type="text" id="name" placeholder="Product Name">
-
-<input type="text" id="brand" placeholder="Brand">
-
-<input type="text" id="image" placeholder="Image URL">
-
-<textarea id="description" placeholder="Description"></textarea>
-
-<button class="save" onclick="addProduct()">
-Save Product
-</button>
+<p id="totalProducts">0</p>
 
 </div>
 
 <div class="card">
 
-<h3>Product List</h3>
+<h3>Total Machines</h3>
+
+<p id="totalMachines">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Spare Parts</h3>
+
+<p id="totalParts">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Website Status</h3>
+
+<p style="color:green;">ONLINE</p>
+
+</div>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;">
+
+<a href="add-product.html">
+
+<button>Add Product</button>
+
+</a>
+
+<a href="products.html">
+
+<button>Manage Products</button>
+
+</a>
+
+<a href="../index.html">
+
+<button>View Website</button>
+
+</a>
+
+</div>
+
+<h2 style="margin-top:40px;">
+
+Recent Products
+
+</h2>
 
 <table>
 
@@ -122,9 +101,15 @@ Save Product
 
 <tr>
 
+<th>Image</th>
+
 <th>Name</th>
 
 <th>Brand</th>
+
+<th>Category</th>
+
+<th>Status</th>
 
 <th>Action</th>
 
@@ -134,15 +119,22 @@ Save Product
 
 <tbody id="productTable">
 
+<tr>
+
+<td colspan="6" style="text-align:center;">
+
+Loading...
+
+</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
 </div>
 
-</div>
-
-<script type="module" src="admin.js"></script>
-
 </body>
+
 </html>
