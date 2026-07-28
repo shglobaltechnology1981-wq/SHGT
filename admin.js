@@ -1,5 +1,5 @@
-import { db, storage } from "./admin/firebase.js";
-console.log("Admin.js Loaded");
+import { db, storage } from "./firebase.js";
+
 import {
   addDoc,
   collection
@@ -18,21 +18,14 @@ window.saveProduct = async function () {
   const model = document.getElementById("model").value.trim();
   const price = document.getElementById("price").value.trim();
   const description = document.getElementById("description").value.trim();
-
   const file = document.getElementById("image").files[0];
 
-  if (!name || !brand || !model || !price || !description) {
-    alert("Please fill all fields.");
-    return;
-  }
-
-  if (!file) {
-    alert("Please select an image.");
+  if (!name || !brand || !model || !price || !description || !file) {
+    alert("Please fill all fields and select an image.");
     return;
   }
 
   try {
-
     const storageRef = ref(storage, "products/" + Date.now() + "-" + file.name);
 
     await uploadBytes(storageRef, file);
@@ -51,20 +44,12 @@ window.saveProduct = async function () {
 
     alert("✅ Product Saved Successfully");
 
-  document.getElementById("name").value = "";
-document.getElementById("brand").value = "";
-document.getElementById("model").value = "";
-document.getElementById("price").value = "";
-document.getElementById("description").value = "";
-document.getElementById("image").value = "";
-document.getElementById("preview").style.display = "none";
+    document.querySelector("form").reset();
+    document.getElementById("preview").style.display = "none";
 
   } catch (error) {
-
     console.error(error);
-
-    alert("Error: " + error.message);
-
+    alert(error.message);
   }
 
 };
