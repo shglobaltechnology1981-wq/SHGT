@@ -1,5 +1,5 @@
 import { db, storage } from "./firebase.js";
-
+console.log("Admin.js Loaded");
 import {
   addDoc,
   collection
